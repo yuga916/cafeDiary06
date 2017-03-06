@@ -1,0 +1,19 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "56d7b6b39421d2b8cd2c4012810f76ed"
+build_time: [541774207, 774318000]
+inputs:
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/DateManager.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/listViewController.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/Meal.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/imageViewController.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/MealViewController.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/imageCollectionViewCell.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/RatingControl.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/AppDelegate.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/MealTableViewController.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/MealTableViewCell.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/calendarViewController.swift": [541771869, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/CalendarCell.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/Diary+CoreDataProperties.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/FoodTracker/oneItemsFlowLayout.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/Diary+CoreDataClass.swift": [541684274, 0]

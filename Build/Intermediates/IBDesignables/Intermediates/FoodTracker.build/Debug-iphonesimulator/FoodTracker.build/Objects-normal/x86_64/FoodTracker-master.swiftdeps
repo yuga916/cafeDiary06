@@ -1,0 +1,19 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "da79eac29da46f606de7e7c342215780"
+build_time: [542083615, 331650000]
+inputs:
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/DateManager.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/listViewController.swift": [542083234, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/Meal.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/imageViewController.swift": [542082233, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/MealViewController.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/imageCollectionViewCell.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/RatingControl.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/AppDelegate.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/MealTableViewController.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/MealTableViewCell.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/calendarViewController.swift": [542081731, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/CalendarCell.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Diary+CoreDataProperties.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/FoodTracker/oneItemsFlowLayout.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Diary+CoreDataClass.swift": [541684274, 0]

@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "deab64c7aac325605b30ba28e0495e62"
+build_time: [541774203, 574229000]
+inputs:
+  "/Users/yuga/Downloads/cafeDiary02-master/Pods/FontAwesome.swift/FontAwesome/Enum.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/Pods/FontAwesome.swift/FontAwesome/FontAwesome.swift": [541684274, 0]
+  "/Users/yuga/Downloads/cafeDiary02-master/Pods/FontAwesome.swift/FontAwesome/FontAwesomeView.swift": [541684274, 0]
