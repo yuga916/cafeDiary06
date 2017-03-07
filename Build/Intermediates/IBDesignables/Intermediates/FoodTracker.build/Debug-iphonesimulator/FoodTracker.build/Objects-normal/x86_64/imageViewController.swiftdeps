@@ -6,66 +6,68 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker19imageViewController", ""]
 provides-dynamic-lookup:
-- "viewWillAppear"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "didReceiveMemoryWarning"
+- "count"
 - "oneFlowLayout"
-- "read"
-- "cafeArray"
+- "cafeDic"
+- "viewDidLoad"
+- "cellMargin"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "numberOfSections"
 - "myCafe"
 - "imageCollection"
-- "numberOfSections"
-- "count"
-- "viewDidLoad"
-- "cafeDic"
-- "cellMargin"
+- "read"
+- "cafeArray"
+- "didReceiveMemoryWarning"
+- "viewWillAppear"
 depends-top-level:
-- !private "PHFetchResult"
-- !private "AppDelegate"
-- !private "URL"
-- !private "print"
-- !private "Void"
 - !private "PHAsset"
-- "Dictionary"
-- "IndexPath"
-- !private "StringLiteralType"
-- !private "NSString"
-- !private "Date"
-- "imageViewController"
-- "String"
-- "UICollectionView"
-- "Int"
-- !private "UIScreen"
-- !private "+="
-- "UICollectionViewDelegate"
-- !private "Array"
-- "CastingPrecedence"
-- !private "UIApplication"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "/"
-- !private "UIImage"
-- "UICollectionViewDelegateFlowLayout"
-- "UICollectionViewLayout"
-- "Bool"
-- "UICollectionViewDataSource"
-- "NSDictionary"
-- !private "NSNumber"
+- "CastingPrecedence"
 - "oneItemsFlowLayout"
-- "NSArray"
-- !private "PHImageManager"
-- "UICollectionViewCell"
-- !private "-"
-- !private "NSFetchRequest"
-- "UIViewController"
-- !private "Diary"
-- "CGFloat"
-- !private "AnyObject"
-- !private "imageCollectionViewCell"
+- !private "UIImage"
 - "CGSize"
+- "imageViewController"
+- "Int"
+- !private "UIScreen"
+- !private "AnyObject"
+- "Bool"
+- "CGFloat"
+- "NSDictionary"
+- "UICollectionViewLayout"
+- "UICollectionViewCell"
+- !private "NSNumber"
+- !private "print"
+- "String"
+- !private "PHImageManager"
+- !private "NSFetchRequest"
+- !private "Diary"
+- "NSArray"
+- "UICollectionView"
+- !private "imageCollectionViewCell"
+- !private "+="
+- "Dictionary"
+- !private "NSString"
+- !private "Date"
+- !private "AppDelegate"
+- !private "Array"
+- "UIViewController"
+- !private "cellSize"
+- !private "Void"
+- !private "-"
+- "UICollectionViewDelegateFlowLayout"
+- "UICollectionViewDataSource"
+- "IndexPath"
+- !private "StringLiteralType"
+- !private "URL"
+- "UICollectionViewDelegate"
+- !private "UIApplication"
+- !private "PHFetchResult"
+- !private ">"
+- !private "/"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "Diary"]
@@ -82,6 +84,7 @@ depends-member:
 - ["Ps9AnyObject", "cafeArray"]
 - ["Ps9AnyObject", "cafeDic"]
 - ["Ps9AnyObject", "cellMargin"]
+- !private ["Ps9AnyObject", "cellSize"]
 - ["Ps9AnyObject", "collectionView"]
 - ["Ps9AnyObject", "count"]
 - !private ["Ps9AnyObject", "dataSource"]
@@ -209,6 +212,7 @@ depends-member:
 - ["Ps7CVarArg", "cafeArray"]
 - ["Ps7CVarArg", "cafeDic"]
 - ["Ps7CVarArg", "cellMargin"]
+- !private ["Ps7CVarArg", "cellSize"]
 - ["Ps7CVarArg", "collectionView"]
 - ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "dataSource"]
@@ -293,6 +297,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "cafeArray"]
 - ["Ps28CustomDebugStringConvertible", "cafeDic"]
 - ["Ps28CustomDebugStringConvertible", "cellMargin"]
+- !private ["Ps28CustomDebugStringConvertible", "cellSize"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
@@ -393,6 +398,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "cafeArray"]
 - ["Ps23CustomStringConvertible", "cafeDic"]
 - ["Ps23CustomStringConvertible", "cellMargin"]
+- !private ["Ps23CustomStringConvertible", "cellSize"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
@@ -473,6 +479,7 @@ depends-member:
 - ["Ps9Equatable", "cafeArray"]
 - ["Ps9Equatable", "cafeDic"]
 - ["Ps9Equatable", "cellMargin"]
+- !private ["Ps9Equatable", "cellSize"]
 - ["Ps9Equatable", "collectionView"]
 - ["Ps9Equatable", "count"]
 - !private ["Ps9Equatable", "dataSource"]
@@ -564,6 +571,7 @@ depends-member:
 - ["Ps8Hashable", "cafeArray"]
 - ["Ps8Hashable", "cafeDic"]
 - ["Ps8Hashable", "cellMargin"]
+- !private ["Ps8Hashable", "cellSize"]
 - ["Ps8Hashable", "collectionView"]
 - ["Ps8Hashable", "count"]
 - !private ["Ps8Hashable", "dataSource"]
@@ -694,6 +702,7 @@ depends-member:
 - ["PSo8NSCoding", "cafeArray"]
 - ["PSo8NSCoding", "cafeDic"]
 - ["PSo8NSCoding", "cellMargin"]
+- !private ["PSo8NSCoding", "cellSize"]
 - ["PSo8NSCoding", "collectionView"]
 - ["PSo8NSCoding", "count"]
 - !private ["PSo8NSCoding", "dataSource"]
@@ -754,6 +763,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "cafeArray"]
 - ["PSo26NSExtensionRequestHandling", "cafeDic"]
 - ["PSo26NSExtensionRequestHandling", "cellMargin"]
+- !private ["PSo26NSExtensionRequestHandling", "cellSize"]
 - ["PSo26NSExtensionRequestHandling", "collectionView"]
 - ["PSo26NSExtensionRequestHandling", "count"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -836,9 +846,11 @@ depends-member:
 - ["CSo8NSObject", "cafeArray"]
 - ["CSo8NSObject", "cafeDic"]
 - ["CSo8NSObject", "cellMargin"]
+- !private ["CSo8NSObject", "cellSize"]
 - ["CSo8NSObject", "collectionView"]
 - ["CSo8NSObject", "count"]
 - !private ["CSo8NSObject", "dataSource"]
+- ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -896,6 +908,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "cafeArray"]
 - ["PSo16NSObjectProtocol", "cafeDic"]
 - ["PSo16NSObjectProtocol", "cellMargin"]
+- !private ["PSo16NSObjectProtocol", "cellSize"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - ["PSo16NSObjectProtocol", "count"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
@@ -1060,6 +1073,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "cafeArray"]
 - ["PSo21UIAppearanceContainer", "cafeDic"]
 - ["PSo21UIAppearanceContainer", "cellMargin"]
+- !private ["PSo21UIAppearanceContainer", "cellSize"]
 - ["PSo21UIAppearanceContainer", "collectionView"]
 - ["PSo21UIAppearanceContainer", "count"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
@@ -1117,6 +1131,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "URL"]
 - !private ["PSo26UICollectionViewDataSource", "cafeArray"]
 - !private ["PSo26UICollectionViewDataSource", "cafeDic"]
+- !private ["PSo26UICollectionViewDataSource", "cellSize"]
 - ["PSo26UICollectionViewDataSource", "collectionView"]
 - !private ["PSo26UICollectionViewDataSource", "count"]
 - !private ["PSo26UICollectionViewDataSource", "imageCollection"]
@@ -1154,6 +1169,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "URL"]
 - !private ["PSo24UICollectionViewDelegate", "cafeArray"]
 - !private ["PSo24UICollectionViewDelegate", "cafeDic"]
+- !private ["PSo24UICollectionViewDelegate", "cellSize"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
 - !private ["PSo24UICollectionViewDelegate", "count"]
 - !private ["PSo24UICollectionViewDelegate", "imageCollection"]
@@ -1191,6 +1207,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "URL"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "cafeArray"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "cafeDic"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "cellSize"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "count"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "imageCollection"]
@@ -1231,6 +1248,7 @@ depends-member:
 - ["PSo18UIContentContainer", "cafeArray"]
 - ["PSo18UIContentContainer", "cafeDic"]
 - ["PSo18UIContentContainer", "cellMargin"]
+- !private ["PSo18UIContentContainer", "cellSize"]
 - ["PSo18UIContentContainer", "collectionView"]
 - ["PSo18UIContentContainer", "count"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -1282,6 +1300,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "cafeArray"]
 - ["PSo18UIFocusEnvironment", "cafeDic"]
 - ["PSo18UIFocusEnvironment", "cellMargin"]
+- !private ["PSo18UIFocusEnvironment", "cellSize"]
 - ["PSo18UIFocusEnvironment", "collectionView"]
 - ["PSo18UIFocusEnvironment", "count"]
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
@@ -1352,9 +1371,11 @@ depends-member:
 - ["CSo11UIResponder", "cafeArray"]
 - ["CSo11UIResponder", "cafeDic"]
 - ["CSo11UIResponder", "cellMargin"]
+- !private ["CSo11UIResponder", "cellSize"]
 - ["CSo11UIResponder", "collectionView"]
 - ["CSo11UIResponder", "count"]
 - !private ["CSo11UIResponder", "dataSource"]
+- ["CSo11UIResponder", "deinit"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -1401,6 +1422,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "cafeArray"]
 - ["PSo30UIResponderStandardEditActions", "cafeDic"]
 - ["PSo30UIResponderStandardEditActions", "cellMargin"]
+- !private ["PSo30UIResponderStandardEditActions", "cellSize"]
 - ["PSo30UIResponderStandardEditActions", "collectionView"]
 - ["PSo30UIResponderStandardEditActions", "count"]
 - !private ["PSo30UIResponderStandardEditActions", "dataSource"]
@@ -1455,6 +1477,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "URL"]
 - !private ["PSo20UIScrollViewDelegate", "cafeArray"]
 - !private ["PSo20UIScrollViewDelegate", "cafeDic"]
+- !private ["PSo20UIScrollViewDelegate", "cellSize"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
 - !private ["PSo20UIScrollViewDelegate", "count"]
 - !private ["PSo20UIScrollViewDelegate", "imageCollection"]
@@ -1493,6 +1516,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "cafeArray"]
 - ["PSo16UIStateRestoring", "cafeDic"]
 - ["PSo16UIStateRestoring", "cellMargin"]
+- !private ["PSo16UIStateRestoring", "cellSize"]
 - ["PSo16UIStateRestoring", "collectionView"]
 - ["PSo16UIStateRestoring", "count"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -1537,6 +1561,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "cafeArray"]
 - ["PSo18UITraitEnvironment", "cafeDic"]
 - ["PSo18UITraitEnvironment", "cellMargin"]
+- !private ["PSo18UITraitEnvironment", "cellSize"]
 - ["PSo18UITraitEnvironment", "collectionView"]
 - ["PSo18UITraitEnvironment", "count"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
@@ -1606,6 +1631,7 @@ depends-member:
 - ["CSo16UIViewController", "cafeArray"]
 - ["CSo16UIViewController", "cafeDic"]
 - ["CSo16UIViewController", "cellMargin"]
+- !private ["CSo16UIViewController", "cellSize"]
 - ["CSo16UIViewController", "collectionView"]
 - ["CSo16UIViewController", "count"]
 - ["CSo16UIViewController", "deinit"]
@@ -1700,6 +1726,7 @@ depends-member:
 - ["Ps9_Hashable", "cafeArray"]
 - ["Ps9_Hashable", "cafeDic"]
 - ["Ps9_Hashable", "cellMargin"]
+- !private ["Ps9_Hashable", "cellSize"]
 - ["Ps9_Hashable", "collectionView"]
 - ["Ps9_Hashable", "count"]
 - !private ["Ps9_Hashable", "dataSource"]
@@ -1810,6 +1837,7 @@ depends-member:
 - ["C11FoodTracker19imageViewController", "cafeArray"]
 - ["C11FoodTracker19imageViewController", "cafeDic"]
 - ["C11FoodTracker19imageViewController", "cellMargin"]
+- !private ["C11FoodTracker19imageViewController", "cellSize"]
 - ["C11FoodTracker19imageViewController", "collectionView"]
 - ["C11FoodTracker19imageViewController", "count"]
 - ["C11FoodTracker19imageViewController", "deinit"]

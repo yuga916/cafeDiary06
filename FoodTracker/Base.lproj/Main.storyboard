@@ -432,7 +432,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zOI-Tj-ec8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="calendar" image="calendar" id="Ju9-L8-PBa"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SXe-xg-RAe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SXe-xg-RAe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -471,7 +471,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xmf-y4-XIP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="picture" image="Image" id="1aD-51-N89" userLabel="list"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nWJ-iX-SxJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nWJ-iX-SxJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -493,7 +493,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c1q-CK-Hs7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Kgv-Db-Ox1" userLabel="list"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SEf-ho-tc5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SEf-ho-tc5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

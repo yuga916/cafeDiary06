@@ -92,7 +92,12 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //        let cellSize:CGFloat = collectionView.frame.size.width / 2
-        let cellSize:CGFloat = UIScreen.main.bounds.size.width / 2 - 2
+        let cellSize:CGFloat
+        if UIScreen.main.bounds.size.width > 500 {
+          cellSize = UIScreen.main.bounds.size.width / 4 - 2
+        } else {
+          cellSize = UIScreen.main.bounds.size.width / 2 - 2
+        }
         // 正方形で返すためにwidth,heightを同じにする
         return CGSize(width: cellSize, height: cellSize)
 
