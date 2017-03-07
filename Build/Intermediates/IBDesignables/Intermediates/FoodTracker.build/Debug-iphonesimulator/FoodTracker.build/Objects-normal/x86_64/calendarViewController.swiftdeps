@@ -9,117 +9,116 @@ provides-member:
 - ["CSo7UIColor", "lightBlue"]
 - ["CSo7UIColor", "lightRed"]
 provides-dynamic-lookup:
-- "read"
-- "cafeArray"
-- "noImage"
-- "hLabel"
-- "changeHeaderTitle"
-- "headerPrevBtn"
-- "selectedDate"
-- "cellMargin"
-- "baseView"
-- "underView"
-- "cafeImage"
-- "prepare"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "numberOfSections"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "myCafe"
-- "editButton"
-- "navigationBar"
-- "today"
-- "lightBlue"
-- "weekArray"
-- "coffeeFont"
+- "timeLabel"
+- "headerNextBtn"
+- "hLabel"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "changeHeaderTitle"
 - "tappedHeaderNextBtn"
-- "ratingControl"
+- "numberOfSections"
 - "tappedHeaderPrevBtn"
+- "prepare"
 - "cafeLabel"
+- "timeFont"
 - "cafeDic"
-- "lightRed"
+- "ratingControl"
+- "didReceiveMemoryWarning"
+- "weekArray"
+- "read"
+- "daysPerWeek"
 - "dateManager"
 - "calenderCollectionView"
-- "timeLabel"
-- "daysPerWeek"
-- "headerNextBtn"
-- "viewWillAppear"
-- "timeFont"
+- "lightBlue"
+- "cafeArray"
+- "coffeeFont"
+- "today"
+- "underView"
+- "lightRed"
+- "selectedDate"
+- "editButton"
+- "viewDidLoad"
+- "baseView"
+- "headerPrevBtn"
+- "cellMargin"
+- "cafeImage"
+- "navigationBar"
+- "noImage"
 depends-top-level:
-- !private ">"
-- !private "*"
-- "StringLiteralType"
-- "NSDate"
-- "calendarViewController"
-- !private "DateFormatter"
-- !private "CalendarCell"
+- !private "NSNumber"
 - "UICollectionView"
-- !private "NSLocale"
-- "CGSize"
-- !private "+"
-- "Int"
-- "UICollectionViewDelegate"
-- "IndexPath"
-- "UICollectionViewDataSource"
-- "UIStoryboardSegue"
-- !private "BooleanLiteralType"
-- "UICollectionViewDelegateFlowLayout"
-- "CGRect"
-- "DateManager"
-- !private "NSPredicate"
-- "CGFloat"
-- !private "UnicodeScalarType"
-- "Array"
-- "UIButton"
-- !private "Void"
 - !private "%"
-- "UINavigationItem"
-- !private "print"
-- !private "URL"
-- !private ">="
-- "UICollectionViewLayout"
-- !private "Date"
-- !private "Locale"
-- !private "/"
+- !private "MealViewController"
+- !private "NSLocale"
 - !private "NSFetchRequest"
 - !private "Diary"
-- "NSIndexPath"
-- !private "NSForegroundColorAttributeName"
-- "UIImageView"
-- !private "UIApplication"
-- !private "MealViewController"
-- !private "UICollectionViewFlowLayout"
-- "String"
-- "UIColor"
+- !private "AnyObject"
+- !private "NSPredicate"
+- !private "UIScreen"
+- "AssignmentPrecedence"
+- !private "=="
 - !private "PHImageManager"
+- "RatingControl"
+- "CastingPrecedence"
+- !private "Locale"
+- !private "CalendarCell"
+- "UIStoryboardSegue"
+- !private ">="
+- !private "URL"
+- "NSIndexPath"
+- "UILabel"
 - "NSArray"
+- !private "UIImage"
+- !private "UIFont"
+- "UIBarButtonItem"
+- "Dictionary"
+- "calendarViewController"
+- "CGSize"
+- !private "-"
+- !private ">"
+- "String"
+- !private "Void"
+- "UICollectionViewCell"
+- !private "*"
+- "IndexPath"
+- !private "AppDelegate"
+- "UIColor"
+- "CGFloat"
+- !private "/"
+- "NSDate"
+- "UINavigationItem"
+- !private "UIApplication"
+- "CGRect"
+- !private "+"
+- "UIImageView"
+- !private "UICollectionViewFlowLayout"
+- "Int"
+- "NSDictionary"
 - "UIViewController"
 - "UIView"
-- "Bool"
-- "UIBarButtonItem"
-- !private "-"
-- "NSDictionary"
-- !private "UIImage"
-- "Dictionary"
-- "UILabel"
-- !private "AppDelegate"
-- "AssignmentPrecedence"
-- !private "AnyObject"
-- "CastingPrecedence"
-- !private "=="
-- !private "UIFont"
-- !private "NSNumber"
-- "UICollectionViewCell"
-- !private "PHAsset"
+- !private "print"
+- "UICollectionViewDelegate"
+- "DateManager"
 - !private "||"
+- !private "Date"
+- "UICollectionViewDataSource"
+- !private "UnicodeScalarType"
+- "StringLiteralType"
+- !private "NSForegroundColorAttributeName"
+- "UIButton"
+- !private "DateFormatter"
+- !private "BooleanLiteralType"
+- "UICollectionViewDelegateFlowLayout"
+- "UICollectionViewLayout"
+- !private "PHAsset"
+- "Array"
 - !private "PHFetchResult"
-- "RatingControl"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -143,6 +142,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UIScreen"]
 - ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "URL"]
 - ["Ps9AnyObject", "Value"]
@@ -150,6 +150,7 @@ depends-member:
 - ["Ps9AnyObject", "baseView"]
 - !private ["Ps9AnyObject", "borderColor"]
 - !private ["Ps9AnyObject", "borderWidth"]
+- !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "brown"]
 - ["Ps9AnyObject", "cafeArray"]
 - ["Ps9AnyObject", "cafeDic"]
@@ -198,6 +199,7 @@ depends-member:
 - ["Ps9AnyObject", "lightBlue"]
 - ["Ps9AnyObject", "lightRed"]
 - !private ["Ps9AnyObject", "locale"]
+- !private ["Ps9AnyObject", "main"]
 - ["Ps9AnyObject", "myCafe"]
 - ["Ps9AnyObject", "navigationBar"]
 - !private ["Ps9AnyObject", "navigationController"]
@@ -232,6 +234,7 @@ depends-member:
 - ["Ps9AnyObject", "selectedDate"]
 - !private ["Ps9AnyObject", "setTitle"]
 - !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "starSize"]
 - !private ["Ps9AnyObject", "string"]
 - ["Ps9AnyObject", "tappedHeaderNextBtn"]
 - ["Ps9AnyObject", "tappedHeaderPrevBtn"]
@@ -251,7 +254,6 @@ depends-member:
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
-- ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", "weekArray"]
 - !private ["Ps9AnyObject", "white"]
 - ["Ps9AnyObject", ""]
@@ -323,6 +325,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "reloadData"]
 - !private ["PSo15CALayerDelegate", "selectedBackgroundView"]
 - !private ["PSo15CALayerDelegate", "setTitle"]
+- !private ["PSo15CALayerDelegate", "starSize"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "textColor"]
 - !private ["PSo15CALayerDelegate", "textLabel"]
@@ -371,6 +374,7 @@ depends-member:
 - !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIImage"]
+- !private ["Ps7CVarArg", "UIScreen"]
 - ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "URL"]
 - ["Ps7CVarArg", "Value"]
@@ -381,6 +385,7 @@ depends-member:
 - ["Ps7CVarArg", "baseView"]
 - !private ["Ps7CVarArg", "borderColor"]
 - !private ["Ps7CVarArg", "borderWidth"]
+- !private ["Ps7CVarArg", "bounds"]
 - !private ["Ps7CVarArg", "brown"]
 - ["Ps7CVarArg", "cafeArray"]
 - ["Ps7CVarArg", "cafeDic"]
@@ -429,6 +434,7 @@ depends-member:
 - ["Ps7CVarArg", "lightBlue"]
 - ["Ps7CVarArg", "lightRed"]
 - !private ["Ps7CVarArg", "locale"]
+- !private ["Ps7CVarArg", "main"]
 - ["Ps7CVarArg", "myCafe"]
 - ["Ps7CVarArg", "navigationBar"]
 - !private ["Ps7CVarArg", "navigationController"]
@@ -463,6 +469,7 @@ depends-member:
 - ["Ps7CVarArg", "selectedDate"]
 - !private ["Ps7CVarArg", "setTitle"]
 - !private ["Ps7CVarArg", "shared"]
+- !private ["Ps7CVarArg", "starSize"]
 - !private ["Ps7CVarArg", "string"]
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tappedHeaderNextBtn"]
@@ -482,7 +489,6 @@ depends-member:
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
-- ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", "weekArray"]
 - !private ["Ps7CVarArg", "white"]
 - ["Ps7CVarArg", ""]
@@ -539,6 +545,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
 - ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "URL"]
 - ["Ps28CustomDebugStringConvertible", "Value"]
@@ -548,6 +555,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "baseView"]
 - !private ["Ps28CustomDebugStringConvertible", "borderColor"]
 - !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "brown"]
 - ["Ps28CustomDebugStringConvertible", "cafeArray"]
 - ["Ps28CustomDebugStringConvertible", "cafeDic"]
@@ -597,6 +605,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "lightBlue"]
 - ["Ps28CustomDebugStringConvertible", "lightRed"]
 - !private ["Ps28CustomDebugStringConvertible", "locale"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
 - ["Ps28CustomDebugStringConvertible", "myCafe"]
 - ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
@@ -634,6 +643,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "starSize"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tappedHeaderNextBtn"]
@@ -653,7 +663,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
-- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", "weekArray"]
 - !private ["Ps28CustomDebugStringConvertible", "white"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
@@ -717,6 +726,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UIScreen"]
 - ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "URL"]
 - ["Ps23CustomStringConvertible", "Value"]
@@ -728,6 +738,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "baseView"]
 - !private ["Ps23CustomStringConvertible", "borderColor"]
 - !private ["Ps23CustomStringConvertible", "borderWidth"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
 - !private ["Ps23CustomStringConvertible", "brown"]
 - ["Ps23CustomStringConvertible", "cafeArray"]
 - ["Ps23CustomStringConvertible", "cafeDic"]
@@ -776,6 +787,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "lightBlue"]
 - ["Ps23CustomStringConvertible", "lightRed"]
 - !private ["Ps23CustomStringConvertible", "locale"]
+- !private ["Ps23CustomStringConvertible", "main"]
 - ["Ps23CustomStringConvertible", "myCafe"]
 - ["Ps23CustomStringConvertible", "navigationBar"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
@@ -812,6 +824,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "selectedDate"]
 - !private ["Ps23CustomStringConvertible", "setTitle"]
 - !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "starSize"]
 - !private ["Ps23CustomStringConvertible", "string"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tappedHeaderNextBtn"]
@@ -831,7 +844,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
-- ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", "weekArray"]
 - !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", ""]
@@ -887,6 +899,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UIScreen"]
 - ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "URL"]
 - ["Ps9Equatable", "Value"]
@@ -897,6 +910,7 @@ depends-member:
 - ["Ps9Equatable", "baseView"]
 - !private ["Ps9Equatable", "borderColor"]
 - !private ["Ps9Equatable", "borderWidth"]
+- !private ["Ps9Equatable", "bounds"]
 - !private ["Ps9Equatable", "brown"]
 - ["Ps9Equatable", "cafeArray"]
 - ["Ps9Equatable", "cafeDic"]
@@ -948,6 +962,7 @@ depends-member:
 - ["Ps9Equatable", "lightBlue"]
 - ["Ps9Equatable", "lightRed"]
 - !private ["Ps9Equatable", "locale"]
+- !private ["Ps9Equatable", "main"]
 - ["Ps9Equatable", "myCafe"]
 - ["Ps9Equatable", "navigationBar"]
 - !private ["Ps9Equatable", "navigationController"]
@@ -986,6 +1001,7 @@ depends-member:
 - !private ["Ps9Equatable", "setTitle"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "starSize"]
 - !private ["Ps9Equatable", "string"]
 - ["Ps9Equatable", "tappedHeaderNextBtn"]
 - ["Ps9Equatable", "tappedHeaderPrevBtn"]
@@ -1004,7 +1020,6 @@ depends-member:
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
-- ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", "weekArray"]
 - !private ["Ps9Equatable", "white"]
 - !private ["Ps9Equatable", "width"]
@@ -1072,6 +1087,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UIScreen"]
 - ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "URL"]
 - ["Ps8Hashable", "Value"]
@@ -1082,6 +1098,7 @@ depends-member:
 - ["Ps8Hashable", "baseView"]
 - !private ["Ps8Hashable", "borderColor"]
 - !private ["Ps8Hashable", "borderWidth"]
+- !private ["Ps8Hashable", "bounds"]
 - !private ["Ps8Hashable", "brown"]
 - ["Ps8Hashable", "cafeArray"]
 - ["Ps8Hashable", "cafeDic"]
@@ -1132,6 +1149,7 @@ depends-member:
 - ["Ps8Hashable", "lightBlue"]
 - ["Ps8Hashable", "lightRed"]
 - !private ["Ps8Hashable", "locale"]
+- !private ["Ps8Hashable", "main"]
 - ["Ps8Hashable", "myCafe"]
 - ["Ps8Hashable", "navigationBar"]
 - !private ["Ps8Hashable", "navigationController"]
@@ -1168,6 +1186,7 @@ depends-member:
 - ["Ps8Hashable", "selectedDate"]
 - !private ["Ps8Hashable", "setTitle"]
 - !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "starSize"]
 - !private ["Ps8Hashable", "string"]
 - ["Ps8Hashable", "tappedHeaderNextBtn"]
 - ["Ps8Hashable", "tappedHeaderPrevBtn"]
@@ -1186,7 +1205,6 @@ depends-member:
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
-- ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", "weekArray"]
 - !private ["Ps8Hashable", "white"]
 - ["Ps8Hashable", ""]
@@ -1297,6 +1315,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIScreen"]
 - ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "URL"]
 - ["PSo8NSCoding", "Value"]
@@ -1373,6 +1392,7 @@ depends-member:
 - !private ["PSo8NSCoding", "selectedBackgroundView"]
 - ["PSo8NSCoding", "selectedDate"]
 - !private ["PSo8NSCoding", "setTitle"]
+- !private ["PSo8NSCoding", "starSize"]
 - !private ["PSo8NSCoding", "string"]
 - ["PSo8NSCoding", "tappedHeaderNextBtn"]
 - ["PSo8NSCoding", "tappedHeaderPrevBtn"]
@@ -1390,7 +1410,6 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
-- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "weekArray"]
 - !private ["PSo8NSCoding", "white"]
 - ["PSo8NSCoding", ""]
@@ -1439,6 +1458,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "UIScreen"]
 - ["PSo26NSExtensionRequestHandling", "UIView"]
 - !private ["PSo26NSExtensionRequestHandling", "URL"]
 - ["PSo26NSExtensionRequestHandling", "baseView"]
@@ -1495,7 +1515,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
-- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "weekArray"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["PSo17NSFastEnumeration", "Key"]
@@ -1521,7 +1540,6 @@ depends-member:
 - ["CSo8NSNumber", "deinit"]
 - !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "AppDelegate"]
-- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "CGSize"]
@@ -1562,6 +1580,7 @@ depends-member:
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UINavigationItem"]
+- !private ["CSo8NSObject", "UIScreen"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "URL"]
@@ -1571,6 +1590,7 @@ depends-member:
 - ["CSo8NSObject", "baseView"]
 - !private ["CSo8NSObject", "borderColor"]
 - !private ["CSo8NSObject", "borderWidth"]
+- !private ["CSo8NSObject", "bounds"]
 - !private ["CSo8NSObject", "brown"]
 - ["CSo8NSObject", "cafeArray"]
 - ["CSo8NSObject", "cafeDic"]
@@ -1618,6 +1638,7 @@ depends-member:
 - ["CSo8NSObject", "lightBlue"]
 - ["CSo8NSObject", "lightRed"]
 - !private ["CSo8NSObject", "locale"]
+- !private ["CSo8NSObject", "main"]
 - ["CSo8NSObject", "myCafe"]
 - ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
@@ -1652,6 +1673,7 @@ depends-member:
 - ["CSo8NSObject", "selectedDate"]
 - !private ["CSo8NSObject", "setTitle"]
 - !private ["CSo8NSObject", "shared"]
+- !private ["CSo8NSObject", "starSize"]
 - !private ["CSo8NSObject", "string"]
 - ["CSo8NSObject", "tappedHeaderNextBtn"]
 - ["CSo8NSObject", "tappedHeaderPrevBtn"]
@@ -1670,7 +1692,6 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
-- ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "weekArray"]
 - !private ["CSo8NSObject", "white"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
@@ -1694,6 +1715,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIScreen"]
 - ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "URL"]
 - ["PSo16NSObjectProtocol", "Value"]
@@ -1701,6 +1723,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "baseView"]
 - !private ["PSo16NSObjectProtocol", "borderColor"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "brown"]
 - ["PSo16NSObjectProtocol", "cafeArray"]
 - ["PSo16NSObjectProtocol", "cafeDic"]
@@ -1748,6 +1771,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "lightBlue"]
 - ["PSo16NSObjectProtocol", "lightRed"]
 - !private ["PSo16NSObjectProtocol", "locale"]
+- !private ["PSo16NSObjectProtocol", "main"]
 - ["PSo16NSObjectProtocol", "myCafe"]
 - ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
@@ -1782,6 +1806,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "selectedDate"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "starSize"]
 - !private ["PSo16NSObjectProtocol", "string"]
 - ["PSo16NSObjectProtocol", "tappedHeaderNextBtn"]
 - ["PSo16NSObjectProtocol", "tappedHeaderPrevBtn"]
@@ -1800,7 +1825,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
-- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "weekArray"]
 - !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1884,6 +1908,7 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["C11FoodTracker13RatingControl", "isHidden"]
 - !private ["C11FoodTracker13RatingControl", "rating"]
+- !private ["C11FoodTracker13RatingControl", "starSize"]
 - !private ["Ps16RawRepresentable", "aspectFill"]
 - !private ["Ps16RawRepresentable", "clockO"]
 - !private ["Ps16RawRepresentable", "coffee"]
@@ -1946,6 +1971,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "selectedBackgroundView"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
+- !private ["PSo29UIAccessibilityIdentification", "starSize"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
@@ -1966,6 +1992,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "selectedBackgroundView"]
 - !private ["PSo12UIAppearance", "setTitle"]
+- !private ["PSo12UIAppearance", "starSize"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo12UIAppearance", "textLabel"]
@@ -1991,6 +2018,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIScreen"]
 - ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "URL"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -2051,6 +2079,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "selectedBackgroundView"]
 - ["PSo21UIAppearanceContainer", "selectedDate"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
+- !private ["PSo21UIAppearanceContainer", "starSize"]
 - ["PSo21UIAppearanceContainer", "tappedHeaderNextBtn"]
 - ["PSo21UIAppearanceContainer", "tappedHeaderPrevBtn"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -2066,7 +2095,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
-- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "weekArray"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo13UIApplication", "deinit"]
@@ -2111,6 +2139,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "UIColor"]
 - !private ["PSo26UICollectionViewDataSource", "UIFont"]
 - !private ["PSo26UICollectionViewDataSource", "UIImage"]
+- !private ["PSo26UICollectionViewDataSource", "UIScreen"]
 - ["PSo26UICollectionViewDataSource", "UIView"]
 - !private ["PSo26UICollectionViewDataSource", "URL"]
 - !private ["PSo26UICollectionViewDataSource", "cafeArray"]
@@ -2176,6 +2205,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "UIColor"]
 - !private ["PSo24UICollectionViewDelegate", "UIFont"]
 - !private ["PSo24UICollectionViewDelegate", "UIImage"]
+- !private ["PSo24UICollectionViewDelegate", "UIScreen"]
 - ["PSo24UICollectionViewDelegate", "UIView"]
 - !private ["PSo24UICollectionViewDelegate", "URL"]
 - !private ["PSo24UICollectionViewDelegate", "cafeArray"]
@@ -2241,6 +2271,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIColor"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIFont"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIImage"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "UIScreen"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "UIView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "URL"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "cafeArray"]
@@ -2319,6 +2350,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "UIScreen"]
 - ["PSo18UIContentContainer", "UIView"]
 - !private ["PSo18UIContentContainer", "URL"]
 - ["PSo18UIContentContainer", "baseView"]
@@ -2375,7 +2407,6 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
-- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "weekArray"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "font"]
@@ -2401,6 +2432,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "selectedBackgroundView"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
+- !private ["PSo17UICoordinateSpace", "starSize"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
@@ -2421,6 +2453,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "selectedBackgroundView"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
+- !private ["PSo13UIDynamicItem", "starSize"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
@@ -2446,6 +2479,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIScreen"]
 - ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "URL"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -2506,6 +2540,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "selectedBackgroundView"]
 - ["PSo18UIFocusEnvironment", "selectedDate"]
 - !private ["PSo18UIFocusEnvironment", "setTitle"]
+- !private ["PSo18UIFocusEnvironment", "starSize"]
 - ["PSo18UIFocusEnvironment", "tappedHeaderNextBtn"]
 - ["PSo18UIFocusEnvironment", "tappedHeaderPrevBtn"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -2521,7 +2556,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
-- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "weekArray"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
@@ -2539,6 +2573,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "reloadData"]
 - !private ["PSo11UIFocusItem", "selectedBackgroundView"]
 - !private ["PSo11UIFocusItem", "setTitle"]
+- !private ["PSo11UIFocusItem", "starSize"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "textColor"]
 - !private ["PSo11UIFocusItem", "textLabel"]
@@ -2563,7 +2598,6 @@ depends-member:
 - !private ["CSo16UINavigationItem", "title"]
 - !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "AppDelegate"]
-- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "CGSize"]
@@ -2603,6 +2637,7 @@ depends-member:
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UINavigationItem"]
+- !private ["CSo11UIResponder", "UIScreen"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "URL"]
@@ -2667,6 +2702,7 @@ depends-member:
 - ["CSo11UIResponder", "selectedDate"]
 - !private ["CSo11UIResponder", "setTitle"]
 - !private ["CSo11UIResponder", "shared"]
+- !private ["CSo11UIResponder", "starSize"]
 - ["CSo11UIResponder", "tappedHeaderNextBtn"]
 - ["CSo11UIResponder", "tappedHeaderPrevBtn"]
 - !private ["CSo11UIResponder", "text"]
@@ -2682,7 +2718,6 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
-- ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "weekArray"]
 - !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
 - ["PSo30UIResponderStandardEditActions", "CGRect"]
@@ -2704,6 +2739,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
+- !private ["PSo30UIResponderStandardEditActions", "UIScreen"]
 - ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "URL"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
@@ -2766,6 +2802,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "selectedDate"]
 - !private ["PSo30UIResponderStandardEditActions", "setTitle"]
 - !private ["PSo30UIResponderStandardEditActions", "shared"]
+- !private ["PSo30UIResponderStandardEditActions", "starSize"]
 - ["PSo30UIResponderStandardEditActions", "tappedHeaderNextBtn"]
 - ["PSo30UIResponderStandardEditActions", "tappedHeaderPrevBtn"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
@@ -2781,9 +2818,11 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
-- ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", "weekArray"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo8UIScreen", "bounds"]
+- ["CSo8UIScreen", "deinit"]
+- !private ["CSo8UIScreen", "main"]
 - !private ["CSo12UIScrollView", "dataSource"]
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
@@ -2809,6 +2848,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
+- !private ["PSo20UIScrollViewDelegate", "UIScreen"]
 - ["PSo20UIScrollViewDelegate", "UIView"]
 - !private ["PSo20UIScrollViewDelegate", "URL"]
 - !private ["PSo20UIScrollViewDelegate", "cafeArray"]
@@ -2856,6 +2896,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["CSo11UIStackView", "isHidden"]
 - !private ["CSo11UIStackView", "rating"]
+- !private ["CSo11UIStackView", "starSize"]
 - !private ["PSo16UIStateRestoring", "CGFloat"]
 - ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "CGSize"]
@@ -2876,6 +2917,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "UIScreen"]
 - ["PSo16UIStateRestoring", "UIView"]
 - !private ["PSo16UIStateRestoring", "URL"]
 - ["PSo16UIStateRestoring", "baseView"]
@@ -2932,7 +2974,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
-- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "weekArray"]
 - ["PSo16UIStateRestoring", ""]
 - ["CSo17UIStoryboardSegue", "deinit"]
@@ -2958,10 +2999,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIScreen"]
 - ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "URL"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "baseView"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "cafeArray"]
 - ["PSo18UITraitEnvironment", "cafeDic"]
 - ["PSo18UITraitEnvironment", "cafeImage"]
@@ -2990,6 +3033,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "isUserInteractionEnabled"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "main"]
 - ["PSo18UITraitEnvironment", "myCafe"]
 - ["PSo18UITraitEnvironment", "navigationBar"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
@@ -3018,6 +3062,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "selectedBackgroundView"]
 - ["PSo18UITraitEnvironment", "selectedDate"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
+- !private ["PSo18UITraitEnvironment", "starSize"]
 - ["PSo18UITraitEnvironment", "tappedHeaderNextBtn"]
 - ["PSo18UITraitEnvironment", "tappedHeaderPrevBtn"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -3033,7 +3078,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
-- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "weekArray"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "backgroundColor"]
@@ -3052,6 +3096,7 @@ depends-member:
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "selectedBackgroundView"]
 - !private ["CSo6UIView", "setTitle"]
+- !private ["CSo6UIView", "starSize"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "textLabel"]
@@ -3059,7 +3104,6 @@ depends-member:
 - !private ["CSo6UIView", "titleTextAttributes"]
 - !private ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "AppDelegate"]
-- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CGRect"]
 - ["CSo16UIViewController", "CGSize"]
@@ -3099,6 +3143,7 @@ depends-member:
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UINavigationItem"]
+- !private ["CSo16UIViewController", "UIScreen"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UIView"]
 - !private ["CSo16UIViewController", "URL"]
@@ -3158,7 +3203,6 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
-- ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "weekArray"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "deinit"]
@@ -3195,6 +3239,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "selectedBackgroundView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitle"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "starSize"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textLabel"]
@@ -3258,6 +3303,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UIImage"]
+- !private ["Ps9_Hashable", "UIScreen"]
 - ["Ps9_Hashable", "UIView"]
 - !private ["Ps9_Hashable", "URL"]
 - ["Ps9_Hashable", "Value"]
@@ -3268,6 +3314,7 @@ depends-member:
 - ["Ps9_Hashable", "baseView"]
 - !private ["Ps9_Hashable", "borderColor"]
 - !private ["Ps9_Hashable", "borderWidth"]
+- !private ["Ps9_Hashable", "bounds"]
 - !private ["Ps9_Hashable", "brown"]
 - ["Ps9_Hashable", "cafeArray"]
 - ["Ps9_Hashable", "cafeDic"]
@@ -3318,6 +3365,7 @@ depends-member:
 - ["Ps9_Hashable", "lightBlue"]
 - ["Ps9_Hashable", "lightRed"]
 - !private ["Ps9_Hashable", "locale"]
+- !private ["Ps9_Hashable", "main"]
 - ["Ps9_Hashable", "myCafe"]
 - ["Ps9_Hashable", "navigationBar"]
 - !private ["Ps9_Hashable", "navigationController"]
@@ -3354,6 +3402,7 @@ depends-member:
 - ["Ps9_Hashable", "selectedDate"]
 - !private ["Ps9_Hashable", "setTitle"]
 - !private ["Ps9_Hashable", "shared"]
+- !private ["Ps9_Hashable", "starSize"]
 - !private ["Ps9_Hashable", "string"]
 - ["Ps9_Hashable", "tappedHeaderNextBtn"]
 - ["Ps9_Hashable", "tappedHeaderPrevBtn"]
@@ -3372,7 +3421,6 @@ depends-member:
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
-- ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", "weekArray"]
 - !private ["Ps9_Hashable", "white"]
 - ["Ps9_Hashable", ""]
@@ -3421,7 +3469,6 @@ depends-member:
 - !private ["Ps11_Strideable", "init"]
 - !private ["C11FoodTracker22calendarViewController", "AnyObject"]
 - !private ["C11FoodTracker22calendarViewController", "AppDelegate"]
-- ["C11FoodTracker22calendarViewController", "Bool"]
 - ["C11FoodTracker22calendarViewController", "CGFloat"]
 - ["C11FoodTracker22calendarViewController", "CGRect"]
 - ["C11FoodTracker22calendarViewController", "CGSize"]
@@ -3461,6 +3508,7 @@ depends-member:
 - ["C11FoodTracker22calendarViewController", "UIImageView"]
 - ["C11FoodTracker22calendarViewController", "UILabel"]
 - ["C11FoodTracker22calendarViewController", "UINavigationItem"]
+- !private ["C11FoodTracker22calendarViewController", "UIScreen"]
 - ["C11FoodTracker22calendarViewController", "UIStoryboardSegue"]
 - ["C11FoodTracker22calendarViewController", "UIView"]
 - !private ["C11FoodTracker22calendarViewController", "URL"]
@@ -3519,7 +3567,6 @@ depends-member:
 - ["C11FoodTracker22calendarViewController", "viewDidLoad"]
 - ["C11FoodTracker22calendarViewController", "viewForZooming"]
 - ["C11FoodTracker22calendarViewController", "viewForZoomingInScrollView"]
-- ["C11FoodTracker22calendarViewController", "viewWillAppear"]
 - ["C11FoodTracker22calendarViewController", "weekArray"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
@@ -3672,6 +3719,7 @@ depends-nominal:
 - !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- "CSo8UIScreen"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - !private "CSo11UIStackView"
@@ -3736,4 +3784,4 @@ depends-external:
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
-interface-hash: "bd88f0e72c5adfebdb8adb33b5c6cc69"
+interface-hash: "c9cb98b91e081e171843c82ac9f1a9c2"

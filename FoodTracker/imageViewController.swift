@@ -102,6 +102,9 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
         return CGSize(width: cellSize, height: cellSize)
 
     }
+
+    
+    
     
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 //        return cellMargin

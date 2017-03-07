@@ -32,32 +32,52 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MhG-hB-JM0" id="4XK-jE-MGL">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="ock-CD-QOb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="104.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="ock-CD-QOb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="105"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ock-CD-QOb" secondAttribute="height" multiplier="25:26" id="uKr-C1-bGd"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcI-fM-PV6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcI-fM-PV6">
                                                     <rect key="frame" x="108" y="10" width="250" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OTr-Ek-mOh" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="OTr-Ek-mOh" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                                     <rect key="frame" x="105" y="31" width="252" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="OTr-Ek-mOh" secondAttribute="height" multiplier="63:11" id="exe-07-baC"/>
+                                                    </constraints>
                                                 </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="17th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxx-Dz-udV">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxx-Dz-udV">
                                                     <rect key="frame" x="270" y="80" width="97" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="97" id="QAe-WU-zkZ"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wxx-Dz-udV" firstAttribute="trailing" secondItem="4XK-jE-MGL" secondAttribute="trailingMargin" id="6ey-GF-uOf"/>
+                                                <constraint firstItem="ock-CD-QOb" firstAttribute="leading" secondItem="4XK-jE-MGL" secondAttribute="leading" id="7yJ-fS-taN"/>
+                                                <constraint firstItem="WcI-fM-PV6" firstAttribute="leading" secondItem="ock-CD-QOb" secondAttribute="trailing" constant="8" symbolic="YES" id="JMd-WL-XsE"/>
+                                                <constraint firstItem="OTr-Ek-mOh" firstAttribute="leading" secondItem="ock-CD-QOb" secondAttribute="trailing" constant="5" id="JmN-LE-cQl"/>
+                                                <constraint firstItem="ock-CD-QOb" firstAttribute="centerY" secondItem="OTr-Ek-mOh" secondAttribute="centerY" id="MU4-2F-Hnd"/>
+                                                <constraint firstItem="ock-CD-QOb" firstAttribute="top" secondItem="4XK-jE-MGL" secondAttribute="top" id="Pdv-tI-tCg"/>
+                                                <constraint firstItem="OTr-Ek-mOh" firstAttribute="top" secondItem="WcI-fM-PV6" secondAttribute="bottom" id="TNJ-yH-vLV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="OTr-Ek-mOh" secondAttribute="trailing" constant="10" id="Y6h-dr-hhg"/>
+                                                <constraint firstItem="ock-CD-QOb" firstAttribute="centerY" secondItem="4XK-jE-MGL" secondAttribute="centerY" id="YcZ-4u-f7f"/>
+                                                <constraint firstItem="OTr-Ek-mOh" firstAttribute="leading" secondItem="ock-CD-QOb" secondAttribute="trailing" constant="5" id="g52-Qu-ykL"/>
+                                                <constraint firstItem="wxx-Dz-udV" firstAttribute="top" secondItem="OTr-Ek-mOh" secondAttribute="bottom" constant="5" id="kGN-ux-50o"/>
+                                                <constraint firstItem="OTr-Ek-mOh" firstAttribute="top" secondItem="4XK-jE-MGL" secondAttribute="top" constant="31" id="tjW-8F-SLf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="OTr-Ek-mOh" secondAttribute="trailing" constant="10" id="x5S-vP-TTU"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateView" destination="wxx-Dz-udV" id="ZRk-KY-z7i"/>
@@ -244,13 +264,14 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vom-hy-bQI">
                                 <rect key="frame" x="0.0" y="351" width="375" height="267"/>
                                 <subviews>
-                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AXf-IM-er0" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AXf-IM-er0" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                         <rect key="frame" x="62" y="10" width="252" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="qga-cA-opA">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="qga-cA-opA">
                                         <rect key="frame" x="26" y="79" width="180" height="180"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qga-cA-opA" secondAttribute="height" multiplier="1:1" id="Rtt-Bs-frw"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooP-iS-n2i">
                                         <rect key="frame" x="218" y="109" width="55" height="46"/>
@@ -302,8 +323,14 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="qga-cA-opA" firstAttribute="top" secondItem="AXf-IM-er0" secondAttribute="bottom" constant="25" id="QSK-7u-U6K"/>
+                                    <constraint firstItem="AXf-IM-er0" firstAttribute="top" secondItem="vom-hy-bQI" secondAttribute="top" constant="10" id="TI7-PA-EUc"/>
+                                    <constraint firstAttribute="bottom" secondItem="qga-cA-opA" secondAttribute="bottom" constant="8" id="Ui6-TJ-bQe"/>
+                                    <constraint firstItem="AXf-IM-er0" firstAttribute="leading" secondItem="vom-hy-bQI" secondAttribute="leading" constant="62" id="WA1-xJ-fcZ"/>
                                     <constraint firstAttribute="trailing" secondItem="H9Y-mR-jPz" secondAttribute="trailing" constant="8" id="XxQ-nk-bc2"/>
+                                    <constraint firstItem="qga-cA-opA" firstAttribute="leading" secondItem="vom-hy-bQI" secondAttribute="leading" constant="26" id="YiM-1x-uuj"/>
                                     <constraint firstItem="H9Y-mR-jPz" firstAttribute="top" secondItem="vom-hy-bQI" secondAttribute="top" constant="23" id="sAH-dF-ueL"/>
+                                    <constraint firstItem="H9Y-mR-jPz" firstAttribute="leading" secondItem="AXf-IM-er0" secondAttribute="trailing" constant="7" id="vuv-FM-ERJ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -490,6 +517,7 @@
         <!--Navigation Controller-->
         <scene sceneID="HI2-92-tgw">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCQ-Xf-S5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c1q-CK-Hs7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Kgv-Db-Ox1" userLabel="list"/>
                     <toolbarItems/>
@@ -502,7 +530,6 @@
                         <segue destination="HYQ-IF-tZd" kind="relationship" relationship="rootViewController" id="dko-I0-4Ag"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dCQ-Xf-S5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4647.5" y="-946.5"/>
         </scene>
@@ -518,7 +545,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="R3V-zN-fF3"/>
+        <segue reference="Vcr-KI-Skv"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

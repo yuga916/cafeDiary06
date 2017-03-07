@@ -333,7 +333,6 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified underView;
 - (void)viewDidLoad;
 - (void)read;
-- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
@@ -383,21 +382,27 @@ SWIFT_CLASS("_TtC11FoodTracker19imageViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITabBar;
+@class UITabBarItem;
 
 SWIFT_CLASS("_TtC11FoodTracker18listViewController")
 @interface listViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) NSArray<NSDictionary *> * _Nonnull cafeArray;
 @property (nonatomic, strong) NSDictionary * _Null_unspecified cafeDic;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
+@property (nonatomic) NSInteger cellSize;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified myTableView;
 @property (nonatomic, copy) NSString * _Null_unspecified selectedImageURL;
 @property (nonatomic, copy) NSString * _Null_unspecified selectedName;
 @property (nonatomic, copy) NSDate * _Null_unspecified selectedDate;
 - (void)viewDidLoad;
 - (void)read;
+- (void)tabBarWithTabBar:(UITabBar * _Nonnull)tabBar didSelectItem:(UITabBarItem * _Null_unspecified)item;
+- (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

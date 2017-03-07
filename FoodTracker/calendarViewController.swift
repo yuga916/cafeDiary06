@@ -114,6 +114,12 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
          editButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 25)
         editButton.setTitle(String.fontAwesomeIcon(name: .edit), for: .normal)
         
+        //ratingの大きさを指定
+        let ratingWidth = UIScreen.main.bounds.size.width / 8
+        let ratingHeight = UIScreen.main.bounds.size.width / 6
+        let ratingRect:CGSize = CGSize(width: ratingWidth, height: ratingHeight)
+        ratingControl.starSize = ratingRect
+        
         read()
     }
     
@@ -204,10 +210,6 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
 //        calendarView.reloadData()
     }
     
-    //こっちは表示されるたびに出力される
-    override func viewWillAppear(_ animated: Bool) {
-        read()
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

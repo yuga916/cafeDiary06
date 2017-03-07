@@ -17,6 +17,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var cafeArray: [NSDictionary] = []
     var cafeDic: NSDictionary! = [:]
     var myCafe = NSArray() as! [String]
+    var cellSize = 0
     
     @IBOutlet weak var myTableView: UITableView!
     
@@ -28,6 +29,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
 //                        //coredata内のデータを全削除
 //                        //　AppDelegateを使う用意をしておく
@@ -54,7 +56,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 //                            try viewContext.save()
 //                        } catch {
 //                        }
-
+        
         
         read()
         
@@ -84,6 +86,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 //                } catch {
 //                }
 
+        
         
     }
 
@@ -127,7 +130,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         } catch {
         }
         //TableViewの再描画
-                myTableView.reloadData()
+            myTableView.reloadData()
         //配列は降順になっているから、昇順にする
         let sortDescription = NSSortDescriptor(key: "rating", ascending: false)
         let sortDescArray = [sortDescription]
@@ -139,6 +142,14 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 //        read()
 //    }
     
+    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem!) {
+        read()
+    }
+    
+    //こっちは表示されるたびに出力される
+    override func viewWillAppear(_ animated: Bool) {
+        read()
+    }
     
     //MARK: - Table view data source
     
@@ -150,9 +161,22 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return cafeArray.count
     }
     
+    
+    
     //セルの内容
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MealTableViewCell") as! MealTableViewCell
+        
+        //photoImageViewの大きさを指定
+        cellSize = Int(UIScreen.main.bounds.size.width / 4 + UIScreen.main.bounds.size.width / 16)
+        let rect:CGSize = CGSize(width: cellSize, height: cellSize)
+        cell.photoImageView.frame.size = rect
+        
+        //ratingの大きさを指定
+        let ratingWidth = UIScreen.main.bounds.size.width / 8
+        let ratingHeight = UIScreen.main.bounds.size.width / 6
+        let ratingRect:CGSize = CGSize(width: ratingWidth, height: ratingHeight)
+        cell.ratingControl.starSize = ratingRect
         
         //とってきてるのはディクショナリー型なのでディクショナリーで変換する
         var cafeDic = cafeArray[indexPath.row] as! NSDictionary
@@ -186,6 +210,12 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return CGFloat(cellSize)
+    }
+    
     
     //行が選択された時に発動
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

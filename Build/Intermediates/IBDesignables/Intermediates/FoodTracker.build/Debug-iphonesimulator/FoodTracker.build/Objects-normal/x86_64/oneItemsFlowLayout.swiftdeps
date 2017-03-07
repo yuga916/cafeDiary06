@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker18oneItemsFlowLayout", ""]
 provides-dynamic-lookup:
-- "itemHeight"
 - "targetContentOffset"
+- "itemWidth"
+- "itemHeight"
 - "itemSize"
 - "setupLayout"
-- "itemWidth"
 depends-top-level:
-- "oneItemsFlowLayout"
-- !private "*"
-- "CGPoint"
-- "UICollectionViewFlowLayout"
 - "CGSize"
-- "CGFloat"
+- "CGPoint"
+- !private "*"
 - "NSCoder"
-- "AssignmentPrecedence"
 - !private "-"
+- "AssignmentPrecedence"
+- "UICollectionViewFlowLayout"
+- "oneItemsFlowLayout"
+- "CGFloat"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "collectionView"]
