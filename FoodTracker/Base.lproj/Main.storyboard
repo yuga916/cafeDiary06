@@ -32,7 +32,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MhG-hB-JM0" id="4XK-jE-MGL">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="ock-CD-QOb">
@@ -137,6 +137,7 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="319" id="RpY-OD-OfS"/>
+                                    <constraint firstAttribute="width" secondItem="vht-w5-DXs" secondAttribute="height" multiplier="1:1" id="tvz-fv-wzt"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="6zR-HY-Zef" appends="YES" id="wPc-Ej-Bht"/>
@@ -148,16 +149,20 @@
                             <constraint firstItem="t56-bQ-7Yp" firstAttribute="top" secondItem="vht-w5-DXs" secondAttribute="bottom" constant="8" symbolic="YES" id="2H7-oh-BBz"/>
                             <constraint firstItem="vht-w5-DXs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="322-a3-gye"/>
                             <constraint firstItem="Cqs-Vk-0lJ" firstAttribute="leading" secondItem="bYf-xg-9ZA" secondAttribute="leading" id="4D5-Cp-gEd"/>
+                            <constraint firstItem="vht-w5-DXs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="9lD-TL-8UU"/>
                             <constraint firstItem="Cqs-Vk-0lJ" firstAttribute="top" secondItem="a2e-yc-TN4" secondAttribute="bottom" constant="38" id="BB7-Vv-Apv"/>
                             <constraint firstItem="bYf-xg-9ZA" firstAttribute="top" secondItem="Cqs-Vk-0lJ" secondAttribute="bottom" constant="17" id="DBx-g3-SEJ"/>
                             <constraint firstItem="vht-w5-DXs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="191" id="DgA-L7-Fq3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vht-w5-DXs" secondAttribute="trailing" constant="12" id="EnA-9C-H8z"/>
                             <constraint firstItem="Cqs-Vk-0lJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="Gvz-jm-9qN"/>
                             <constraint firstItem="Cqs-Vk-0lJ" firstAttribute="trailing" secondItem="vht-w5-DXs" secondAttribute="trailing" id="HMB-Cs-ZqC"/>
                             <constraint firstItem="vht-w5-DXs" firstAttribute="top" secondItem="FTR-sc-auC" secondAttribute="bottom" constant="11" id="Xby-4f-Hbk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cqs-Vk-0lJ" secondAttribute="trailing" constant="12" id="YFp-kE-3v2"/>
                             <constraint firstItem="FTR-sc-auC" firstAttribute="leading" secondItem="bYf-xg-9ZA" secondAttribute="trailing" constant="7" id="Yaj-6X-pjg"/>
                             <constraint firstItem="Cqs-Vk-0lJ" firstAttribute="centerX" secondItem="t56-bQ-7Yp" secondAttribute="centerX" id="o6G-rp-q0L"/>
+                            <constraint firstItem="vht-w5-DXs" firstAttribute="top" secondItem="FTR-sc-auC" secondAttribute="bottom" constant="11" id="p1U-u5-Q2f"/>
                             <constraint firstItem="FTR-sc-auC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="137" id="qwT-hG-yH4"/>
+                            <constraint firstItem="t56-bQ-7Yp" firstAttribute="top" secondItem="vht-w5-DXs" secondAttribute="bottom" constant="8" id="z1R-s5-WS3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lPO-Rb-aqa">
@@ -427,7 +432,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zOI-Tj-ec8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="calendar" image="calendar" id="Ju9-L8-PBa"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SXe-xg-RAe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SXe-xg-RAe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -466,7 +471,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xmf-y4-XIP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="picture" image="Image" id="1aD-51-N89" userLabel="list"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nWJ-iX-SxJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nWJ-iX-SxJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -488,7 +493,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c1q-CK-Hs7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Kgv-Db-Ox1" userLabel="list"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SEf-ho-tc5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SEf-ho-tc5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

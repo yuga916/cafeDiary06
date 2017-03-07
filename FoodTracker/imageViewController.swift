@@ -17,6 +17,7 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
     var myCafe = NSArray() as! [String]
     var count = 0
     let oneFlowLayout = oneItemsFlowLayout()
+    let cellMargin:CGFloat = 2.0
     
     @IBOutlet weak var imageCollection: UICollectionView!
     
@@ -27,6 +28,9 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
         
         imageCollection.delegate = self
         imageCollection.dataSource = self
+
+//        ページングするかどうか
+//        imageCollection.isPagingEnabled = true
         
         read()
     }
@@ -72,12 +76,31 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
     }
     
     // Screenサイズに応じたセルサイズを返す
-    // UICollectionViewDelegateFlowLayoutの設定が必要
+//    // UICollectionViewDelegateFlowLayoutの設定が必要
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: NSIndexPath) -> CGSize {
+////        let cellSize:CGFloat = collectionView.frame.size.width / 2
+//        let cellSize:CGFloat = UIScreen.main.bounds.size.width
+//        // 正方形で返すためにwidth,heightを同じにする
+//        return CGSize(width: cellSize, height: cellSize)
+//    }
+//    
+//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+//        let width: CGFloat = UIScreen.main.bounds.size.width
+//        //        let height: CGFloat = view.frame.height
+//        return CGSize(width: width, height: width)
+//    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellSize:CGFloat = self.view.frame.size.width / 6
+        //        let cellSize:CGFloat = collectionView.frame.size.width / 2
+        let cellSize:CGFloat = UIScreen.main.bounds.size.width / 2 - 2
         // 正方形で返すためにwidth,heightを同じにする
         return CGSize(width: cellSize, height: cellSize)
+
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return cellMargin
+//    }
     
     // MARK: - UICollectionViewDelegate Protocol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -143,11 +166,6 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
         // Dispose of any resources that can be recreated.
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let width: CGFloat = collectionView.frame.size.width
-//        let height: CGFloat = view.frame.height
-        return CGSize(width: width, height: width)
-    }
     
     
 //    //Viewを切り替える

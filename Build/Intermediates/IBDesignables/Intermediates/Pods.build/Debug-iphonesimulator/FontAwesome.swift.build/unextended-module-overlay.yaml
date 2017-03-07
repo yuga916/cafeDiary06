@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/yuga/Documents/ios20161219/cafeDiary02-master のコピー 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules'
+    'name': '/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/yuga/Documents/ios20161219/cafeDiary02-master のコピー 2/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/unextended-module.modulemap',
+      'external-contents': '/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/unextended-module.modulemap',
     }]
   }]
 }

@@ -4,55 +4,55 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers",
+      'name': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "FontAwesome.swift-umbrella.h",
-          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Pods/Target Support Files/FontAwesome.swift/FontAwesome.swift-umbrella.h"
+          'external-contents': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Pods/Target Support Files/FontAwesome.swift/FontAwesome.swift-umbrella.h"
         },
         {
           'type': 'file',
           'name': "FontAwesome_swift-Swift.h",
-          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+          'external-contents': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules",
+      'name': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/module.modulemap"
+          'external-contents': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers",
+      'name': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Pods-FoodTracker-umbrella.h",
-          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-umbrella.h"
+          'external-contents': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-umbrella.h"
         },
         {
           'type': 'file',
           'name': "Pods_FoodTracker-Swift.h",
-          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers/Pods_FoodTracker-Swift.h"
+          'external-contents': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers/Pods_FoodTracker-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Modules",
+      'name': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/Pods-FoodTracker.build/module.modulemap"
+          'external-contents': "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/Pods-FoodTracker.build/module.modulemap"
         }
       ]
     }

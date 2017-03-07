@@ -368,6 +368,7 @@ SWIFT_CLASS("_TtC11FoodTracker19imageViewController")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
 @property (nonatomic) NSInteger count;
 @property (nonatomic, readonly, strong) oneItemsFlowLayout * _Nonnull oneFlowLayout;
+@property (nonatomic, readonly) CGFloat cellMargin;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified imageCollection;
 - (void)viewDidLoad;
 - (void)read;
@@ -377,7 +378,6 @@ SWIFT_CLASS("_TtC11FoodTracker19imageViewController")
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
-- (CGSize)collectionViewWithCollectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

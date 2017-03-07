@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 - "image"
 depends-top-level:
-- "UIImageView"
 - "imageCollectionViewCell"
+- "UIImageView"
 - "UICollectionViewCell"
 depends-member:
 - ["Ps9AnyObject", "image"]
@@ -147,8 +147,8 @@ depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-- "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
-- "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
-- "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
-- "/Users/yuga/Documents/ios20161219/cafeDiary02-master \u306E\u30B3\u30D2\u309A\u30FC 2/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+- "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
+- "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
 interface-hash: "a7aba5cd37236a581d7ad40482c6ecc8"
