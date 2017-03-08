@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>AUSEU8PGNP.org.cocoapods.FontAwesome-swift</string>
+	<string>U4MXNAXUEC.org.cocoapods.FontAwesome-swift</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>AUSEU8PGNP.org.cocoapods.FontAwesome-swift</string>
+		<string>U4MXNAXUEC.org.cocoapods.FontAwesome-swift</string>
 	</array>
 </dict>
 </plist>

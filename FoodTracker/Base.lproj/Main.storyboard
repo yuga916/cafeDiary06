@@ -32,7 +32,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MhG-hB-JM0" id="4XK-jE-MGL">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="ock-CD-QOb">
@@ -264,18 +264,14 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vom-hy-bQI">
                                 <rect key="frame" x="0.0" y="351" width="375" height="267"/>
                                 <subviews>
-                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AXf-IM-er0" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="62" y="10" width="252" height="44"/>
-                                    </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="qga-cA-opA">
-                                        <rect key="frame" x="26" y="79" width="180" height="180"/>
+                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AXf-IM-er0" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="61.5" y="10" width="252" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="qga-cA-opA" secondAttribute="height" multiplier="1:1" id="Rtt-Bs-frw"/>
+                                            <constraint firstAttribute="width" secondItem="AXf-IM-er0" secondAttribute="height" multiplier="63:11" id="67S-Ve-UGE"/>
                                         </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooP-iS-n2i">
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooP-iS-n2i">
                                         <rect key="frame" x="218" y="109" width="55" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -288,7 +284,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jge-Fz-FtR">
-                                        <rect key="frame" x="272" y="175" width="18" height="21"/>
+                                        <rect key="frame" x="272" y="175" width="26" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -302,7 +298,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9Y-mR-jPz">
-                                        <rect key="frame" x="321" y="23" width="46" height="30"/>
+                                        <rect key="frame" x="320.5" y="23" width="46.5" height="30.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="H9Y-mR-jPz" secondAttribute="height" multiplier="23:15" id="ajJ-ML-x1a"/>
                                         </constraints>
@@ -320,15 +316,22 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="qga-cA-opA">
+                                        <rect key="frame" x="30" y="79" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qga-cA-opA" secondAttribute="height" multiplier="1:1" id="pLs-Mq-sXh"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="qga-cA-opA" firstAttribute="top" secondItem="AXf-IM-er0" secondAttribute="bottom" constant="25" id="QSK-7u-U6K"/>
+                                    <constraint firstItem="ooP-iS-n2i" firstAttribute="leading" secondItem="qga-cA-opA" secondAttribute="trailing" constant="8" id="AI9-Q3-rLB"/>
+                                    <constraint firstItem="qga-cA-opA" firstAttribute="top" secondItem="AXf-IM-er0" secondAttribute="bottom" constant="25" id="KHE-VL-DLA"/>
                                     <constraint firstItem="AXf-IM-er0" firstAttribute="top" secondItem="vom-hy-bQI" secondAttribute="top" constant="10" id="TI7-PA-EUc"/>
-                                    <constraint firstAttribute="bottom" secondItem="qga-cA-opA" secondAttribute="bottom" constant="8" id="Ui6-TJ-bQe"/>
-                                    <constraint firstItem="AXf-IM-er0" firstAttribute="leading" secondItem="vom-hy-bQI" secondAttribute="leading" constant="62" id="WA1-xJ-fcZ"/>
                                     <constraint firstAttribute="trailing" secondItem="H9Y-mR-jPz" secondAttribute="trailing" constant="8" id="XxQ-nk-bc2"/>
-                                    <constraint firstItem="qga-cA-opA" firstAttribute="leading" secondItem="vom-hy-bQI" secondAttribute="leading" constant="26" id="YiM-1x-uuj"/>
+                                    <constraint firstItem="qga-cA-opA" firstAttribute="leading" secondItem="vom-hy-bQI" secondAttribute="leading" constant="30" id="gNG-Df-q4M"/>
+                                    <constraint firstItem="qga-cA-opA" firstAttribute="width" secondItem="vom-hy-bQI" secondAttribute="width" multiplier="0.5" id="leH-4p-cAK"/>
+                                    <constraint firstItem="AXf-IM-er0" firstAttribute="centerX" secondItem="vom-hy-bQI" secondAttribute="centerX" id="oX3-xc-kkz"/>
                                     <constraint firstItem="H9Y-mR-jPz" firstAttribute="top" secondItem="vom-hy-bQI" secondAttribute="top" constant="23" id="sAH-dF-ueL"/>
                                     <constraint firstItem="H9Y-mR-jPz" firstAttribute="leading" secondItem="AXf-IM-er0" secondAttribute="trailing" constant="7" id="vuv-FM-ERJ"/>
                                 </constraints>
@@ -336,6 +339,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vom-hy-bQI" firstAttribute="centerX" secondItem="N7E-eb-6u1" secondAttribute="centerX" id="ETZ-oV-3k4"/>
                             <constraint firstItem="vom-hy-bQI" firstAttribute="top" secondItem="U8y-MR-KP9" secondAttribute="bottom" id="F3E-sq-IaR"/>
                             <constraint firstItem="vom-hy-bQI" firstAttribute="top" secondItem="U8y-MR-KP9" secondAttribute="bottom" id="FdR-zZ-TVc"/>
                             <constraint firstItem="U8y-MR-KP9" firstAttribute="top" secondItem="N7E-eb-6u1" secondAttribute="top" id="GYb-ww-1hs"/>
@@ -517,7 +521,6 @@
         <!--Navigation Controller-->
         <scene sceneID="HI2-92-tgw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dCQ-Xf-S5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c1q-CK-Hs7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Kgv-Db-Ox1" userLabel="list"/>
                     <toolbarItems/>
@@ -530,6 +533,7 @@
                         <segue destination="HYQ-IF-tZd" kind="relationship" relationship="rootViewController" id="dko-I0-4Ag"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCQ-Xf-S5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4647.5" y="-946.5"/>
         </scene>

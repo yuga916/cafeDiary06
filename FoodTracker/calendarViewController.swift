@@ -120,6 +120,12 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         let ratingRect:CGSize = CGSize(width: ratingWidth, height: ratingHeight)
         ratingControl.starSize = ratingRect
         
+        //ratingの大きさを指定
+        let imageWidth = UIScreen.main.bounds.size.width / 2
+//        let imageHeight = UIScreen.main.bounds.size.width / 6
+        var imageRect:CGSize = CGSize(width: imageWidth, height: imageWidth)
+        cafeImage.frame.size = imageRect
+        
         read()
     }
     

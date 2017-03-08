@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>AUSEU8PGNP.com.example.FoodTracker</string>
+	<string>U4MXNAXUEC.com.yugaichinohe.cafeDiary</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>AUSEU8PGNP.com.example.FoodTracker</string>
+		<string>U4MXNAXUEC.com.yugaichinohe.cafeDiary</string>
 	</array>
 </dict>
 </plist>
