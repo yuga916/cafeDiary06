@@ -9,116 +9,118 @@ provides-member:
 - ["CSo7UIColor", "lightBlue"]
 - ["CSo7UIColor", "lightRed"]
 provides-dynamic-lookup:
+- "lightBlue"
+- "daysPerWeek"
+- "cafeImage"
+- "tappedHeaderPrevBtn"
+- "editButton"
+- "numberOfSections"
 - "tappedHeaderNextBtn"
+- "myCafe"
+- "coffeeFont"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "baseView"
+- "selectedDate"
+- "calenderCollectionView"
 - "timeFont"
-- "dateManager"
-- "read"
-- "headerNextBtn"
+- "navigationBar"
+- "lightRed"
+- "cafeDic"
 - "timeLabel"
-- "weekArray"
-- "hLabel"
+- "headerNextBtn"
 - "changeHeaderTitle"
+- "dateManager"
+- "prepare"
+- "hLabel"
+- "viewWillAppear"
+- "weekArray"
+- "cafeLabel"
 - "cafeArray"
 - "headerPrevBtn"
-- "noImage"
-- "tappedHeaderPrevBtn"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "today"
-- "cafeDic"
-- "cafeImage"
-- "daysPerWeek"
-- "underView"
-- "ratingControl"
-- "navigationBar"
-- "prepare"
-- "myCafe"
-- "numberOfSections"
-- "lightRed"
-- "coffeeFont"
-- "editButton"
-- "baseView"
-- "lightBlue"
 - "didReceiveMemoryWarning"
-- "selectedDate"
-- "cafeLabel"
-- "calenderCollectionView"
+- "read"
+- "noImage"
 - "cellMargin"
+- "today"
+- "ratingControl"
 - "viewDidLoad"
+- "underView"
 depends-top-level:
-- !private "NSNumber"
-- "NSIndexPath"
-- "Int"
-- "CGSize"
-- !private "NSPredicate"
-- "StringLiteralType"
-- !private "MealViewController"
-- "DateManager"
-- "UICollectionView"
-- !private "%"
-- "UICollectionViewDelegateFlowLayout"
-- "Dictionary"
-- !private "BooleanLiteralType"
-- "NSDictionary"
-- "UICollectionViewDataSource"
-- "Array"
-- !private "UIScreen"
-- "UICollectionViewDelegate"
-- !private "UIFont"
-- !private "PHAsset"
-- !private "Locale"
-- !private "PHFetchResult"
-- "UIBarButtonItem"
-- "CGFloat"
-- "UILabel"
-- !private "UIImage"
-- !private ">"
-- "UIStoryboardSegue"
-- !private "-"
-- !private "||"
-- !private "+"
-- "UIColor"
-- "IndexPath"
-- "UICollectionViewCell"
-- !private "/"
-- !private "DateFormatter"
-- "NSArray"
-- "RatingControl"
-- "UINavigationItem"
-- "UICollectionViewLayout"
-- !private "URL"
 - !private "UIApplication"
-- !private "UnicodeScalarType"
-- "UIImageView"
-- !private "NSForegroundColorAttributeName"
-- !private "print"
-- !private "AnyObject"
-- "UIViewController"
-- !private "NSFetchRequest"
-- !private "Diary"
-- "UIView"
-- !private "CalendarCell"
 - !private "Void"
-- !private "NSLocale"
+- !private "||"
+- "UINavigationItem"
+- !private "UIFont"
+- !private "-"
+- "Dictionary"
+- !private "URL"
+- "UICollectionViewLayout"
 - "UIButton"
+- "UIViewController"
+- !private "MealViewController"
+- "UIImageView"
+- "NSArray"
+- !private "Diary"
+- !private "NSFetchRequest"
+- !private ">"
 - "String"
 - !private "UICollectionViewFlowLayout"
-- !private "Date"
-- "CGRect"
-- !private "AppDelegate"
-- !private "*"
-- !private ">="
+- !private "AnyObject"
 - "NSDate"
+- "NSIndexPath"
+- !private "*"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "PHImageManager"
-- "calendarViewController"
 - "CastingPrecedence"
+- !private "NSForegroundColorAttributeName"
+- !private "NSNumber"
+- "RatingControl"
+- !private "PHImageManager"
+- "UICollectionViewCell"
+- "UIView"
+- !private "NSPredicate"
+- "CGSize"
+- !private ">="
+- "NSDictionary"
+- "StringLiteralType"
+- "calendarViewController"
+- !private "UIScreen"
+- !private "AppDelegate"
+- !private "NSLocale"
+- "DateManager"
+- !private "BooleanLiteralType"
+- "Bool"
+- "Int"
+- "UIBarButtonItem"
+- "CGRect"
+- !private "Date"
+- !private "PHAsset"
+- "Array"
+- !private "UnicodeScalarType"
+- !private "PHFetchResult"
+- "UILabel"
+- !private "%"
+- "UICollectionViewDelegateFlowLayout"
+- !private "print"
+- !private "Locale"
+- "UIColor"
+- "UIStoryboardSegue"
+- "UICollectionViewDelegate"
+- !private "UIImage"
+- "IndexPath"
+- "UICollectionViewDataSource"
+- "UICollectionView"
+- !private "/"
+- !private "DateFormatter"
+- "CGFloat"
+- !private "+"
+- !private "CalendarCell"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -254,6 +256,7 @@ depends-member:
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
+- ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", "weekArray"]
 - !private ["Ps9AnyObject", "white"]
 - ["Ps9AnyObject", ""]
@@ -489,6 +492,7 @@ depends-member:
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
+- ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", "weekArray"]
 - !private ["Ps7CVarArg", "white"]
 - ["Ps7CVarArg", ""]
@@ -663,6 +667,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
+- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", "weekArray"]
 - !private ["Ps28CustomDebugStringConvertible", "white"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
@@ -844,6 +849,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
+- ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", "weekArray"]
 - !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", ""]
@@ -1020,6 +1026,7 @@ depends-member:
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
+- ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", "weekArray"]
 - !private ["Ps9Equatable", "white"]
 - !private ["Ps9Equatable", "width"]
@@ -1205,6 +1212,7 @@ depends-member:
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
+- ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", "weekArray"]
 - !private ["Ps8Hashable", "white"]
 - ["Ps8Hashable", ""]
@@ -1410,6 +1418,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
+- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "weekArray"]
 - !private ["PSo8NSCoding", "white"]
 - ["PSo8NSCoding", ""]
@@ -1515,6 +1524,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "weekArray"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["PSo17NSFastEnumeration", "Key"]
@@ -1540,6 +1550,7 @@ depends-member:
 - ["CSo8NSNumber", "deinit"]
 - !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "AppDelegate"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "CGSize"]
@@ -1692,6 +1703,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
+- ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "weekArray"]
 - !private ["CSo8NSObject", "white"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
@@ -1825,6 +1837,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "weekArray"]
 - !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", ""]
@@ -2095,6 +2108,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "weekArray"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo13UIApplication", "deinit"]
@@ -2407,6 +2421,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "weekArray"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "font"]
@@ -2556,6 +2571,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "weekArray"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
@@ -2599,6 +2615,7 @@ depends-member:
 - !private ["CSo16UINavigationItem", "title"]
 - !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "AppDelegate"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "CGSize"]
@@ -2719,6 +2736,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
+- ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "weekArray"]
 - !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
 - ["PSo30UIResponderStandardEditActions", "CGRect"]
@@ -2819,6 +2837,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
+- ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", "weekArray"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo8UIScreen", "bounds"]
@@ -2975,6 +2994,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "weekArray"]
 - ["PSo16UIStateRestoring", ""]
 - ["CSo17UIStoryboardSegue", "deinit"]
@@ -3079,6 +3099,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "weekArray"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "backgroundColor"]
@@ -3105,6 +3126,7 @@ depends-member:
 - !private ["CSo6UIView", "titleTextAttributes"]
 - !private ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "AppDelegate"]
+- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CGRect"]
 - ["CSo16UIViewController", "CGSize"]
@@ -3204,6 +3226,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
+- ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "weekArray"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "deinit"]
@@ -3422,6 +3445,7 @@ depends-member:
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
+- ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", "weekArray"]
 - !private ["Ps9_Hashable", "white"]
 - ["Ps9_Hashable", ""]
@@ -3470,6 +3494,7 @@ depends-member:
 - !private ["Ps11_Strideable", "init"]
 - !private ["C11FoodTracker22calendarViewController", "AnyObject"]
 - !private ["C11FoodTracker22calendarViewController", "AppDelegate"]
+- ["C11FoodTracker22calendarViewController", "Bool"]
 - ["C11FoodTracker22calendarViewController", "CGFloat"]
 - ["C11FoodTracker22calendarViewController", "CGRect"]
 - ["C11FoodTracker22calendarViewController", "CGSize"]
@@ -3568,6 +3593,7 @@ depends-member:
 - ["C11FoodTracker22calendarViewController", "viewDidLoad"]
 - ["C11FoodTracker22calendarViewController", "viewForZooming"]
 - ["C11FoodTracker22calendarViewController", "viewForZoomingInScrollView"]
+- ["C11FoodTracker22calendarViewController", "viewWillAppear"]
 - ["C11FoodTracker22calendarViewController", "weekArray"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
@@ -3785,4 +3811,4 @@ depends-external:
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
-interface-hash: "c9cb98b91e081e171843c82ac9f1a9c2"
+interface-hash: "f226fcc20d39edc5a00fcc7e2bcf68b2"

@@ -32,7 +32,6 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
 //        ページングするかどうか
 //        imageCollection.isPagingEnabled = true
         
-        read()
     }
 
     //既に存在するデータの読み込み処理
@@ -54,6 +53,7 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
             //データの取得
             //一旦配列を空っぽにする（初期化する）→そうしないとどんどん、TableViewに表示されてしまう。
             myCafe = NSArray() as! [String]
+            cafeArray = NSArray() as! [NSDictionary]
             //nilが入るかもしれないのでasに?をつける。
             for result: AnyObject in fetchResults {
                 
@@ -66,13 +66,16 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
                 cafeDic = ["coffeeName":coffeeName, "date":date, "studyTime":studyTime, "img":img, "rating":rating]
                 cafeArray.append(cafeDic)
                 print(cafeArray)
+                
                 //                myCafe = NSArray() as! [String]
                 //                myCafe.append(coffeeName!)
                 //                print(myCafe)
             }
+            print(cafeArray.count)
         } catch {
         }
         //TableViewの再描画
+        imageCollection.reloadData()
     }
     
     // Screenサイズに応じたセルサイズを返す

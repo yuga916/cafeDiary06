@@ -6,12 +6,21 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "highlightedStar.png",
+      "filename" : "Java Bean Filled-100 (2).png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
       "scale" : "3x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "filename" : "Java Bean Filled-100 (2)-1.png",
+      "scale" : "2x"
     }
   ],
   "info" : {

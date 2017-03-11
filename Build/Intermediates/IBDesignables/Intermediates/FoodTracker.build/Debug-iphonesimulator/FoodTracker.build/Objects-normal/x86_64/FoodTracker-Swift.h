@@ -332,6 +332,7 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified noImage;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified underView;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)read;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;

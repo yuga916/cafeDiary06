@@ -100,6 +100,10 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         // CollectionViewのレイアウトを生成.
         let layout = UICollectionViewFlowLayout()
         
+        
+        
+        
+        
         //コーヒーカップを出す
         coffeeFont.font = UIFont.fontAwesome(ofSize: 30)
 //        myLabel.text = String.fontAwesomeIcon(name: .coffee) + "coffee"
@@ -126,6 +130,10 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         var imageRect:CGSize = CGSize(width: imageWidth, height: imageWidth)
         cafeImage.frame.size = imageRect
         
+        read()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         read()
     }
     
@@ -257,17 +265,22 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         } else {
             print(indexPath.row)
             print(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))
-            if Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! >= 30 {
+            
+            if Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! >= 25 {
                 
                 cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
                 cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
-                cell.isUserInteractionEnabled = true
-            
+                cell.isUserInteractionEnabled = false
+            } else if Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! - Int(indexPath.row) >= 25 {
+                cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
+                cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
+                cell.isUserInteractionEnabled = false
+                
             } else if Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! == 1 || Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! == 0 {
                 
                 cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
                 cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
-                cell.isUserInteractionEnabled = true
+                cell.isUserInteractionEnabled = false
                 
             } else if (indexPath.row > Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))!) {
                 
@@ -284,6 +297,8 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
             
             //月によって1日の場所は異なる(後ほど説明します)
         }
+        
+        
         
         var cellSelectedBgView = UIView()
         cellSelectedBgView.layer.borderColor = UIColor.brown.cgColor
