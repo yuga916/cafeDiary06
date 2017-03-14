@@ -132,6 +132,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         dismiss(animated: true, completion: nil)
     }
     
+    
     //カメラロールで選択された後の処理
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
@@ -140,6 +141,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
         }
         
+        
         // Set photoImageView to display the selected image.
         photoImageView.image = selectedImage
         
@@ -147,8 +149,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         dismiss(animated: true, completion: nil)
         
         
-        
-        let assetURL:AnyObject = info[UIImagePickerControllerReferenceURL]! as AnyObject
+        let assetURL:AnyObject = info[UIImagePickerControllerCropRect]! as AnyObject
         
         strURL = assetURL.description
         if strURL != "" {
@@ -215,6 +216,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         // Make sure ViewController is notified when the user picks an image.
         imagePickerController.delegate = self
+        imagePickerController.allowsEditing = true
         present(imagePickerController, animated: true, completion: nil)
     }
     

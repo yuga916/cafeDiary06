@@ -8,74 +8,75 @@ provides-member:
 provides-dynamic-lookup:
 - "myCafe"
 - "selectedImageURL"
+- "selectedDate"
 - "read"
+- "numberOfSections"
 - "cellSize"
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "tabBar"
-- "cafeDic"
-- "selectedDate"
-- "selectedName"
 - "prepare"
+- "cafeDic"
+- "tabBar"
+- "didReceiveMemoryWarning"
+- "selectedName"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
-- "numberOfSections"
-- "viewWillAppear"
 - "myTableView"
 - "cafeArray"
+- "viewWillAppear"
 depends-top-level:
 - !private "AppDelegate"
-- !private "NSDate"
-- "listViewController"
-- !private "StringLiteralType"
-- !private "BooleanLiteralType"
-- "String"
-- !private "/"
-- !private "PHImageManager"
-- "UIStoryboardSegue"
-- "IndexPath"
+- "Dictionary"
 - !private "NSSortDescriptor"
+- !private "AnyObject"
+- !private "/"
+- "CastingPrecedence"
+- !private "PHImageManager"
+- "AssignmentPrecedence"
+- "IndexPath"
+- !private "=="
 - !private "+"
-- "CGFloat"
-- !private "NSForegroundColorAttributeName"
-- "UIViewController"
+- "listViewController"
+- !private "UIColor"
+- !private "StringLiteralType"
+- "UITableView"
+- !private "DateFormatter"
+- "UITabBarItem"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
+- !private "PHAsset"
+- !private "print"
+- !private "BooleanLiteralType"
+- !private "PHFetchResult"
+- !private "UIScreen"
 - "UITableViewCell"
+- !private "MealTableViewCell"
+- "NSDictionary"
+- "CGFloat"
+- !private "Array"
+- !private "UIApplication"
+- !private "NSFetchRequest"
+- !private "Diary"
+- !private "MealViewController"
+- "UIViewController"
+- !private "NSString"
+- !private "NSNumber"
+- !private "NSDate"
+- "UITabBar"
+- !private "CGSize"
+- "UIStoryboardSegue"
+- !private "NSForegroundColorAttributeName"
+- "NSArray"
+- "Date"
+- "Int"
 - !private "URL"
 - "Bool"
-- !private "UIColor"
-- !private "Void"
-- !private "UIApplication"
-- !private "NSNumber"
-- "UITabBarItem"
-- !private "MealTableViewCell"
-- !private "AnyObject"
 - !private "UIImage"
-- !private "MealViewController"
-- !private "Diary"
-- !private "NSFetchRequest"
-- "NSArray"
-- "Int"
-- !private "DateFormatter"
-- !private "CGSize"
-- "NSDictionary"
-- !private "Array"
-- "UITabBar"
-- !private "UIScreen"
-- "UITableViewDelegate"
-- "UITableView"
-- !private "PHAsset"
-- "UITableViewDataSource"
-- "Date"
-- "Dictionary"
-- !private "NSString"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "print"
-- !private "PHFetchResult"
-- "CastingPrecedence"
+- !private "Void"
+- "String"
+- "UITableViewCellEditingStyle"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -104,6 +105,7 @@ depends-member:
 - !private ["Ps9AnyObject", "dateView"]
 - ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "deleteRows"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -181,6 +183,7 @@ depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - ["Sa", "deinit"]
+- !private ["Sa", "remove"]
 - !private ["Sa", "subscript"]
 - !private ["Ps23BidirectionalCollection", "Element"]
 - !private ["Ps23BidirectionalCollection", "Index"]
@@ -191,6 +194,7 @@ depends-member:
 - !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "append"]
 - !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "remove"]
 - !private ["Ps23BidirectionalCollection", "row"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Ps22BidirectionalIndexable", "Element"]
@@ -202,6 +206,7 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "_Element"]
 - !private ["Ps22BidirectionalIndexable", "append"]
 - !private ["Ps22BidirectionalIndexable", "count"]
+- !private ["Ps22BidirectionalIndexable", "remove"]
 - !private ["Ps22BidirectionalIndexable", "row"]
 - !private ["Ps22BidirectionalIndexable", "subscript"]
 - !private ["Vs18BidirectionalSlice", "Index"]
@@ -218,6 +223,7 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "dateView"]
+- !private ["PSo15CALayerDelegate", "deleteRows"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "image"]
@@ -272,6 +278,7 @@ depends-member:
 - !private ["Ps7CVarArg", "dateFormat"]
 - !private ["Ps7CVarArg", "dateView"]
 - !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "deleteRows"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
@@ -301,6 +308,7 @@ depends-member:
 - !private ["Ps7CVarArg", "ratingControl"]
 - ["Ps7CVarArg", "read"]
 - !private ["Ps7CVarArg", "reloadData"]
+- !private ["Ps7CVarArg", "remove"]
 - !private ["Ps7CVarArg", "requestImage"]
 - !private ["Ps7CVarArg", "scSelectedDate"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
@@ -349,6 +357,7 @@ depends-member:
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "remove"]
 - !private ["Ps10Collection", "row"]
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
@@ -389,6 +398,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - !private ["Ps28CustomDebugStringConvertible", "dateView"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "deleteRows"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -418,6 +428,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "ratingControl"]
 - ["Ps28CustomDebugStringConvertible", "read"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
+- !private ["Ps28CustomDebugStringConvertible", "remove"]
 - !private ["Ps28CustomDebugStringConvertible", "requestImage"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "scSelectedDate"]
@@ -479,6 +490,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "count"]
 - ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "remove"]
 - !private ["Ps17CustomReflectable", "row"]
 - !private ["Ps17CustomReflectable", "size"]
 - !private ["Ps17CustomReflectable", "sortedArray"]
@@ -521,6 +533,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dateFormat"]
 - !private ["Ps23CustomStringConvertible", "dateView"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "deleteRows"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -550,6 +563,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "ratingControl"]
 - ["Ps23CustomStringConvertible", "read"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
+- !private ["Ps23CustomStringConvertible", "remove"]
 - !private ["Ps23CustomStringConvertible", "requestImage"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "scSelectedDate"]
@@ -621,6 +635,7 @@ depends-member:
 - !private ["Ps9Equatable", "NSSortDescriptor"]
 - !private ["Ps9Equatable", "PHAsset"]
 - !private ["Ps9Equatable", "PHImageManager"]
+- !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "UIColor"]
@@ -639,9 +654,12 @@ depends-member:
 - !private ["Ps9Equatable", "dateFormat"]
 - !private ["Ps9Equatable", "dateView"]
 - !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "delete"]
+- !private ["Ps9Equatable", "deleteRows"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "fade"]
 - !private ["Ps9Equatable", "fetch"]
 - !private ["Ps9Equatable", "fetchAssets"]
 - !private ["Ps9Equatable", "fetchRequest"]
@@ -716,6 +734,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "remove"]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - !private ["Ps25ExpressibleByArrayLiteral", "sortedArray"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
@@ -750,6 +769,7 @@ depends-member:
 - !private ["Ps8Hashable", "NSSortDescriptor"]
 - !private ["Ps8Hashable", "PHAsset"]
 - !private ["Ps8Hashable", "PHImageManager"]
+- !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "UIColor"]
@@ -768,9 +788,12 @@ depends-member:
 - !private ["Ps8Hashable", "dateFormat"]
 - !private ["Ps8Hashable", "dateView"]
 - !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "delete"]
+- !private ["Ps8Hashable", "deleteRows"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "fade"]
 - !private ["Ps8Hashable", "fetch"]
 - !private ["Ps8Hashable", "fetchAssets"]
 - !private ["Ps8Hashable", "fetchRequest"]
@@ -848,6 +871,7 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
+- !private ["Ps9Indexable", "remove"]
 - !private ["Ps9Indexable", "row"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Ps13IndexableBase", "Element"]
@@ -861,6 +885,7 @@ depends-member:
 - !private ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "append"]
 - !private ["Ps13IndexableBase", "count"]
+- !private ["Ps13IndexableBase", "remove"]
 - !private ["Ps13IndexableBase", "row"]
 - !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
@@ -903,6 +928,7 @@ depends-member:
 - !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "remove"]
 - !private ["Ps17MutableCollection", "row"]
 - !private ["Ps17MutableCollection", "subscript"]
 - !private ["Ps16MutableIndexable", "Element"]
@@ -913,6 +939,7 @@ depends-member:
 - !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "append"]
 - !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableIndexable", "remove"]
 - !private ["Ps16MutableIndexable", "row"]
 - !private ["Ps16MutableIndexable", "subscript"]
 - ["CSo7NSArray", "deinit"]
@@ -942,6 +969,7 @@ depends-member:
 - !private ["PSo8NSCoding", "date"]
 - !private ["PSo8NSCoding", "dateFormat"]
 - !private ["PSo8NSCoding", "dateView"]
+- !private ["PSo8NSCoding", "deleteRows"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "fetch"]
@@ -1128,6 +1156,7 @@ depends-member:
 - ["CSo8NSObject", "UITabBarItem"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "UITableViewCellEditingStyle"]
 - !private ["CSo8NSObject", "URL"]
 - ["CSo8NSObject", "Value"]
 - !private ["CSo8NSObject", "Void"]
@@ -1139,6 +1168,7 @@ depends-member:
 - !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "dateView"]
 - !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "deleteRows"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -1228,6 +1258,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
 - !private ["PSo16NSObjectProtocol", "dateView"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "deleteRows"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -1324,6 +1355,7 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "remove"]
 - !private ["Ps22RandomAccessCollection", "row"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
 - !private ["Ps21RandomAccessIndexable", "Element"]
@@ -1335,6 +1367,7 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "_Element"]
 - !private ["Ps21RandomAccessIndexable", "append"]
 - !private ["Ps21RandomAccessIndexable", "count"]
+- !private ["Ps21RandomAccessIndexable", "remove"]
 - !private ["Ps21RandomAccessIndexable", "row"]
 - !private ["Ps21RandomAccessIndexable", "subscript"]
 - !private ["Vs17RandomAccessSlice", "Index"]
@@ -1351,6 +1384,7 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "remove"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps25RangeReplaceableIndexable", "Element"]
 - !private ["Ps25RangeReplaceableIndexable", "Index"]
@@ -1360,10 +1394,14 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps25RangeReplaceableIndexable", "append"]
 - !private ["Ps25RangeReplaceableIndexable", "count"]
+- !private ["Ps25RangeReplaceableIndexable", "remove"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["C11FoodTracker13RatingControl", "rating"]
 - !private ["C11FoodTracker13RatingControl", "starSize"]
+- !private ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "aspectFill"]
+- !private ["Ps16RawRepresentable", "delete"]
+- !private ["Ps16RawRepresentable", "fade"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["Ps8Sequence", "Element"]
@@ -1378,6 +1416,7 @@ depends-member:
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "count"]
 - ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "remove"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "sortedArray"]
 - !private ["Ps8Sequence", "subscript"]
@@ -1402,6 +1441,7 @@ depends-member:
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "dateView"]
+- !private ["PSo29UIAccessibilityIdentification", "deleteRows"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
@@ -1415,6 +1455,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo12UIAppearance", "dateView"]
+- !private ["PSo12UIAppearance", "deleteRows"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "image"]
@@ -1445,6 +1486,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "cafeDic"]
 - ["PSo21UIAppearanceContainer", "cellSize"]
 - !private ["PSo21UIAppearanceContainer", "dateView"]
+- !private ["PSo21UIAppearanceContainer", "deleteRows"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
@@ -1563,6 +1605,7 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "dateView"]
+- !private ["PSo17UICoordinateSpace", "deleteRows"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "image"]
@@ -1575,6 +1618,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "dateView"]
+- !private ["PSo13UIDynamicItem", "deleteRows"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "image"]
@@ -1605,6 +1649,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "cafeDic"]
 - ["PSo18UIFocusEnvironment", "cellSize"]
 - !private ["PSo18UIFocusEnvironment", "dateView"]
+- !private ["PSo18UIFocusEnvironment", "deleteRows"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
@@ -1657,6 +1702,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "dateView"]
+- !private ["PSo11UIFocusItem", "deleteRows"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "image"]
@@ -1715,6 +1761,7 @@ depends-member:
 - ["CSo11UIResponder", "UITabBarItem"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "UITableViewCellEditingStyle"]
 - !private ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "cafeArray"]
@@ -1722,6 +1769,7 @@ depends-member:
 - ["CSo11UIResponder", "cellSize"]
 - !private ["CSo11UIResponder", "dateView"]
 - !private ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "deleteRows"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "frame"]
@@ -1794,6 +1842,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "cellSize"]
 - !private ["PSo30UIResponderStandardEditActions", "dateView"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
+- !private ["PSo30UIResponderStandardEditActions", "deleteRows"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
@@ -1850,6 +1899,7 @@ depends-member:
 - !private ["CSo8UIScreen", "bounds"]
 - ["CSo8UIScreen", "deinit"]
 - !private ["CSo8UIScreen", "main"]
+- !private ["CSo12UIScrollView", "deleteRows"]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "CGFloat"]
@@ -1961,12 +2011,16 @@ depends-member:
 - ["CSo17UIStoryboardSegue", "deinit"]
 - !private ["CSo17UIStoryboardSegue", "destination"]
 - ["CSo11UITableView", "deinit"]
+- !private ["CSo11UITableView", "deleteRows"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo15UITableViewCell", "dateView"]
 - !private ["CSo15UITableViewCell", "nameLabel"]
 - !private ["CSo15UITableViewCell", "photoImageView"]
 - !private ["CSo15UITableViewCell", "ratingControl"]
+- !private ["OSC27UITableViewCellEditingStyle", "RawValue"]
+- ["OSC27UITableViewCellEditingStyle", "deinit"]
+- !private ["OSC27UITableViewCellEditingStyle", "delete"]
 - !private ["PSo21UITableViewDataSource", "CGFloat"]
 - !private ["PSo21UITableViewDataSource", "CGSize"]
 - !private ["PSo21UITableViewDataSource", "DateFormatter"]
@@ -2059,6 +2113,8 @@ depends-member:
 - ["PSo19UITableViewDelegate", "viewForZooming"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UITableViewDelegate", ""]
+- ["OSC23UITableViewRowAnimation", "deinit"]
+- !private ["OSC23UITableViewRowAnimation", "fade"]
 - !private ["PSo19UITextFieldDelegate", "scSelectedDate"]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
@@ -2080,6 +2136,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "cafeDic"]
 - ["PSo18UITraitEnvironment", "cellSize"]
 - !private ["PSo18UITraitEnvironment", "dateView"]
+- !private ["PSo18UITraitEnvironment", "deleteRows"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "frame"]
@@ -2133,6 +2190,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dateView"]
+- !private ["CSo6UIView", "deleteRows"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "image"]
@@ -2177,6 +2235,7 @@ depends-member:
 - ["CSo16UIViewController", "UITabBarItem"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "UITableViewCellEditingStyle"]
 - !private ["CSo16UIViewController", "URL"]
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "cafeArray"]
@@ -2239,10 +2298,12 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps14_ArrayProtocol", "remove"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dateView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "deleteRows"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
@@ -2262,6 +2323,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "remove"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
@@ -2288,6 +2350,7 @@ depends-member:
 - !private ["Ps9_Hashable", "NSSortDescriptor"]
 - !private ["Ps9_Hashable", "PHAsset"]
 - !private ["Ps9_Hashable", "PHImageManager"]
+- !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UIApplication"]
 - !private ["Ps9_Hashable", "UIColor"]
@@ -2306,9 +2369,12 @@ depends-member:
 - !private ["Ps9_Hashable", "dateFormat"]
 - !private ["Ps9_Hashable", "dateView"]
 - !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "delete"]
+- !private ["Ps9_Hashable", "deleteRows"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "fade"]
 - !private ["Ps9_Hashable", "fetch"]
 - !private ["Ps9_Hashable", "fetchAssets"]
 - !private ["Ps9_Hashable", "fetchRequest"]
@@ -2399,6 +2465,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "remove"]
 - !private ["Ps21_ObjectiveCBridgeable", "row"]
 - !private ["Ps21_ObjectiveCBridgeable", "size"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
@@ -2445,6 +2512,7 @@ depends-member:
 - ["C11FoodTracker18listViewController", "UITabBarItem"]
 - ["C11FoodTracker18listViewController", "UITableView"]
 - ["C11FoodTracker18listViewController", "UITableViewCell"]
+- ["C11FoodTracker18listViewController", "UITableViewCellEditingStyle"]
 - !private ["C11FoodTracker18listViewController", "URL"]
 - !private ["C11FoodTracker18listViewController", "Void"]
 - ["C11FoodTracker18listViewController", "cafeArray"]
@@ -2625,8 +2693,10 @@ depends-nominal:
 - "CSo17UIStoryboardSegue"
 - "CSo11UITableView"
 - !private "CSo15UITableViewCell"
+- "OSC27UITableViewCellEditingStyle"
 - "PSo21UITableViewDataSource"
 - "PSo19UITableViewDelegate"
+- "OSC23UITableViewRowAnimation"
 - !private "PSo19UITextFieldDelegate"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
@@ -2686,4 +2756,4 @@ depends-external:
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
-interface-hash: "2410419bda510f3810ede90571b9492f"
+interface-hash: "694151636bb34f5cf8d5a817f8cca89e"

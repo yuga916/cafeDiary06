@@ -6,88 +6,88 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker18MealViewController", ""]
 provides-dynamic-lookup:
-- "prepare"
-- "tapSave"
-- "selectImageFromPhotoLibrary"
-- "textView"
-- "meal"
-- "studyTime"
-- "scSelectedDate"
-- "textFieldDidBeginEditing"
-- "nameTextField"
-- "textFieldDidEndEditing"
-- "viewDidLoad"
-- "textFieldShouldReturn"
-- "imagePickerController"
-- "photoImageView"
-- "doneButtonAction"
-- "num"
-- "cancel"
-- "saveButton"
-- "myTitle"
-- "read"
-- "strURL"
-- "myTextField"
-- "ratingControl"
-- "returnMenu"
 - "textFieldShouldBeginEditing"
+- "doneButtonAction"
+- "scSelectedDate"
+- "textFieldShouldReturn"
+- "prepare"
+- "imagePickerController"
+- "returnMenu"
+- "studyTime"
+- "viewDidLoad"
 - "imagePickerControllerDidCancel"
+- "num"
+- "meal"
+- "nameTextField"
+- "tapSave"
+- "photoImageView"
+- "textFieldDidBeginEditing"
+- "textFieldDidEndEditing"
+- "myTitle"
+- "selectImageFromPhotoLibrary"
+- "cancel"
+- "strURL"
+- "saveButton"
+- "read"
+- "ratingControl"
+- "textView"
+- "myTextField"
 depends-top-level:
-- !private "UIImage"
-- "UITapGestureRecognizer"
-- "StringLiteralType"
-- !private "UIToolbar"
-- "UIBarButtonItem"
 - !private "CGRect"
-- !private "CGSize"
-- !private "Date"
-- !private "Array"
-- !private "AnyObject"
-- !private "PHAsset"
-- "Meal"
-- !private "!="
-- "UIImagePickerControllerDelegate"
-- !private "PHFetchResult"
-- "Bool"
-- "UINavigationControllerDelegate"
-- !private "BooleanLiteralType"
-- !private "??"
-- !private "NSManagedObject"
-- !private "Diary"
-- !private "NSFetchRequest"
-- !private "NSEntityDescription"
-- "UIImageView"
-- "NSArray"
-- "UITextField"
-- "UIImagePickerController"
-- !private "NSNumber"
-- "Int"
-- !private "UIKeyboardType"
-- !private "Selector"
 - !private "Void"
-- "UIStoryboardSegue"
-- "RatingControl"
+- "UITapGestureRecognizer"
+- "UIImagePickerController"
 - !private "URL"
-- !private "NSPredicate"
-- "String"
+- "NSArray"
 - !private "UIImagePickerControllerOriginalImage"
 - !private "AppDelegate"
-- !private "!"
-- !private "UIImagePickerControllerReferenceURL"
-- "UITextView"
-- "UIViewController"
-- "UITextFieldDelegate"
+- !private "UIImagePickerControllerCropRect"
+- "Int"
 - !private "UINavigationController"
+- "UIBarButtonItem"
+- "UITextView"
+- "UIImageView"
+- !private "NSEntityDescription"
 - "MealViewController"
+- "String"
+- "StringLiteralType"
+- !private "Array"
+- !private "PHImageManager"
 - "NSDate"
+- "UIStoryboardSegue"
+- !private "BooleanLiteralType"
+- !private "print"
+- "UITextField"
+- !private "UIImage"
+- "CastingPrecedence"
 - !private "UIApplication"
 - "AssignmentPrecedence"
 - !private "~="
-- "CastingPrecedence"
 - !private "=="
-- !private "print"
+- !private "CGSize"
+- !private "UIKeyboardType"
+- !private "PHAsset"
+- "Bool"
+- "RatingControl"
+- "UIViewController"
+- !private "PHFetchResult"
+- !private "NSManagedObject"
+- !private "Date"
+- "UINavigationControllerDelegate"
+- !private "Diary"
+- !private "!"
+- !private "NSFetchRequest"
+- "UITextFieldDelegate"
+- "Meal"
 - !private "fatalError"
-- !private "PHImageManager"
+- "UIImagePickerControllerDelegate"
+- !private "??"
+- !private "UIToolbar"
+- !private "Selector"
+- !private "NSPredicate"
+- !private "NSNumber"
+- !private "AnyObject"
+- !private "!="
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "CGSize"]
@@ -106,11 +106,12 @@ depends-member:
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIImagePickerController"]
+- !private ["Ps9AnyObject", "UIImagePickerControllerCropRect"]
 - !private ["Ps9AnyObject", "UIImagePickerControllerOriginalImage"]
-- !private ["Ps9AnyObject", "UIImagePickerControllerReferenceURL"]
 - !private ["Ps9AnyObject", "UIKeyboardType"]
 - !private ["Ps9AnyObject", "UIToolbar"]
 - !private ["Ps9AnyObject", "URL"]
+- !private ["Ps9AnyObject", "allowsEditing"]
 - ["Ps9AnyObject", "cancel"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "deinit"]
@@ -261,12 +262,13 @@ depends-member:
 - !private ["Ps7CVarArg", "UIBarButtonItem"]
 - !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "UIImagePickerController"]
+- !private ["Ps7CVarArg", "UIImagePickerControllerCropRect"]
 - !private ["Ps7CVarArg", "UIImagePickerControllerOriginalImage"]
-- !private ["Ps7CVarArg", "UIImagePickerControllerReferenceURL"]
 - !private ["Ps7CVarArg", "UIKeyboardType"]
 - !private ["Ps7CVarArg", "UIToolbar"]
 - !private ["Ps7CVarArg", "URL"]
 - !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "allowsEditing"]
 - !private ["Ps7CVarArg", "append"]
 - ["Ps7CVarArg", "cancel"]
 - !private ["Ps7CVarArg", "cornerRadius"]
@@ -382,12 +384,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImagePickerController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImagePickerControllerCropRect"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImagePickerControllerOriginalImage"]
-- !private ["Ps28CustomDebugStringConvertible", "UIImagePickerControllerReferenceURL"]
 - !private ["Ps28CustomDebugStringConvertible", "UIKeyboardType"]
 - !private ["Ps28CustomDebugStringConvertible", "UIToolbar"]
 - !private ["Ps28CustomDebugStringConvertible", "URL"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "allowsEditing"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - ["Ps28CustomDebugStringConvertible", "cancel"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
@@ -510,13 +513,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UIImagePickerController"]
+- !private ["Ps23CustomStringConvertible", "UIImagePickerControllerCropRect"]
 - !private ["Ps23CustomStringConvertible", "UIImagePickerControllerOriginalImage"]
-- !private ["Ps23CustomStringConvertible", "UIImagePickerControllerReferenceURL"]
 - !private ["Ps23CustomStringConvertible", "UIKeyboardType"]
 - !private ["Ps23CustomStringConvertible", "UIToolbar"]
 - !private ["Ps23CustomStringConvertible", "URL"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "allowsEditing"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - ["Ps23CustomStringConvertible", "cancel"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
@@ -619,12 +623,13 @@ depends-member:
 - !private ["Ps9Equatable", "UIBarButtonItem"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UIImagePickerController"]
+- !private ["Ps9Equatable", "UIImagePickerControllerCropRect"]
 - !private ["Ps9Equatable", "UIImagePickerControllerOriginalImage"]
-- !private ["Ps9Equatable", "UIImagePickerControllerReferenceURL"]
 - !private ["Ps9Equatable", "UIKeyboardType"]
 - !private ["Ps9Equatable", "UIToolbar"]
 - !private ["Ps9Equatable", "URL"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "allowsEditing"]
 - !private ["Ps9Equatable", "aspectFill"]
 - !private ["Ps9Equatable", "aspectFit"]
 - ["Ps9Equatable", "cancel"]
@@ -746,12 +751,13 @@ depends-member:
 - !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UIImagePickerController"]
+- !private ["Ps8Hashable", "UIImagePickerControllerCropRect"]
 - !private ["Ps8Hashable", "UIImagePickerControllerOriginalImage"]
-- !private ["Ps8Hashable", "UIImagePickerControllerReferenceURL"]
 - !private ["Ps8Hashable", "UIKeyboardType"]
 - !private ["Ps8Hashable", "UIToolbar"]
 - !private ["Ps8Hashable", "URL"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "allowsEditing"]
 - !private ["Ps8Hashable", "aspectFill"]
 - !private ["Ps8Hashable", "aspectFit"]
 - ["Ps8Hashable", "cancel"]
@@ -895,8 +901,8 @@ depends-member:
 - ["C11FoodTracker18MealViewController", "UIBarButtonItem"]
 - !private ["C11FoodTracker18MealViewController", "UIImage"]
 - ["C11FoodTracker18MealViewController", "UIImagePickerController"]
+- !private ["C11FoodTracker18MealViewController", "UIImagePickerControllerCropRect"]
 - !private ["C11FoodTracker18MealViewController", "UIImagePickerControllerOriginalImage"]
-- !private ["C11FoodTracker18MealViewController", "UIImagePickerControllerReferenceURL"]
 - ["C11FoodTracker18MealViewController", "UIImageView"]
 - !private ["C11FoodTracker18MealViewController", "UIKeyboardType"]
 - !private ["C11FoodTracker18MealViewController", "UINavigationController"]
@@ -986,11 +992,12 @@ depends-member:
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImagePickerController"]
+- !private ["PSo8NSCoding", "UIImagePickerControllerCropRect"]
 - !private ["PSo8NSCoding", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo8NSCoding", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo8NSCoding", "UIKeyboardType"]
 - !private ["PSo8NSCoding", "UIToolbar"]
 - !private ["PSo8NSCoding", "URL"]
+- !private ["PSo8NSCoding", "allowsEditing"]
 - ["PSo8NSCoding", "cancel"]
 - !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "delegate"]
@@ -1082,11 +1089,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImagePickerControllerCropRect"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo26NSExtensionRequestHandling", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo26NSExtensionRequestHandling", "UIKeyboardType"]
 - !private ["PSo26NSExtensionRequestHandling", "UIToolbar"]
 - !private ["PSo26NSExtensionRequestHandling", "URL"]
+- !private ["PSo26NSExtensionRequestHandling", "allowsEditing"]
 - ["PSo26NSExtensionRequestHandling", "cancel"]
 - !private ["PSo26NSExtensionRequestHandling", "delegate"]
 - !private ["PSo26NSExtensionRequestHandling", "dismiss"]
@@ -1179,8 +1187,8 @@ depends-member:
 - ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImagePickerController"]
+- !private ["CSo8NSObject", "UIImagePickerControllerCropRect"]
 - !private ["CSo8NSObject", "UIImagePickerControllerOriginalImage"]
-- !private ["CSo8NSObject", "UIImagePickerControllerReferenceURL"]
 - ["CSo8NSObject", "UIImageView"]
 - !private ["CSo8NSObject", "UIKeyboardType"]
 - !private ["CSo8NSObject", "UINavigationController"]
@@ -1191,6 +1199,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIToolbar"]
 - !private ["CSo8NSObject", "URL"]
 - !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "allowsEditing"]
 - ["CSo8NSObject", "cancel"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "delegate"]
@@ -1280,11 +1289,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerController"]
+- !private ["PSo16NSObjectProtocol", "UIImagePickerControllerCropRect"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo16NSObjectProtocol", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo16NSObjectProtocol", "UIKeyboardType"]
 - !private ["PSo16NSObjectProtocol", "UIToolbar"]
 - !private ["PSo16NSObjectProtocol", "URL"]
+- !private ["PSo16NSObjectProtocol", "allowsEditing"]
 - ["PSo16NSObjectProtocol", "cancel"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
@@ -1493,11 +1503,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerController"]
+- !private ["PSo21UIAppearanceContainer", "UIImagePickerControllerCropRect"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo21UIAppearanceContainer", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo21UIAppearanceContainer", "UIKeyboardType"]
 - !private ["PSo21UIAppearanceContainer", "UIToolbar"]
 - !private ["PSo21UIAppearanceContainer", "URL"]
+- !private ["PSo21UIAppearanceContainer", "allowsEditing"]
 - ["PSo21UIAppearanceContainer", "cancel"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dismiss"]
@@ -1588,11 +1599,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImagePickerController"]
+- !private ["PSo18UIContentContainer", "UIImagePickerControllerCropRect"]
 - !private ["PSo18UIContentContainer", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo18UIContentContainer", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo18UIContentContainer", "UIKeyboardType"]
 - !private ["PSo18UIContentContainer", "UIToolbar"]
 - !private ["PSo18UIContentContainer", "URL"]
+- !private ["PSo18UIContentContainer", "allowsEditing"]
 - ["PSo18UIContentContainer", "cancel"]
 - !private ["PSo18UIContentContainer", "delegate"]
 - !private ["PSo18UIContentContainer", "dismiss"]
@@ -1691,11 +1703,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerController"]
+- !private ["PSo18UIFocusEnvironment", "UIImagePickerControllerCropRect"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo18UIFocusEnvironment", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo18UIFocusEnvironment", "UIKeyboardType"]
 - !private ["PSo18UIFocusEnvironment", "UIToolbar"]
 - !private ["PSo18UIFocusEnvironment", "URL"]
+- !private ["PSo18UIFocusEnvironment", "allowsEditing"]
 - ["PSo18UIFocusEnvironment", "cancel"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dismiss"]
@@ -1768,6 +1781,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "text"]
 - ["CSo7UIImage", "deinit"]
 - !private ["CSo7UIImage", "init"]
+- !private ["CSo23UIImagePickerController", "allowsEditing"]
 - ["CSo23UIImagePickerController", "deinit"]
 - !private ["CSo23UIImagePickerController", "delegate"]
 - !private ["CSo23UIImagePickerController", "dismiss"]
@@ -1790,8 +1804,8 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "UIBarButtonItem"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImage"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerController"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerControllerCropRect"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIKeyboardType"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIToolbar"]
 - !private ["PSo31UIImagePickerControllerDelegate", "URL"]
@@ -1835,6 +1849,7 @@ depends-member:
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["OSC14UIKeyboardType", "decimalPad"]
 - ["OSC14UIKeyboardType", "deinit"]
+- !private ["CSo22UINavigationController", "allowsEditing"]
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "delegate"]
 - !private ["CSo22UINavigationController", "dismiss"]
@@ -1858,8 +1873,8 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "UIBarButtonItem"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImage"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerController"]
+- !private ["PSo30UINavigationControllerDelegate", "UIImagePickerControllerCropRect"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo30UINavigationControllerDelegate", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo30UINavigationControllerDelegate", "UIKeyboardType"]
 - !private ["PSo30UINavigationControllerDelegate", "UIToolbar"]
 - !private ["PSo30UINavigationControllerDelegate", "URL"]
@@ -1920,8 +1935,8 @@ depends-member:
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImagePickerController"]
+- !private ["CSo11UIResponder", "UIImagePickerControllerCropRect"]
 - !private ["CSo11UIResponder", "UIImagePickerControllerOriginalImage"]
-- !private ["CSo11UIResponder", "UIImagePickerControllerReferenceURL"]
 - ["CSo11UIResponder", "UIImageView"]
 - !private ["CSo11UIResponder", "UIKeyboardType"]
 - !private ["CSo11UIResponder", "UINavigationController"]
@@ -1932,6 +1947,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIToolbar"]
 - !private ["CSo11UIResponder", "URL"]
 - !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "allowsEditing"]
 - ["CSo11UIResponder", "cancel"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dismiss"]
@@ -2007,11 +2023,12 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIBarButtonItem"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImagePickerController"]
+- !private ["PSo30UIResponderStandardEditActions", "UIImagePickerControllerCropRect"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo30UIResponderStandardEditActions", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo30UIResponderStandardEditActions", "UIKeyboardType"]
 - !private ["PSo30UIResponderStandardEditActions", "UIToolbar"]
 - !private ["PSo30UIResponderStandardEditActions", "URL"]
+- !private ["PSo30UIResponderStandardEditActions", "allowsEditing"]
 - ["PSo30UIResponderStandardEditActions", "cancel"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "dismiss"]
@@ -2090,11 +2107,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerController"]
+- !private ["PSo16UIStateRestoring", "UIImagePickerControllerCropRect"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo16UIStateRestoring", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo16UIStateRestoring", "UIKeyboardType"]
 - !private ["PSo16UIStateRestoring", "UIToolbar"]
 - !private ["PSo16UIStateRestoring", "URL"]
+- !private ["PSo16UIStateRestoring", "allowsEditing"]
 - ["PSo16UIStateRestoring", "cancel"]
 - !private ["PSo16UIStateRestoring", "delegate"]
 - !private ["PSo16UIStateRestoring", "dismiss"]
@@ -2165,8 +2183,8 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITextFieldDelegate", "UIImage"]
 - !private ["PSo19UITextFieldDelegate", "UIImagePickerController"]
+- !private ["PSo19UITextFieldDelegate", "UIImagePickerControllerCropRect"]
 - !private ["PSo19UITextFieldDelegate", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo19UITextFieldDelegate", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo19UITextFieldDelegate", "UIKeyboardType"]
 - !private ["PSo19UITextFieldDelegate", "UIToolbar"]
 - !private ["PSo19UITextFieldDelegate", "URL"]
@@ -2231,11 +2249,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerController"]
+- !private ["PSo18UITraitEnvironment", "UIImagePickerControllerCropRect"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerControllerOriginalImage"]
-- !private ["PSo18UITraitEnvironment", "UIImagePickerControllerReferenceURL"]
 - !private ["PSo18UITraitEnvironment", "UIKeyboardType"]
 - !private ["PSo18UITraitEnvironment", "UIToolbar"]
 - !private ["PSo18UITraitEnvironment", "URL"]
+- !private ["PSo18UITraitEnvironment", "allowsEditing"]
 - ["PSo18UITraitEnvironment", "cancel"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dismiss"]
@@ -2333,8 +2352,8 @@ depends-member:
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImagePickerController"]
+- !private ["CSo16UIViewController", "UIImagePickerControllerCropRect"]
 - !private ["CSo16UIViewController", "UIImagePickerControllerOriginalImage"]
-- !private ["CSo16UIViewController", "UIImagePickerControllerReferenceURL"]
 - ["CSo16UIViewController", "UIImageView"]
 - !private ["CSo16UIViewController", "UIKeyboardType"]
 - !private ["CSo16UIViewController", "UINavigationController"]
@@ -2345,6 +2364,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIToolbar"]
 - !private ["CSo16UIViewController", "URL"]
 - !private ["CSo16UIViewController", "Void"]
+- !private ["CSo16UIViewController", "allowsEditing"]
 - ["CSo16UIViewController", "cancel"]
 - ["CSo16UIViewController", "deinit"]
 - !private ["CSo16UIViewController", "delegate"]
@@ -2459,12 +2479,13 @@ depends-member:
 - !private ["Ps9_Hashable", "UIBarButtonItem"]
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "UIImagePickerController"]
+- !private ["Ps9_Hashable", "UIImagePickerControllerCropRect"]
 - !private ["Ps9_Hashable", "UIImagePickerControllerOriginalImage"]
-- !private ["Ps9_Hashable", "UIImagePickerControllerReferenceURL"]
 - !private ["Ps9_Hashable", "UIKeyboardType"]
 - !private ["Ps9_Hashable", "UIToolbar"]
 - !private ["Ps9_Hashable", "URL"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "allowsEditing"]
 - !private ["Ps9_Hashable", "aspectFill"]
 - !private ["Ps9_Hashable", "aspectFit"]
 - ["Ps9_Hashable", "cancel"]
@@ -2741,9 +2762,9 @@ depends-nominal:
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
+- !private "value"
 - !private "setValue"
 - !private "description"
-- !private "value"
 depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"

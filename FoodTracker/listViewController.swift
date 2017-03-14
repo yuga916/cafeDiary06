@@ -60,32 +60,6 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         read()
         
-//                //coredata内のデータを全削除
-//                //　AppDelegateを使う用意をしておく
-//                let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
-//        
-//                //エンティティを操作するためのオブジェクトを作成
-//                //DB接続をするのと同じ
-//                let viewContext = appDelegate.persistentContainer.viewContext
-//        
-//        
-//                //削除するdataを取得
-//                let request:NSFetchRequest<Diary> = Diary.fetchRequest()
-//        
-//                do{
-//                    //削除するデータを取得
-//                    let fetchResults = try viewContext.fetch(request)
-//                    //nilが入るかもしれないのでasに?をつける。
-//                    for result: AnyObject in fetchResults {
-//                        let record = result as! NSManagedObject
-//                        //一行ずつ削除
-//                        viewContext.delete(record)
-//                    }
-//                    
-//                    try viewContext.save()
-//                } catch {
-//                }
-
         
         
     }
@@ -252,11 +226,44 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     
-    // Override to support conditional editing of the table view.
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+                            //coredata内のデータを全削除
+                            //　AppDelegateを使う用意をしておく
+                            let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+                            //エンティティを操作するためのオブジェクトを作成
+                            //DB接続をするのと同じ
+                            let viewContext = appDelegate.persistentContainer.viewContext
+            
+            
+                            //削除するdataを取得
+                            let request:NSFetchRequest<Diary> = Diary.fetchRequest()
+            
+                            do{
+                                //削除するデータを取得
+                                var dic = cafeArray[indexPath.row] as! NSDictionary
+                                request.predicate = NSPredicate(format:"date = %@", dic["date"] as! Date as CVarArg)
+                                let fetchResults = try! viewContext.fetch(request)
+                                //nilが入るかもしれないのでasに?をつける。
+                                for result: AnyObject in fetchResults {
+                                    let record = result as! NSManagedObject
+                                    //一行ずつ削除
+                                    viewContext.delete(record)
+                                }
+                                
+                                try viewContext.save()
+                            } catch {
+                            }
+            
+            cafeArray.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        }
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
