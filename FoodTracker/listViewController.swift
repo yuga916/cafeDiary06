@@ -159,7 +159,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         //画像
         var imgDic = cafeArray[indexPath.row] as! NSDictionary
         var AImage: UIImage!
-        if imgDic["img"] as? String == nil {
+        if imgDic["img"] as? String == "" {
             cell.photoImageView.image = UIImage(named: "defaultPhoto")
         } else {
             let url = URL(string: (imgDic["img"] as! NSString) as String)

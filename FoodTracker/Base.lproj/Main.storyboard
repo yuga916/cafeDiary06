@@ -325,6 +325,10 @@
                                             <constraint firstAttribute="width" secondItem="qga-cA-opA" secondAttribute="height" multiplier="1:1" id="pLs-Mq-sXh"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image" translatesAutoresizingMaskIntoConstraints="NO" id="l6b-tf-vGj">
+                                        <rect key="frame" x="47" y="62" width="288" height="197"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -426,17 +430,17 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="639"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="uqt-Vi-acX">
-                                    <size key="itemSize" width="186" height="186"/>
+                                    <size key="itemSize" width="214" height="220"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="OFq-0f-TI7" customClass="imageCollectionViewCell" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="1" y="0.0" width="186" height="186"/>
+                                        <rect key="frame" x="80.5" y="0.0" width="214" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="186" height="186"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="214" height="220"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ob1-hE-NJn">
@@ -479,7 +483,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zOI-Tj-ec8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="calendar" image="calendar" id="Ju9-L8-PBa"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SXe-xg-RAe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SXe-xg-RAe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -518,7 +522,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xmf-y4-XIP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="picture" image="Image" id="1aD-51-N89" userLabel="list"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nWJ-iX-SxJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nWJ-iX-SxJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -540,7 +544,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c1q-CK-Hs7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Kgv-Db-Ox1" userLabel="list"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SEf-ho-tc5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SEf-ho-tc5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -558,6 +562,7 @@
         <image name="Image" width="32" height="32"/>
         <image name="calendar" width="30" height="30"/>
         <image name="defaultPhoto" width="540" height="540"/>
+        <image name="no_image" width="110" height="110"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -119,7 +119,7 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
         //画像
         var imgDic = cafeArray[indexPath.row] as! NSDictionary
         var AImage: UIImage!
-        if imgDic["img"] as? String == nil {
+        if imgDic["img"] as? String == "" {
             cell.image.image = UIImage(named: "defaultPhoto")
         } else {
             let url = URL(string: (imgDic["img"] as! NSString) as String)
@@ -179,24 +179,24 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
     
     
     
-//    //Viewを切り替える
-//    private func changeView(flowLayout: UICollectionViewFlowLayout) {
-//        
-//        UIView.animate(withDuration: 0.5) { [weak self] () -> Void in
-//            
-//            self?.imageCollection.collectionViewLayout.invalidateLayout()
-//            self?.imageCollection.setCollectionViewLayout(flowLayout, animated: true)
-//            self?.imageCollection.layoutIfNeeded()
-//        }
-//        
-//    }
+    //Viewを切り替える
+    private func changeView(flowLayout: UICollectionViewFlowLayout) {
+        
+        UIView.animate(withDuration: 0.5) { [weak self] () -> Void in
+            
+            self?.imageCollection.collectionViewLayout.invalidateLayout()
+            self?.imageCollection.setCollectionViewLayout(flowLayout, animated: true)
+            self?.imageCollection.layoutIfNeeded()
+        }
+        
+    }
     
     // Cell が選択された場合
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("タップされたよ")
 //        changeView(flowLayout: oneFlowLayout)
 //        self.changeView(flowLayout: oneFlowLayout)
-//        // [indexPath.row] から画像名を探し、UImage を設定
+        // [indexPath.row] から画像名を探し、UImage を設定
 //        selectedImage = UIImage(named: photos[(indexPath as NSIndexPath).row])
 //        if selectedImage != nil {
 //            // SubViewController へ遷移するために Segue を呼び出す

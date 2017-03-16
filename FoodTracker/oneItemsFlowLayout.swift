@@ -11,14 +11,14 @@ import UIKit
 class oneItemsFlowLayout: UICollectionViewFlowLayout {
     override var itemSize: CGSize {
         set {
-            self.itemSize = CGSize(width: itemWidth(), height: itemHeight()*0.7)
+            var height = UIScreen.main.bounds.size.width
+            self.itemSize = CGSize(width: height, height: height)
         }
         get {
-            return CGSize(width: itemWidth(), height: itemHeight()*0.7)
+            var height = UIScreen.main.bounds.size.width
+            return CGSize(width: height, height: height)
         }
     }
-    
-    
     
     override init() {
         super.init()

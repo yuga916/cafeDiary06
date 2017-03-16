@@ -192,7 +192,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 timeLabel.text = "\(studyTime)"
                 ratingControl.rating = rating as! Int
                 var AImage: UIImage!
-                if img == nil {
+                if img == "" {
                     cafeImage.image = UIImage(named: "defaultPhoto")
                 } else {
                     let url = URL(string: (img! as String))
@@ -206,7 +206,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 
                     cafeImage.image = AImage
                 }
-                //データ入力がない場合、すべて表示しない。 ??
+                //データ入力がない場合、すべて表示しない。
                 
             }
             if date == nil {

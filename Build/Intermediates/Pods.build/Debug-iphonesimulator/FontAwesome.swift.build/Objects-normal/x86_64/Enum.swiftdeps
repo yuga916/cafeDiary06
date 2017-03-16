@@ -9,13 +9,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "UnicodeScalarType"
-- "StringLiteralType"
+- !private "~="
+- "=="
+- "FontAwesome"
 - "FontAwesomeIcons"
 - "Dictionary"
 - "String"
-- "=="
-- !private "~="
-- "FontAwesome"
+- "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

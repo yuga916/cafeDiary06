@@ -141,15 +141,16 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
         }
         
+        let assetURL:AnyObject = info[UIImagePickerControllerReferenceURL]! as AnyObject
+//        let assetImage:AnyObject = info[UIImagePickerControllerEditedImage]! as AnyObject
         
         // Set photoImageView to display the selected image.
-        photoImageView.image = selectedImage
+//        photoImageView.image = assetImage as! UIImage
+//        let assetURL:NSURL = assetImage as! NSURL
         
         // Dismiss the picker.
         dismiss(animated: true, completion: nil)
         
-        
-        let assetURL:AnyObject = info[UIImagePickerControllerCropRect]! as AnyObject
         
         strURL = assetURL.description
         if strURL != "" {
@@ -174,6 +175,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         // Disable the Save button if the text field is empty.
         let text = nameTextField.text ?? ""
         saveButton.isEnabled = !text.isEmpty
+        
     }
 
 
@@ -387,7 +389,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
                 num = studyTimenum as! Int
                 ratingControl.rating = rating as! Int
                 var AImage: UIImage!
-                if img == nil {
+                if img == "" {
                     photoImageView.image = UIImage(named: "defaultPhoto")
                 } else {
                     let url = URL(string: (img! as String))
