@@ -148,6 +148,7 @@ SWIFT_CLASS("_TtC11FoodTracker11AppDelegate")
 SWIFT_CLASS("_TtC11FoodTracker12CalendarCell")
 @interface CalendarCell : UICollectionViewCell
 @property (nonatomic, strong) UILabel * _Null_unspecified textLabel;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified todayLabel;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -310,11 +311,12 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, copy) NSArray<NSDictionary *> * _Nonnull cafeArray;
 @property (nonatomic, strong) NSDictionary * _Null_unspecified cafeDic;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
+@property (nonatomic, strong) NSDate * _Nonnull tmpToday;
 @property (nonatomic, readonly, strong) DateManager * _Nonnull dateManager;
 @property (nonatomic, readonly) NSInteger daysPerWeek;
 @property (nonatomic, readonly) CGFloat cellMargin;
 @property (nonatomic, strong) NSDate * _Nonnull selectedDate;
-@property (nonatomic, strong) NSDate * _Null_unspecified today;
+@property (nonatomic, strong) NSDate * _Nonnull today;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull weekArray;
 @property (nonatomic, readonly, strong) UIView * _Nonnull baseView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cafeLabel;

@@ -166,11 +166,14 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             let fetchResult: PHFetchResult = PHAsset.fetchAssets(withALAssetURLs: [url!], options: nil)
             let asset: PHAsset = (fetchResult.firstObject! as PHAsset)
             let manager: PHImageManager = PHImageManager()
+            var options:PHImageRequestOptions = PHImageRequestOptions()
+            options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
             manager.requestImage(for: asset,targetSize: CGSize(width: 5, height: 500),contentMode: .aspectFill,options: nil) { (image, info) -> Void in
                 //                        self.cell.tableMyImg.image = image
                 AImage = image
+                cell.photoImageView.image = AImage
             }
-            cell.photoImageView.image = AImage
+//            cell.photoImageView.image = AImage
         }
         
         //日付
@@ -193,7 +196,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     //行が選択された時に発動
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.row)行目")
+//        print("\(indexPath.row)行目")
         var cafeRow = cafeArray[indexPath.row] as! NSDictionary
         var selectedDateTmp = cafeRow["date"] as! NSDate
         let formatter: DateFormatter = DateFormatter()
@@ -204,7 +207,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         formatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
         selectedDate = (formatter.date(from: selectDateTmp) as! NSDate) as Date!
         
-        print(selectedDate)
+        
         
         
         //        セグエを通して画面遷移する
@@ -219,7 +222,7 @@ class listViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         //次の画面のオブジェクトを作成
         //destinationはAny型なので変換
         let secondVC = segue.destination as! MealViewController
-        print(selectedDate)
+     
         //選択されたkeyNameを次の画面のプロパティに保存
         secondVC.scSelectedDate = selectedDate as NSDate
         print("日付\(secondVC.scSelectedDate)を次の画面へ渡す")

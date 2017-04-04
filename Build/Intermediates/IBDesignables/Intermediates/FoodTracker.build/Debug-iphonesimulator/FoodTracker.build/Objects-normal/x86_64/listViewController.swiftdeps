@@ -6,80 +6,82 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker18listViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "cellSize"
-- "cafeDic"
-- "selectedName"
-- "selectedImageURL"
-- "viewDidLoad"
-- "read"
-- "tabBar"
-- "prepare"
 - "myCafe"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "selectedDate"
 - "cafeArray"
-- "viewWillAppear"
-- "numberOfSections"
 - "myTableView"
+- "prepare"
+- "numberOfSections"
+- "selectedName"
+- "viewDidLoad"
+- "selectedDate"
+- "tabBar"
+- "cafeDic"
+- "cellSize"
+- "viewWillAppear"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "read"
+- "didReceiveMemoryWarning"
+- "selectedImageURL"
 depends-top-level:
-- "UITabBar"
+- "UITableViewDataSource"
 - "CastingPrecedence"
-- !private "NSDate"
-- "NSDictionary"
 - !private "URL"
+- "UITabBar"
+- "Dictionary"
+- !private "MealViewController"
 - "AssignmentPrecedence"
-- !private "NSForegroundColorAttributeName"
+- "UITableViewDelegate"
 - !private "=="
 - !private "UIScreen"
-- !private "Void"
-- "listViewController"
-- !private "NSNumber"
-- !private "NSPredicate"
-- !private "CGSize"
-- "IndexPath"
-- "Bool"
-- !private "AppDelegate"
-- !private "/"
+- !private "NSSortDescriptor"
+- !private "NSString"
+- !private "AnyObject"
+- !private "Array"
+- !private "print"
+- !private "MealTableViewCell"
+- "NSDictionary"
+- "UITableViewCellEditingStyle"
 - "UIStoryboardSegue"
-- !private "BooleanLiteralType"
+- "listViewController"
+- !private "Void"
 - !private "UIColor"
+- !private "DateFormatter"
+- !private "UIImage"
+- !private "PHAsset"
+- !private "NSNumber"
+- !private "PHFetchResult"
+- !private "UIApplication"
 - !private "NSFetchRequest"
 - !private "Diary"
-- !private "+"
-- !private "StringLiteralType"
-- !private "DateFormatter"
-- "UITableViewDataSource"
-- "UITableViewDelegate"
-- !private "UIImage"
-- !private "NSSortDescriptor"
-- "Date"
-- !private "print"
-- !private "UIApplication"
-- !private "PHFetchResult"
-- "Dictionary"
-- !private "AnyObject"
-- "UITableViewCellEditingStyle"
-- !private "PHAsset"
-- "UIViewController"
-- "Int"
-- "NSArray"
-- "UITableViewCell"
-- !private "CVarArg"
-- "CGFloat"
-- !private "PHImageManager"
-- "String"
-- "UITableView"
+- !private "CGSize"
 - !private "NSManagedObject"
-- !private "Array"
-- !private "MealTableViewCell"
-- !private "MealViewController"
+- !private "PHImageRequestOptions"
+- !private "NSForegroundColorAttributeName"
+- !private "PHImageRequestOptionsDeliveryMode"
+- "Date"
+- "Int"
+- "UIViewController"
+- "UITableViewCell"
+- "CGFloat"
+- !private "CVarArg"
+- "String"
+- !private "PHImageManager"
+- "UITableView"
+- !private "BooleanLiteralType"
+- "IndexPath"
+- !private "StringLiteralType"
+- !private "NSDate"
+- !private "/"
+- "Bool"
+- !private "NSPredicate"
+- "NSArray"
 - "UITabBarItem"
-- !private "NSString"
+- !private "+"
+- !private "AppDelegate"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -94,6 +96,8 @@ depends-member:
 - !private ["Ps9AnyObject", "NSSortDescriptor"]
 - !private ["Ps9AnyObject", "PHAsset"]
 - !private ["Ps9AnyObject", "PHImageManager"]
+- !private ["Ps9AnyObject", "PHImageRequestOptions"]
+- !private ["Ps9AnyObject", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIImage"]
@@ -111,6 +115,7 @@ depends-member:
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "delete"]
 - !private ["Ps9AnyObject", "deleteRows"]
+- !private ["Ps9AnyObject", "deliveryMode"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -266,6 +271,8 @@ depends-member:
 - !private ["Ps7CVarArg", "NSSortDescriptor"]
 - !private ["Ps7CVarArg", "PHAsset"]
 - !private ["Ps7CVarArg", "PHImageManager"]
+- !private ["Ps7CVarArg", "PHImageRequestOptions"]
+- !private ["Ps7CVarArg", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIApplication"]
@@ -289,6 +296,7 @@ depends-member:
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "delete"]
 - !private ["Ps7CVarArg", "deleteRows"]
+- !private ["Ps7CVarArg", "deliveryMode"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
@@ -393,6 +401,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSSortDescriptor"]
 - !private ["Ps28CustomDebugStringConvertible", "PHAsset"]
 - !private ["Ps28CustomDebugStringConvertible", "PHImageManager"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
@@ -413,6 +423,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "delete"]
 - !private ["Ps28CustomDebugStringConvertible", "deleteRows"]
+- !private ["Ps28CustomDebugStringConvertible", "deliveryMode"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -529,6 +540,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSSortDescriptor"]
 - !private ["Ps23CustomStringConvertible", "PHAsset"]
 - !private ["Ps23CustomStringConvertible", "PHImageManager"]
+- !private ["Ps23CustomStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps23CustomStringConvertible", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIApplication"]
@@ -552,6 +565,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "delete"]
 - !private ["Ps23CustomStringConvertible", "deleteRows"]
+- !private ["Ps23CustomStringConvertible", "deliveryMode"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -656,6 +670,8 @@ depends-member:
 - !private ["Ps9Equatable", "NSSortDescriptor"]
 - !private ["Ps9Equatable", "PHAsset"]
 - !private ["Ps9Equatable", "PHImageManager"]
+- !private ["Ps9Equatable", "PHImageRequestOptions"]
+- !private ["Ps9Equatable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIApplication"]
@@ -677,6 +693,7 @@ depends-member:
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "delete"]
 - !private ["Ps9Equatable", "deleteRows"]
+- !private ["Ps9Equatable", "deliveryMode"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -686,6 +703,7 @@ depends-member:
 - !private ["Ps9Equatable", "fetchRequest"]
 - !private ["Ps9Equatable", "firstObject"]
 - !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "highQualityFormat"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
@@ -793,6 +811,8 @@ depends-member:
 - !private ["Ps8Hashable", "NSSortDescriptor"]
 - !private ["Ps8Hashable", "PHAsset"]
 - !private ["Ps8Hashable", "PHImageManager"]
+- !private ["Ps8Hashable", "PHImageRequestOptions"]
+- !private ["Ps8Hashable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIApplication"]
@@ -814,6 +834,7 @@ depends-member:
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "delete"]
 - !private ["Ps8Hashable", "deleteRows"]
+- !private ["Ps8Hashable", "deliveryMode"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -823,6 +844,7 @@ depends-member:
 - !private ["Ps8Hashable", "fetchRequest"]
 - !private ["Ps8Hashable", "firstObject"]
 - !private ["Ps8Hashable", "frame"]
+- !private ["Ps8Hashable", "highQualityFormat"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -984,6 +1006,8 @@ depends-member:
 - !private ["PSo8NSCoding", "NSSortDescriptor"]
 - !private ["PSo8NSCoding", "PHAsset"]
 - !private ["PSo8NSCoding", "PHImageManager"]
+- !private ["PSo8NSCoding", "PHImageRequestOptions"]
+- !private ["PSo8NSCoding", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIImage"]
@@ -1061,6 +1085,7 @@ depends-member:
 - !private ["PSo9NSCopying", "date"]
 - !private ["PSo9NSCopying", "dateFormat"]
 - !private ["PSo9NSCopying", "deinit"]
+- !private ["PSo9NSCopying", "deliveryMode"]
 - !private ["PSo9NSCopying", "fetchAssets"]
 - !private ["PSo9NSCopying", "firstObject"]
 - ["PSo9NSCopying", "init"]
@@ -1085,6 +1110,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSSortDescriptor"]
 - !private ["PSo26NSExtensionRequestHandling", "PHAsset"]
 - !private ["PSo26NSExtensionRequestHandling", "PHImageManager"]
+- !private ["PSo26NSExtensionRequestHandling", "PHImageRequestOptions"]
+- !private ["PSo26NSExtensionRequestHandling", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
@@ -1187,6 +1214,8 @@ depends-member:
 - !private ["CSo8NSObject", "PHAsset"]
 - !private ["CSo8NSObject", "PHFetchResult"]
 - !private ["CSo8NSObject", "PHImageManager"]
+- !private ["CSo8NSObject", "PHImageRequestOptions"]
+- !private ["CSo8NSObject", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIApplication"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -1211,6 +1240,7 @@ depends-member:
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "delete"]
 - !private ["CSo8NSObject", "deleteRows"]
+- !private ["CSo8NSObject", "deliveryMode"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -1289,6 +1319,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSSortDescriptor"]
 - !private ["PSo16NSObjectProtocol", "PHAsset"]
 - !private ["PSo16NSObjectProtocol", "PHImageManager"]
+- !private ["PSo16NSObjectProtocol", "PHImageRequestOptions"]
+- !private ["PSo16NSObjectProtocol", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
@@ -1305,6 +1337,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "delete"]
 - !private ["PSo16NSObjectProtocol", "deleteRows"]
+- !private ["PSo16NSObjectProtocol", "deliveryMode"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -1396,6 +1429,11 @@ depends-member:
 - ["CSo14PHImageManager", "deinit"]
 - !private ["CSo14PHImageManager", "init"]
 - !private ["CSo14PHImageManager", "requestImage"]
+- ["CSo21PHImageRequestOptions", "deinit"]
+- !private ["CSo21PHImageRequestOptions", "deliveryMode"]
+- !private ["CSo21PHImageRequestOptions", "init"]
+- ["OSC33PHImageRequestOptionsDeliveryMode", "deinit"]
+- !private ["OSC33PHImageRequestOptionsDeliveryMode", "highQualityFormat"]
 - !private ["CSo8PHObject", "fetchAssets"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
@@ -1453,6 +1491,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "aspectFill"]
 - !private ["Ps16RawRepresentable", "delete"]
 - !private ["Ps16RawRepresentable", "fade"]
+- !private ["Ps16RawRepresentable", "highQualityFormat"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["Ps8Sequence", "Element"]
@@ -1529,6 +1568,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSSortDescriptor"]
 - !private ["PSo21UIAppearanceContainer", "PHAsset"]
 - !private ["PSo21UIAppearanceContainer", "PHImageManager"]
+- !private ["PSo21UIAppearanceContainer", "PHImageRequestOptions"]
+- !private ["PSo21UIAppearanceContainer", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
@@ -1608,6 +1649,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSSortDescriptor"]
 - !private ["PSo18UIContentContainer", "PHAsset"]
 - !private ["PSo18UIContentContainer", "PHImageManager"]
+- !private ["PSo18UIContentContainer", "PHImageRequestOptions"]
+- !private ["PSo18UIContentContainer", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIImage"]
@@ -1694,6 +1737,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSSortDescriptor"]
 - !private ["PSo18UIFocusEnvironment", "PHAsset"]
 - !private ["PSo18UIFocusEnvironment", "PHImageManager"]
+- !private ["PSo18UIFocusEnvironment", "PHImageRequestOptions"]
+- !private ["PSo18UIFocusEnvironment", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
@@ -1808,6 +1853,8 @@ depends-member:
 - !private ["CSo11UIResponder", "PHAsset"]
 - !private ["CSo11UIResponder", "PHFetchResult"]
 - !private ["CSo11UIResponder", "PHImageManager"]
+- !private ["CSo11UIResponder", "PHImageRequestOptions"]
+- !private ["CSo11UIResponder", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIApplication"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -1890,6 +1937,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSSortDescriptor"]
 - !private ["PSo30UIResponderStandardEditActions", "PHAsset"]
 - !private ["PSo30UIResponderStandardEditActions", "PHImageManager"]
+- !private ["PSo30UIResponderStandardEditActions", "PHImageRequestOptions"]
+- !private ["PSo30UIResponderStandardEditActions", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
@@ -1971,6 +2020,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSSortDescriptor"]
 - !private ["PSo20UIScrollViewDelegate", "PHAsset"]
 - !private ["PSo20UIScrollViewDelegate", "PHImageManager"]
+- !private ["PSo20UIScrollViewDelegate", "PHImageRequestOptions"]
+- !private ["PSo20UIScrollViewDelegate", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo20UIScrollViewDelegate", "UIApplication"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
@@ -2020,6 +2071,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSSortDescriptor"]
 - !private ["PSo16UIStateRestoring", "PHAsset"]
 - !private ["PSo16UIStateRestoring", "PHImageManager"]
+- !private ["PSo16UIStateRestoring", "PHImageRequestOptions"]
+- !private ["PSo16UIStateRestoring", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
@@ -2092,6 +2145,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSSortDescriptor"]
 - !private ["PSo21UITableViewDataSource", "PHAsset"]
 - !private ["PSo21UITableViewDataSource", "PHImageManager"]
+- !private ["PSo21UITableViewDataSource", "PHImageRequestOptions"]
+- !private ["PSo21UITableViewDataSource", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo21UITableViewDataSource", "UIApplication"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
@@ -2139,6 +2194,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSSortDescriptor"]
 - !private ["PSo19UITableViewDelegate", "PHAsset"]
 - !private ["PSo19UITableViewDelegate", "PHImageManager"]
+- !private ["PSo19UITableViewDelegate", "PHImageRequestOptions"]
+- !private ["PSo19UITableViewDelegate", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo19UITableViewDelegate", "UIApplication"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
@@ -2189,6 +2246,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSSortDescriptor"]
 - !private ["PSo18UITraitEnvironment", "PHAsset"]
 - !private ["PSo18UITraitEnvironment", "PHImageManager"]
+- !private ["PSo18UITraitEnvironment", "PHImageRequestOptions"]
+- !private ["PSo18UITraitEnvironment", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
@@ -2291,6 +2350,8 @@ depends-member:
 - !private ["CSo16UIViewController", "PHAsset"]
 - !private ["CSo16UIViewController", "PHFetchResult"]
 - !private ["CSo16UIViewController", "PHImageManager"]
+- !private ["CSo16UIViewController", "PHImageRequestOptions"]
+- !private ["CSo16UIViewController", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIApplication"]
 - !private ["CSo16UIViewController", "UIColor"]
@@ -2417,6 +2478,8 @@ depends-member:
 - !private ["Ps9_Hashable", "NSSortDescriptor"]
 - !private ["Ps9_Hashable", "PHAsset"]
 - !private ["Ps9_Hashable", "PHImageManager"]
+- !private ["Ps9_Hashable", "PHImageRequestOptions"]
+- !private ["Ps9_Hashable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UIApplication"]
@@ -2438,6 +2501,7 @@ depends-member:
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "delete"]
 - !private ["Ps9_Hashable", "deleteRows"]
+- !private ["Ps9_Hashable", "deliveryMode"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
@@ -2447,6 +2511,7 @@ depends-member:
 - !private ["Ps9_Hashable", "fetchRequest"]
 - !private ["Ps9_Hashable", "firstObject"]
 - !private ["Ps9_Hashable", "frame"]
+- !private ["Ps9_Hashable", "highQualityFormat"]
 - !private ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -2574,6 +2639,8 @@ depends-member:
 - !private ["C11FoodTracker18listViewController", "PHAsset"]
 - !private ["C11FoodTracker18listViewController", "PHFetchResult"]
 - !private ["C11FoodTracker18listViewController", "PHImageManager"]
+- !private ["C11FoodTracker18listViewController", "PHImageRequestOptions"]
+- !private ["C11FoodTracker18listViewController", "PHImageRequestOptionsDeliveryMode"]
 - ["C11FoodTracker18listViewController", "String"]
 - !private ["C11FoodTracker18listViewController", "UIApplication"]
 - !private ["C11FoodTracker18listViewController", "UIColor"]
@@ -2719,6 +2786,8 @@ depends-nominal:
 - "CSo13PHFetchResult"
 - "OSC18PHImageContentMode"
 - "CSo14PHImageManager"
+- "CSo21PHImageRequestOptions"
+- "OSC33PHImageRequestOptionsDeliveryMode"
 - !private "CSo8PHObject"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"

@@ -1,0 +1,19 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "908dd1424cf96f11c51f3ca0702b65d5"
+build_time: [543373768, 287508000]
+inputs:
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/DateManager.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/listViewController.swift": [543373768, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/Meal.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/imageViewController.swift": [542969367, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/MealViewController.swift": [543236134, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/imageCollectionViewCell.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/RatingControl.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/AppDelegate.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/MealTableViewController.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/MealTableViewCell.swift": [542169077, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/calendarViewController.swift": [543235905, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/CalendarCell.swift": [542947132, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Diary+CoreDataProperties.swift": [541684274, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/oneItemsFlowLayout.swift": [542863755, 0]
+  "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Diary+CoreDataClass.swift": [541684274, 0]

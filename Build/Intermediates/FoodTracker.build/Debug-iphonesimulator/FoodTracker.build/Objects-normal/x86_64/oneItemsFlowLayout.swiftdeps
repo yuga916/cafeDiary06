@@ -8,20 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 - "setupLayout"
 - "itemHeight"
-- "itemSize"
 - "itemWidth"
 - "targetContentOffset"
+- "itemSize"
 depends-top-level:
-- "CGPoint"
-- !private "UIScreen"
-- "NSCoder"
-- "oneItemsFlowLayout"
 - "UICollectionViewFlowLayout"
+- "NSCoder"
+- "CGPoint"
+- !private "-"
+- "CGFloat"
 - !private "*"
 - "AssignmentPrecedence"
-- !private "-"
+- !private "UIScreen"
+- "oneItemsFlowLayout"
 - "CGSize"
-- "CGFloat"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "UIScreen"]

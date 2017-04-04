@@ -9,118 +9,121 @@ provides-member:
 - ["CSo7UIColor", "lightBlue"]
 - ["CSo7UIColor", "lightRed"]
 provides-dynamic-lookup:
-- "editButton"
-- "coffeeFont"
-- "numberOfSections"
-- "today"
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
 - "cellMargin"
-- "lightBlue"
-- "lightRed"
-- "weekArray"
-- "cafeLabel"
-- "calenderCollectionView"
-- "read"
 - "dateManager"
-- "timeLabel"
-- "cafeArray"
-- "timeFont"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "viewWillAppear"
-- "daysPerWeek"
-- "headerNextBtn"
+- "cafeLabel"
 - "ratingControl"
-- "cafeDic"
-- "headerPrevBtn"
-- "hLabel"
-- "baseView"
+- "weekArray"
+- "didReceiveMemoryWarning"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "timeFont"
+- "daysPerWeek"
+- "calenderCollectionView"
+- "numberOfSections"
 - "changeHeaderTitle"
-- "navigationBar"
-- "selectedDate"
-- "underView"
-- "prepare"
-- "noImage"
-- "tappedHeaderNextBtn"
+- "lightRed"
+- "today"
+- "coffeeFont"
 - "myCafe"
+- "tmpToday"
+- "navigationBar"
+- "editButton"
 - "cafeImage"
+- "underView"
+- "lightBlue"
+- "cafeDic"
+- "baseView"
+- "prepare"
+- "viewWillAppear"
+- "noImage"
 - "tappedHeaderPrevBtn"
+- "tappedHeaderNextBtn"
+- "cafeArray"
+- "headerPrevBtn"
+- "timeLabel"
+- "selectedDate"
+- "hLabel"
+- "read"
+- "headerNextBtn"
 depends-top-level:
-- "UICollectionViewDelegate"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "UIView"
-- !private "UIImage"
-- !private ">"
-- !private "UIScreen"
-- !private "*"
-- "UICollectionViewDelegateFlowLayout"
-- !private "MealViewController"
-- !private "=="
-- !private "NSPredicate"
-- "UICollectionViewDataSource"
-- "DateManager"
-- "UIBarButtonItem"
-- "UICollectionViewCell"
-- "UIColor"
-- !private "AppDelegate"
-- "Int"
-- !private "Date"
-- !private "||"
-- !private "DateFormatter"
-- !private "UnicodeScalarType"
-- "NSArray"
-- "Array"
-- "UIViewController"
-- "CGSize"
-- !private "print"
-- !private "URL"
-- !private "BooleanLiteralType"
-- "StringLiteralType"
-- !private "UIApplication"
-- !private "Void"
-- "RatingControl"
-- "calendarViewController"
-- !private "UICollectionViewFlowLayout"
-- !private "-"
-- !private "Locale"
-- !private "AnyObject"
-- "String"
-- "IndexPath"
-- !private "%"
-- "Bool"
-- !private "/"
-- "CGFloat"
-- "UILabel"
-- "UICollectionViewLayout"
-- !private ">="
-- !private "+"
-- "UIButton"
-- "CGRect"
-- "NSIndexPath"
-- !private "PHImageManager"
 - !private "CalendarCell"
-- !private "NSNumber"
-- !private "Diary"
-- "UIImageView"
-- !private "NSFetchRequest"
-- !private "NSLocale"
-- "UINavigationItem"
-- !private "PHFetchResult"
+- !private "UICollectionViewFlowLayout"
+- "calendarViewController"
+- "UIViewController"
+- "UIColor"
+- "NSIndexPath"
+- !private "MealViewController"
+- !private "Date"
+- !private "AppDelegate"
+- "RatingControl"
+- !private ">"
+- "CGFloat"
+- "String"
+- !private "UIApplication"
+- !private "UIImage"
+- !private "URL"
+- !private ">="
+- !private "BooleanLiteralType"
+- !private "PHImageRequestOptionsDeliveryMode"
 - !private "NSForegroundColorAttributeName"
-- "Dictionary"
+- !private "UnicodeScalarType"
+- "UICollectionViewLayout"
+- !private "UIScreen"
 - "NSDictionary"
-- !private "UIFont"
+- "NSArray"
+- "UICollectionViewDelegate"
+- "UINavigationItem"
+- "UICollectionViewDataSource"
+- !private "NSNumber"
+- "StringLiteralType"
+- "IndexPath"
+- "UICollectionViewDelegateFlowLayout"
+- "UIImageView"
+- "UIButton"
+- !private "/"
+- !private "Locale"
+- !private "+"
+- "Int"
+- "UILabel"
+- "Bool"
+- "CGRect"
+- "CGSize"
+- !private "%"
+- !private "DateFormatter"
+- !private "NSLocale"
+- "CastingPrecedence"
+- !private "PHImageRequestOptions"
+- "UIStoryboardSegue"
+- "Array"
+- !private "NSFetchRequest"
+- "AssignmentPrecedence"
+- "DateManager"
+- "Dictionary"
+- !private "AnyObject"
+- !private "-"
+- "UIView"
+- !private "Diary"
 - !private "PHAsset"
 - "UICollectionView"
+- !private "Void"
+- !private "PHFetchResult"
+- !private "=="
+- !private "print"
+- !private "||"
+- !private "NSPredicate"
+- !private "UIFont"
 - "NSDate"
-- "UIStoryboardSegue"
+- !private "PHImageManager"
+- "UICollectionViewCell"
+- !private "*"
+- "UIBarButtonItem"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -138,6 +141,8 @@ depends-member:
 - !private ["Ps9AnyObject", "NSPredicate"]
 - !private ["Ps9AnyObject", "PHAsset"]
 - !private ["Ps9AnyObject", "PHImageManager"]
+- !private ["Ps9AnyObject", "PHImageRequestOptions"]
+- !private ["Ps9AnyObject", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UICollectionViewFlowLayout"]
@@ -175,6 +180,7 @@ depends-member:
 - ["Ps9AnyObject", "daysPerWeek"]
 - ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "deliveryMode"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -248,7 +254,9 @@ depends-member:
 - !private ["Ps9AnyObject", "title"]
 - !private ["Ps9AnyObject", "titleLabel"]
 - !private ["Ps9AnyObject", "titleTextAttributes"]
+- ["Ps9AnyObject", "tmpToday"]
 - ["Ps9AnyObject", "today"]
+- !private ["Ps9AnyObject", "todayLabel"]
 - ["Ps9AnyObject", "underView"]
 - !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "view"]
@@ -334,6 +342,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "textLabel"]
 - !private ["PSo15CALayerDelegate", "titleLabel"]
 - !private ["PSo15CALayerDelegate", "titleTextAttributes"]
+- !private ["PSo15CALayerDelegate", "todayLabel"]
 - !private ["PSo13CAMediaTiming", "borderColor"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
@@ -369,6 +378,8 @@ depends-member:
 - !private ["Ps7CVarArg", "NSPredicate"]
 - !private ["Ps7CVarArg", "PHAsset"]
 - !private ["Ps7CVarArg", "PHImageManager"]
+- !private ["Ps7CVarArg", "PHImageRequestOptions"]
+- !private ["Ps7CVarArg", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "SubSequence"]
@@ -411,6 +422,7 @@ depends-member:
 - !private ["Ps7CVarArg", "daysAcquisition"]
 - ["Ps7CVarArg", "daysPerWeek"]
 - !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "deliveryMode"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
@@ -485,7 +497,9 @@ depends-member:
 - !private ["Ps7CVarArg", "title"]
 - !private ["Ps7CVarArg", "titleLabel"]
 - !private ["Ps7CVarArg", "titleTextAttributes"]
+- ["Ps7CVarArg", "tmpToday"]
 - ["Ps7CVarArg", "today"]
+- !private ["Ps7CVarArg", "todayLabel"]
 - ["Ps7CVarArg", "underView"]
 - !private ["Ps7CVarArg", "view"]
 - !private ["Ps7CVarArg", "viewContext"]
@@ -501,6 +515,7 @@ depends-member:
 - !private ["C11FoodTracker12CalendarCell", "isUserInteractionEnabled"]
 - !private ["C11FoodTracker12CalendarCell", "selectedBackgroundView"]
 - !private ["C11FoodTracker12CalendarCell", "textLabel"]
+- !private ["C11FoodTracker12CalendarCell", "todayLabel"]
 - !private ["Vs9Character", "deinit"]
 - ["Ps10Collection", "Element"]
 - !private ["Ps10Collection", "Index"]
@@ -542,6 +557,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
 - !private ["Ps28CustomDebugStringConvertible", "PHAsset"]
 - !private ["Ps28CustomDebugStringConvertible", "PHImageManager"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
@@ -582,6 +599,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "daysAcquisition"]
 - ["Ps28CustomDebugStringConvertible", "daysPerWeek"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "deliveryMode"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -660,7 +678,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "titleLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
+- ["Ps28CustomDebugStringConvertible", "tmpToday"]
 - ["Ps28CustomDebugStringConvertible", "today"]
+- !private ["Ps28CustomDebugStringConvertible", "todayLabel"]
 - ["Ps28CustomDebugStringConvertible", "underView"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "viewContext"]
@@ -723,6 +743,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSPredicate"]
 - !private ["Ps23CustomStringConvertible", "PHAsset"]
 - !private ["Ps23CustomStringConvertible", "PHImageManager"]
+- !private ["Ps23CustomStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps23CustomStringConvertible", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
@@ -766,6 +788,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "daysAcquisition"]
 - ["Ps23CustomStringConvertible", "daysPerWeek"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "deliveryMode"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -842,7 +865,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "title"]
 - !private ["Ps23CustomStringConvertible", "titleLabel"]
 - !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
+- ["Ps23CustomStringConvertible", "tmpToday"]
 - ["Ps23CustomStringConvertible", "today"]
+- !private ["Ps23CustomStringConvertible", "todayLabel"]
 - ["Ps23CustomStringConvertible", "underView"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "viewContext"]
@@ -898,6 +923,8 @@ depends-member:
 - !private ["Ps9Equatable", "NSPredicate"]
 - !private ["Ps9Equatable", "PHAsset"]
 - !private ["Ps9Equatable", "PHImageManager"]
+- !private ["Ps9Equatable", "PHImageRequestOptions"]
+- !private ["Ps9Equatable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UIApplication"]
@@ -940,6 +967,7 @@ depends-member:
 - !private ["Ps9Equatable", "daysAcquisition"]
 - ["Ps9Equatable", "daysPerWeek"]
 - !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "deliveryMode"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -958,6 +986,7 @@ depends-member:
 - ["Ps9Equatable", "headerNextBtn"]
 - ["Ps9Equatable", "headerPrevBtn"]
 - !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "highQualityFormat"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1019,7 +1048,9 @@ depends-member:
 - !private ["Ps9Equatable", "title"]
 - !private ["Ps9Equatable", "titleLabel"]
 - !private ["Ps9Equatable", "titleTextAttributes"]
+- ["Ps9Equatable", "tmpToday"]
 - ["Ps9Equatable", "today"]
+- !private ["Ps9Equatable", "todayLabel"]
 - ["Ps9Equatable", "underView"]
 - !private ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "viewContext"]
@@ -1087,6 +1118,8 @@ depends-member:
 - !private ["Ps8Hashable", "NSPredicate"]
 - !private ["Ps8Hashable", "PHAsset"]
 - !private ["Ps8Hashable", "PHImageManager"]
+- !private ["Ps8Hashable", "PHImageRequestOptions"]
+- !private ["Ps8Hashable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIApplication"]
@@ -1129,6 +1162,7 @@ depends-member:
 - !private ["Ps8Hashable", "daysAcquisition"]
 - ["Ps8Hashable", "daysPerWeek"]
 - !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "deliveryMode"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -1146,6 +1180,7 @@ depends-member:
 - ["Ps8Hashable", "hLabel"]
 - ["Ps8Hashable", "headerNextBtn"]
 - ["Ps8Hashable", "headerPrevBtn"]
+- !private ["Ps8Hashable", "highQualityFormat"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1205,7 +1240,9 @@ depends-member:
 - !private ["Ps8Hashable", "title"]
 - !private ["Ps8Hashable", "titleLabel"]
 - !private ["Ps8Hashable", "titleTextAttributes"]
+- ["Ps8Hashable", "tmpToday"]
 - ["Ps8Hashable", "today"]
+- !private ["Ps8Hashable", "todayLabel"]
 - ["Ps8Hashable", "underView"]
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "viewContext"]
@@ -1317,6 +1354,8 @@ depends-member:
 - !private ["PSo8NSCoding", "NSPredicate"]
 - !private ["PSo8NSCoding", "PHAsset"]
 - !private ["PSo8NSCoding", "PHImageManager"]
+- !private ["PSo8NSCoding", "PHImageRequestOptions"]
+- !private ["PSo8NSCoding", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UICollectionViewFlowLayout"]
@@ -1412,7 +1451,9 @@ depends-member:
 - !private ["PSo8NSCoding", "title"]
 - !private ["PSo8NSCoding", "titleLabel"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
+- ["PSo8NSCoding", "tmpToday"]
 - ["PSo8NSCoding", "today"]
+- !private ["PSo8NSCoding", "todayLabel"]
 - ["PSo8NSCoding", "underView"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
@@ -1430,6 +1471,7 @@ depends-member:
 - !private ["PSo9NSCopying", "clear"]
 - !private ["PSo9NSCopying", "date"]
 - !private ["PSo9NSCopying", "dateFormat"]
+- !private ["PSo9NSCopying", "deliveryMode"]
 - !private ["PSo9NSCopying", "fetchAssets"]
 - !private ["PSo9NSCopying", "firstObject"]
 - !private ["PSo9NSCopying", "fontAwesome"]
@@ -1461,6 +1503,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
 - !private ["PSo26NSExtensionRequestHandling", "PHAsset"]
 - !private ["PSo26NSExtensionRequestHandling", "PHImageManager"]
+- !private ["PSo26NSExtensionRequestHandling", "PHImageRequestOptions"]
+- !private ["PSo26NSExtensionRequestHandling", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UICollectionViewFlowLayout"]
@@ -1518,6 +1562,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "tappedHeaderPrevBtn"]
 - ["PSo26NSExtensionRequestHandling", "timeFont"]
 - ["PSo26NSExtensionRequestHandling", "timeLabel"]
+- ["PSo26NSExtensionRequestHandling", "tmpToday"]
 - ["PSo26NSExtensionRequestHandling", "today"]
 - ["PSo26NSExtensionRequestHandling", "underView"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -1576,6 +1621,8 @@ depends-member:
 - !private ["CSo8NSObject", "PHAsset"]
 - !private ["CSo8NSObject", "PHFetchResult"]
 - !private ["CSo8NSObject", "PHImageManager"]
+- !private ["CSo8NSObject", "PHImageRequestOptions"]
+- !private ["CSo8NSObject", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo8NSObject", "RatingControl"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIApplication"]
@@ -1623,6 +1670,7 @@ depends-member:
 - !private ["CSo8NSObject", "daysAcquisition"]
 - ["CSo8NSObject", "daysPerWeek"]
 - !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "deliveryMode"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -1696,7 +1744,9 @@ depends-member:
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "titleLabel"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
+- ["CSo8NSObject", "tmpToday"]
 - ["CSo8NSObject", "today"]
+- !private ["CSo8NSObject", "todayLabel"]
 - ["CSo8NSObject", "underView"]
 - !private ["CSo8NSObject", "view"]
 - !private ["CSo8NSObject", "viewContext"]
@@ -1721,6 +1771,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSPredicate"]
 - !private ["PSo16NSObjectProtocol", "PHAsset"]
 - !private ["PSo16NSObjectProtocol", "PHImageManager"]
+- !private ["PSo16NSObjectProtocol", "PHImageRequestOptions"]
+- !private ["PSo16NSObjectProtocol", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UICollectionViewFlowLayout"]
@@ -1757,6 +1809,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "daysAcquisition"]
 - ["PSo16NSObjectProtocol", "daysPerWeek"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "deliveryMode"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -1830,7 +1883,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "titleLabel"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
+- ["PSo16NSObjectProtocol", "tmpToday"]
 - ["PSo16NSObjectProtocol", "today"]
+- !private ["PSo16NSObjectProtocol", "todayLabel"]
 - ["PSo16NSObjectProtocol", "underView"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "viewContext"]
@@ -1870,6 +1925,11 @@ depends-member:
 - ["CSo14PHImageManager", "deinit"]
 - !private ["CSo14PHImageManager", "init"]
 - !private ["CSo14PHImageManager", "requestImage"]
+- ["CSo21PHImageRequestOptions", "deinit"]
+- !private ["CSo21PHImageRequestOptions", "deliveryMode"]
+- !private ["CSo21PHImageRequestOptions", "init"]
+- ["OSC33PHImageRequestOptionsDeliveryMode", "deinit"]
+- !private ["OSC33PHImageRequestOptionsDeliveryMode", "highQualityFormat"]
 - !private ["CSo8PHObject", "fetchAssets"]
 - ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
@@ -1926,6 +1986,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "clockO"]
 - !private ["Ps16RawRepresentable", "coffee"]
 - !private ["Ps16RawRepresentable", "edit"]
+- !private ["Ps16RawRepresentable", "highQualityFormat"]
 - !private ["Ps16RawRepresentable", "normal"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
@@ -1990,6 +2051,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
+- !private ["PSo29UIAccessibilityIdentification", "todayLabel"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "dataSource"]
 - !private ["PSo12UIAppearance", "delegate"]
@@ -2011,6 +2073,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "textLabel"]
 - !private ["PSo12UIAppearance", "titleLabel"]
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
+- !private ["PSo12UIAppearance", "todayLabel"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
@@ -2025,6 +2088,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSPredicate"]
 - !private ["PSo21UIAppearanceContainer", "PHAsset"]
 - !private ["PSo21UIAppearanceContainer", "PHImageManager"]
+- !private ["PSo21UIAppearanceContainer", "PHImageRequestOptions"]
+- !private ["PSo21UIAppearanceContainer", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UICollectionViewFlowLayout"]
@@ -2102,7 +2167,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "timeLabel"]
 - !private ["PSo21UIAppearanceContainer", "titleLabel"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- ["PSo21UIAppearanceContainer", "tmpToday"]
 - ["PSo21UIAppearanceContainer", "today"]
+- !private ["PSo21UIAppearanceContainer", "todayLabel"]
 - ["PSo21UIAppearanceContainer", "underView"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
@@ -2122,6 +2189,7 @@ depends-member:
 - !private ["CSo24UICollectionReusableView", "isUserInteractionEnabled"]
 - !private ["CSo24UICollectionReusableView", "selectedBackgroundView"]
 - !private ["CSo24UICollectionReusableView", "textLabel"]
+- !private ["CSo24UICollectionReusableView", "todayLabel"]
 - !private ["CSo16UICollectionView", "dataSource"]
 - ["CSo16UICollectionView", "deinit"]
 - !private ["CSo16UICollectionView", "delegate"]
@@ -2133,6 +2201,7 @@ depends-member:
 - !private ["CSo20UICollectionViewCell", "isUserInteractionEnabled"]
 - !private ["CSo20UICollectionViewCell", "selectedBackgroundView"]
 - !private ["CSo20UICollectionViewCell", "textLabel"]
+- !private ["CSo20UICollectionViewCell", "todayLabel"]
 - !private ["PSo26UICollectionViewDataSource", "CGFloat"]
 - ["PSo26UICollectionViewDataSource", "CGRect"]
 - !private ["PSo26UICollectionViewDataSource", "CGSize"]
@@ -2147,6 +2216,8 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "NSPredicate"]
 - !private ["PSo26UICollectionViewDataSource", "PHAsset"]
 - !private ["PSo26UICollectionViewDataSource", "PHImageManager"]
+- !private ["PSo26UICollectionViewDataSource", "PHImageRequestOptions"]
+- !private ["PSo26UICollectionViewDataSource", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo26UICollectionViewDataSource", "String"]
 - !private ["PSo26UICollectionViewDataSource", "UIApplication"]
 - !private ["PSo26UICollectionViewDataSource", "UICollectionViewFlowLayout"]
@@ -2194,6 +2265,8 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "selectedDate"]
 - !private ["PSo26UICollectionViewDataSource", "timeFont"]
 - !private ["PSo26UICollectionViewDataSource", "timeLabel"]
+- !private ["PSo26UICollectionViewDataSource", "tmpToday"]
+- !private ["PSo26UICollectionViewDataSource", "today"]
 - !private ["PSo26UICollectionViewDataSource", "view"]
 - ["PSo26UICollectionViewDataSource", "viewForZooming"]
 - ["PSo26UICollectionViewDataSource", "viewForZoomingInScrollView"]
@@ -2213,6 +2286,8 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "NSPredicate"]
 - !private ["PSo24UICollectionViewDelegate", "PHAsset"]
 - !private ["PSo24UICollectionViewDelegate", "PHImageManager"]
+- !private ["PSo24UICollectionViewDelegate", "PHImageRequestOptions"]
+- !private ["PSo24UICollectionViewDelegate", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo24UICollectionViewDelegate", "String"]
 - !private ["PSo24UICollectionViewDelegate", "UIApplication"]
 - !private ["PSo24UICollectionViewDelegate", "UICollectionViewFlowLayout"]
@@ -2260,6 +2335,8 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "selectedDate"]
 - !private ["PSo24UICollectionViewDelegate", "timeFont"]
 - !private ["PSo24UICollectionViewDelegate", "timeLabel"]
+- !private ["PSo24UICollectionViewDelegate", "tmpToday"]
+- !private ["PSo24UICollectionViewDelegate", "today"]
 - !private ["PSo24UICollectionViewDelegate", "view"]
 - ["PSo24UICollectionViewDelegate", "viewForZooming"]
 - ["PSo24UICollectionViewDelegate", "viewForZoomingInScrollView"]
@@ -2279,6 +2356,8 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "NSPredicate"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "PHAsset"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "PHImageManager"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "PHImageRequestOptions"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "String"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIApplication"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UICollectionViewFlowLayout"]
@@ -2326,6 +2405,8 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "selectedDate"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "timeFont"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "timeLabel"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "tmpToday"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "today"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "view"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZooming"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZoomingInScrollView"]
@@ -2358,6 +2439,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSPredicate"]
 - !private ["PSo18UIContentContainer", "PHAsset"]
 - !private ["PSo18UIContentContainer", "PHImageManager"]
+- !private ["PSo18UIContentContainer", "PHImageRequestOptions"]
+- !private ["PSo18UIContentContainer", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UICollectionViewFlowLayout"]
@@ -2415,6 +2498,7 @@ depends-member:
 - ["PSo18UIContentContainer", "tappedHeaderPrevBtn"]
 - ["PSo18UIContentContainer", "timeFont"]
 - ["PSo18UIContentContainer", "timeLabel"]
+- ["PSo18UIContentContainer", "tmpToday"]
 - ["PSo18UIContentContainer", "today"]
 - ["PSo18UIContentContainer", "underView"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -2453,6 +2537,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo17UICoordinateSpace", "titleLabel"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
+- !private ["PSo17UICoordinateSpace", "todayLabel"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "dataSource"]
 - !private ["PSo13UIDynamicItem", "delegate"]
@@ -2474,6 +2559,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - !private ["PSo13UIDynamicItem", "titleLabel"]
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
+- !private ["PSo13UIDynamicItem", "todayLabel"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
@@ -2488,6 +2574,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSPredicate"]
 - !private ["PSo18UIFocusEnvironment", "PHAsset"]
 - !private ["PSo18UIFocusEnvironment", "PHImageManager"]
+- !private ["PSo18UIFocusEnvironment", "PHImageRequestOptions"]
+- !private ["PSo18UIFocusEnvironment", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UICollectionViewFlowLayout"]
@@ -2565,7 +2653,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "timeLabel"]
 - !private ["PSo18UIFocusEnvironment", "titleLabel"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- ["PSo18UIFocusEnvironment", "tmpToday"]
 - ["PSo18UIFocusEnvironment", "today"]
+- !private ["PSo18UIFocusEnvironment", "todayLabel"]
 - ["PSo18UIFocusEnvironment", "underView"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
@@ -2595,6 +2685,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "textLabel"]
 - !private ["PSo11UIFocusItem", "titleLabel"]
 - !private ["PSo11UIFocusItem", "titleTextAttributes"]
+- !private ["PSo11UIFocusItem", "todayLabel"]
 - ["CSo6UIFont", "deinit"]
 - !private ["CSo6UIFont", "fontAwesome"]
 - !private ["CSo7UIImage", "init"]
@@ -2640,6 +2731,8 @@ depends-member:
 - !private ["CSo11UIResponder", "PHAsset"]
 - !private ["CSo11UIResponder", "PHFetchResult"]
 - !private ["CSo11UIResponder", "PHImageManager"]
+- !private ["CSo11UIResponder", "PHImageRequestOptions"]
+- !private ["CSo11UIResponder", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo11UIResponder", "RatingControl"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIApplication"]
@@ -2730,7 +2823,9 @@ depends-member:
 - ["CSo11UIResponder", "timeLabel"]
 - !private ["CSo11UIResponder", "titleLabel"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
+- ["CSo11UIResponder", "tmpToday"]
 - ["CSo11UIResponder", "today"]
+- !private ["CSo11UIResponder", "todayLabel"]
 - ["CSo11UIResponder", "underView"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
@@ -2752,6 +2847,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSPredicate"]
 - !private ["PSo30UIResponderStandardEditActions", "PHAsset"]
 - !private ["PSo30UIResponderStandardEditActions", "PHImageManager"]
+- !private ["PSo30UIResponderStandardEditActions", "PHImageRequestOptions"]
+- !private ["PSo30UIResponderStandardEditActions", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
 - !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
 - !private ["PSo30UIResponderStandardEditActions", "UICollectionViewFlowLayout"]
@@ -2831,7 +2928,9 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "timeLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "titleLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "titleTextAttributes"]
+- ["PSo30UIResponderStandardEditActions", "tmpToday"]
 - ["PSo30UIResponderStandardEditActions", "today"]
+- !private ["PSo30UIResponderStandardEditActions", "todayLabel"]
 - ["PSo30UIResponderStandardEditActions", "underView"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
@@ -2862,6 +2961,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSPredicate"]
 - !private ["PSo20UIScrollViewDelegate", "PHAsset"]
 - !private ["PSo20UIScrollViewDelegate", "PHImageManager"]
+- !private ["PSo20UIScrollViewDelegate", "PHImageRequestOptions"]
+- !private ["PSo20UIScrollViewDelegate", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIApplication"]
 - !private ["PSo20UIScrollViewDelegate", "UICollectionViewFlowLayout"]
@@ -2909,6 +3010,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "selectedDate"]
 - !private ["PSo20UIScrollViewDelegate", "timeFont"]
 - !private ["PSo20UIScrollViewDelegate", "timeLabel"]
+- !private ["PSo20UIScrollViewDelegate", "tmpToday"]
+- !private ["PSo20UIScrollViewDelegate", "today"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
 - ["PSo20UIScrollViewDelegate", "viewForZooming"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
@@ -2931,6 +3034,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSPredicate"]
 - !private ["PSo16UIStateRestoring", "PHAsset"]
 - !private ["PSo16UIStateRestoring", "PHImageManager"]
+- !private ["PSo16UIStateRestoring", "PHImageRequestOptions"]
+- !private ["PSo16UIStateRestoring", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UICollectionViewFlowLayout"]
@@ -2988,6 +3093,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "tappedHeaderPrevBtn"]
 - ["PSo16UIStateRestoring", "timeFont"]
 - ["PSo16UIStateRestoring", "timeLabel"]
+- ["PSo16UIStateRestoring", "tmpToday"]
 - ["PSo16UIStateRestoring", "today"]
 - ["PSo16UIStateRestoring", "underView"]
 - !private ["PSo16UIStateRestoring", "view"]
@@ -3014,6 +3120,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSPredicate"]
 - !private ["PSo18UITraitEnvironment", "PHAsset"]
 - !private ["PSo18UITraitEnvironment", "PHImageManager"]
+- !private ["PSo18UITraitEnvironment", "PHImageRequestOptions"]
+- !private ["PSo18UITraitEnvironment", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UICollectionViewFlowLayout"]
@@ -3093,7 +3201,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "timeLabel"]
 - !private ["PSo18UITraitEnvironment", "titleLabel"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- ["PSo18UITraitEnvironment", "tmpToday"]
 - ["PSo18UITraitEnvironment", "today"]
+- !private ["PSo18UITraitEnvironment", "todayLabel"]
 - ["PSo18UITraitEnvironment", "underView"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
@@ -3124,6 +3234,7 @@ depends-member:
 - !private ["CSo6UIView", "textLabel"]
 - !private ["CSo6UIView", "titleLabel"]
 - !private ["CSo6UIView", "titleTextAttributes"]
+- !private ["CSo6UIView", "todayLabel"]
 - !private ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "AppDelegate"]
 - ["CSo16UIViewController", "Bool"]
@@ -3151,6 +3262,8 @@ depends-member:
 - !private ["CSo16UIViewController", "PHAsset"]
 - !private ["CSo16UIViewController", "PHFetchResult"]
 - !private ["CSo16UIViewController", "PHImageManager"]
+- !private ["CSo16UIViewController", "PHImageRequestOptions"]
+- !private ["CSo16UIViewController", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo16UIViewController", "RatingControl"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIApplication"]
@@ -3220,6 +3333,7 @@ depends-member:
 - ["CSo16UIViewController", "tappedHeaderPrevBtn"]
 - ["CSo16UIViewController", "timeFont"]
 - ["CSo16UIViewController", "timeLabel"]
+- ["CSo16UIViewController", "tmpToday"]
 - ["CSo16UIViewController", "today"]
 - ["CSo16UIViewController", "underView"]
 - !private ["CSo16UIViewController", "view"]
@@ -3269,6 +3383,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleTextAttributes"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "todayLabel"]
 - ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
@@ -3320,6 +3435,8 @@ depends-member:
 - !private ["Ps9_Hashable", "NSPredicate"]
 - !private ["Ps9_Hashable", "PHAsset"]
 - !private ["Ps9_Hashable", "PHImageManager"]
+- !private ["Ps9_Hashable", "PHImageRequestOptions"]
+- !private ["Ps9_Hashable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "String"]
 - !private ["Ps9_Hashable", "UIApplication"]
@@ -3362,6 +3479,7 @@ depends-member:
 - !private ["Ps9_Hashable", "daysAcquisition"]
 - ["Ps9_Hashable", "daysPerWeek"]
 - !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "deliveryMode"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
@@ -3379,6 +3497,7 @@ depends-member:
 - ["Ps9_Hashable", "hLabel"]
 - ["Ps9_Hashable", "headerNextBtn"]
 - ["Ps9_Hashable", "headerPrevBtn"]
+- !private ["Ps9_Hashable", "highQualityFormat"]
 - !private ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -3438,7 +3557,9 @@ depends-member:
 - !private ["Ps9_Hashable", "title"]
 - !private ["Ps9_Hashable", "titleLabel"]
 - !private ["Ps9_Hashable", "titleTextAttributes"]
+- ["Ps9_Hashable", "tmpToday"]
 - ["Ps9_Hashable", "today"]
+- !private ["Ps9_Hashable", "todayLabel"]
 - ["Ps9_Hashable", "underView"]
 - !private ["Ps9_Hashable", "view"]
 - !private ["Ps9_Hashable", "viewContext"]
@@ -3519,6 +3640,8 @@ depends-member:
 - !private ["C11FoodTracker22calendarViewController", "PHAsset"]
 - !private ["C11FoodTracker22calendarViewController", "PHFetchResult"]
 - !private ["C11FoodTracker22calendarViewController", "PHImageManager"]
+- !private ["C11FoodTracker22calendarViewController", "PHImageRequestOptions"]
+- !private ["C11FoodTracker22calendarViewController", "PHImageRequestOptionsDeliveryMode"]
 - ["C11FoodTracker22calendarViewController", "RatingControl"]
 - ["C11FoodTracker22calendarViewController", "String"]
 - !private ["C11FoodTracker22calendarViewController", "UIApplication"]
@@ -3587,6 +3710,7 @@ depends-member:
 - ["C11FoodTracker22calendarViewController", "tappedHeaderPrevBtn"]
 - ["C11FoodTracker22calendarViewController", "timeFont"]
 - ["C11FoodTracker22calendarViewController", "timeLabel"]
+- ["C11FoodTracker22calendarViewController", "tmpToday"]
 - ["C11FoodTracker22calendarViewController", "today"]
 - ["C11FoodTracker22calendarViewController", "underView"]
 - !private ["C11FoodTracker22calendarViewController", "view"]
@@ -3693,6 +3817,8 @@ depends-nominal:
 - "CSo13PHFetchResult"
 - "OSC18PHImageContentMode"
 - "CSo14PHImageManager"
+- "CSo21PHImageRequestOptions"
+- "OSC33PHImageRequestOptionsDeliveryMode"
 - !private "CSo8PHObject"
 - "Ps22RandomAccessCollection"
 - "Ps21RandomAccessIndexable"
@@ -3811,4 +3937,4 @@ depends-external:
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
-interface-hash: "f226fcc20d39edc5a00fcc7e2bcf68b2"
+interface-hash: "8572c70fb69306d21c25a40e66d9c1aa"

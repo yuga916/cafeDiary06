@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 - "image"
 depends-top-level:
-- "imageCollectionViewCell"
 - "UIImageView"
+- "imageCollectionViewCell"
 - "UICollectionViewCell"
 depends-member:
 - ["Ps9AnyObject", "image"]

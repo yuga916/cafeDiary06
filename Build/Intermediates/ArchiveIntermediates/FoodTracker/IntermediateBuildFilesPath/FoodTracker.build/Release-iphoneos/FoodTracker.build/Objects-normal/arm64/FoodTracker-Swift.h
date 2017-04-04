@@ -148,6 +148,7 @@ SWIFT_CLASS("_TtC11FoodTracker11AppDelegate")
 SWIFT_CLASS("_TtC11FoodTracker12CalendarCell")
 @interface CalendarCell : UICollectionViewCell
 @property (nonatomic, strong) UILabel * _Null_unspecified textLabel;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified todayLabel;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -310,11 +311,13 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, copy) NSArray<NSDictionary *> * _Nonnull cafeArray;
 @property (nonatomic, strong) NSDictionary * _Null_unspecified cafeDic;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
+@property (nonatomic, strong) NSDate * _Nonnull tmpToday;
+@property (nonatomic, strong) NSDate * _Nonnull selectedToday;
 @property (nonatomic, readonly, strong) DateManager * _Nonnull dateManager;
 @property (nonatomic, readonly) NSInteger daysPerWeek;
 @property (nonatomic, readonly) CGFloat cellMargin;
 @property (nonatomic, strong) NSDate * _Nonnull selectedDate;
-@property (nonatomic, strong) NSDate * _Null_unspecified today;
+@property (nonatomic, strong) NSDate * _Nonnull today;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull weekArray;
 @property (nonatomic, readonly, strong) UIView * _Nonnull baseView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cafeLabel;
@@ -406,7 +409,7 @@ SWIFT_CLASS("_TtC11FoodTracker18listViewController")
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

@@ -198,6 +198,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="Cqs-Vk-0lJ" id="k1B-cu-2dt"/>
+                        <outlet property="navigationItem" destination="lPO-Rb-aqa" id="KZd-nA-e0j"/>
                         <outlet property="photoImageView" destination="vht-w5-DXs" id="v4o-NY-tJv"/>
                         <outlet property="ratingControl" destination="t56-bQ-7Yp" id="GPw-4O-On7"/>
                         <outlet property="saveButton" destination="Jw0-Vp-23G" id="CmS-qD-fxe"/>
@@ -245,9 +246,21 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="35"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyz-kI-W7i">
+                                                    <rect key="frame" x="16" y="22" width="24" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="0.96309143029349664" blue="0.73470041925277552" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="tintColor" red="0.50783253205128198" green="0.37001265870561445" blue="0.19644643039484666" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="todayLabel" destination="Vyz-kI-W7i" id="mIa-cM-i5m"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GRF-Ub-x9F">
@@ -324,10 +337,6 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="qga-cA-opA" secondAttribute="height" multiplier="1:1" id="pLs-Mq-sXh"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no_image" translatesAutoresizingMaskIntoConstraints="NO" id="l6b-tf-vGj">
-                                        <rect key="frame" x="47" y="62" width="288" height="197"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
@@ -538,11 +547,11 @@
             </objects>
             <point key="canvasLocation" x="972.5" y="1276.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--list-->
         <scene sceneID="HI2-92-tgw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c1q-CK-Hs7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Kgv-Db-Ox1" userLabel="list"/>
+                    <tabBarItem key="tabBarItem" title="list" image="list" selectedImage="list" id="Kgv-Db-Ox1" userLabel="list"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SEf-ho-tc5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -559,10 +568,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="32" height="32"/>
-        <image name="calendar" width="30" height="30"/>
+        <image name="Image" width="25" height="25"/>
+        <image name="calendar" width="25" height="25"/>
         <image name="defaultPhoto" width="540" height="540"/>
-        <image name="no_image" width="110" height="110"/>
+        <image name="list" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

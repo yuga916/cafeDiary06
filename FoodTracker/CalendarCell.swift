@@ -11,6 +11,8 @@ import UIKit
 class CalendarCell: UICollectionViewCell {
     var textLabel: UILabel!
     
+    @IBOutlet var todayLabel: UILabel!
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         

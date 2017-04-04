@@ -6,91 +6,95 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker18MealViewController", ""]
 provides-dynamic-lookup:
-- "textFieldShouldReturn"
-- "textView"
-- "textFieldDidBeginEditing"
-- "read"
-- "textFieldShouldBeginEditing"
-- "studyTime"
-- "viewDidLoad"
-- "imagePickerControllerDidCancel"
-- "meal"
-- "prepare"
-- "tapSave"
-- "nameTextField"
-- "ratingControl"
-- "strURL"
-- "photoImageView"
-- "textFieldDidEndEditing"
-- "saveButton"
-- "scSelectedDate"
-- "myTitle"
-- "doneButtonAction"
 - "returnMenu"
-- "num"
-- "cancel"
-- "selectImageFromPhotoLibrary"
 - "myTextField"
+- "textView"
+- "photoImageView"
+- "textFieldShouldBeginEditing"
+- "imagePickerControllerDidCancel"
+- "studyTime"
+- "nameTextField"
+- "textFieldShouldReturn"
+- "tapSave"
+- "meal"
 - "imagePickerController"
+- "read"
+- "selectImageFromPhotoLibrary"
+- "strURL"
+- "textFieldDidBeginEditing"
+- "prepare"
+- "ratingControl"
+- "myTitle"
+- "cancel"
+- "viewDidLoad"
+- "doneButtonAction"
+- "saveButton"
+- "num"
+- "scSelectedDate"
+- "textFieldDidEndEditing"
 depends-top-level:
-- "Meal"
-- "Bool"
-- !private "CGRect"
-- !private "PHAsset"
-- "UIImageView"
-- !private "PHFetchResult"
-- !private "CGSize"
-- "UITextField"
-- !private "NSNumber"
-- "UIStoryboardSegue"
-- "CastingPrecedence"
-- "UITapGestureRecognizer"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "~="
-- !private "Diary"
-- !private "NSFetchRequest"
-- !private "NSPredicate"
-- !private "print"
-- "StringLiteralType"
-- "String"
-- "NSArray"
-- !private "Date"
-- !private "BooleanLiteralType"
-- !private "AnyObject"
-- "NSDate"
-- "UIBarButtonItem"
-- !private "UIImagePickerControllerReferenceURL"
-- "UIViewController"
-- "Int"
-- !private "URL"
-- !private "UIKeyboardType"
-- !private "!"
 - !private "Void"
-- !private "UIToolbar"
-- !private "UINavigationController"
-- !private "UIImagePickerControllerOriginalImage"
-- !private "Array"
-- "UIImagePickerController"
-- !private "UIImage"
-- !private "UIApplication"
+- !private "NSManagedObject"
+- "UITextField"
+- !private "BooleanLiteralType"
+- !private "NSFetchRequest"
+- !private "Diary"
+- !private "PHFetchResult"
+- "StringLiteralType"
+- "Bool"
+- !private "PHAsset"
 - "RatingControl"
-- "UITextFieldDelegate"
+- "UIBarButtonItem"
+- !private "PHImageRequestOptions"
+- !private "UIToolbar"
+- !private "Array"
+- !private "DateFormatter"
+- "Int"
+- !private "Date"
+- !private "UIImagePickerControllerOriginalImage"
+- "UIImageView"
+- "UITextView"
+- "Meal"
+- !private "!"
+- !private "NSPredicate"
 - !private "PHImageManager"
-- "UIImagePickerControllerDelegate"
+- !private "!="
+- "UITapGestureRecognizer"
+- !private "CGRect"
+- !private "UIImage"
+- !private "CGSize"
+- "NSDate"
+- !private "fatalError"
+- !private "print"
+- "NSArray"
+- !private "UIApplication"
+- !private "AnyObject"
+- "MealViewController"
+- "UIStoryboardSegue"
+- "String"
+- !private "NSNumber"
+- !private "Selector"
+- !private "URL"
+- !private "AppDelegate"
+- "UIViewController"
+- "AssignmentPrecedence"
+- !private "~="
+- !private "=="
 - !private "??"
 - "UINavigationControllerDelegate"
-- !private "fatalError"
-- !private "Selector"
-- !private "AppDelegate"
-- "UITextView"
-- !private "!="
-- !private "NSManagedObject"
-- "MealViewController"
+- "CastingPrecedence"
+- !private "UINavigationController"
+- !private "UIImagePickerControllerReferenceURL"
+- !private "PHImageRequestOptionsDeliveryMode"
+- "UIImagePickerController"
+- !private "UIKeyboardType"
+- "UIImagePickerControllerDelegate"
 - !private "NSEntityDescription"
+- "UITextFieldDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "CGSize"]
+- !private ["Ps9AnyObject", "DateFormatter"]
 - !private ["Ps9AnyObject", "Diary"]
 - !private ["Ps9AnyObject", "Int"]
 - ["Ps9AnyObject", "NSArray"]
@@ -100,6 +104,8 @@ depends-member:
 - !private ["Ps9AnyObject", "NSPredicate"]
 - !private ["Ps9AnyObject", "PHAsset"]
 - !private ["Ps9AnyObject", "PHImageManager"]
+- !private ["Ps9AnyObject", "PHImageRequestOptions"]
+- !private ["Ps9AnyObject", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9AnyObject", "Selector"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIApplication"]
@@ -113,8 +119,10 @@ depends-member:
 - !private ["Ps9AnyObject", "URL"]
 - ["Ps9AnyObject", "cancel"]
 - !private ["Ps9AnyObject", "cornerRadius"]
+- !private ["Ps9AnyObject", "dateFormat"]
 - ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "deliveryMode"]
 - !private ["Ps9AnyObject", "description"]
 - !private ["Ps9AnyObject", "dismiss"]
 - ["Ps9AnyObject", "doneButtonAction"]
@@ -142,6 +150,7 @@ depends-member:
 - ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["Ps9AnyObject", "navigationItem"]
 - ["Ps9AnyObject", "num"]
 - !private ["Ps9AnyObject", "persistentContainer"]
 - ["Ps9AnyObject", "photoImageView"]
@@ -169,6 +178,7 @@ depends-member:
 - !private ["Ps9AnyObject", "source"]
 - !private ["Ps9AnyObject", "sourceType"]
 - ["Ps9AnyObject", "strURL"]
+- !private ["Ps9AnyObject", "string"]
 - ["Ps9AnyObject", "studyTime"]
 - !private ["Ps9AnyObject", "tag"]
 - ["Ps9AnyObject", "tapSave"]
@@ -181,6 +191,7 @@ depends-member:
 - ["Ps9AnyObject", "textFieldShouldEndEditing"]
 - ["Ps9AnyObject", "textFieldShouldReturn"]
 - ["Ps9AnyObject", "textView"]
+- !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "updateSaveButtonState"]
 - !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "view"]
@@ -240,6 +251,7 @@ depends-member:
 - !private ["VSC6CGSize", "width"]
 - !private ["Ps7CVarArg", "CGRect"]
 - !private ["Ps7CVarArg", "CGSize"]
+- !private ["Ps7CVarArg", "DateFormatter"]
 - !private ["Ps7CVarArg", "Diary"]
 - !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "Index"]
@@ -253,6 +265,8 @@ depends-member:
 - !private ["Ps7CVarArg", "NSPredicate"]
 - !private ["Ps7CVarArg", "PHAsset"]
 - !private ["Ps7CVarArg", "PHImageManager"]
+- !private ["Ps7CVarArg", "PHImageRequestOptions"]
+- !private ["Ps7CVarArg", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps7CVarArg", "Selector"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "String"]
@@ -271,7 +285,9 @@ depends-member:
 - ["Ps7CVarArg", "cancel"]
 - !private ["Ps7CVarArg", "cornerRadius"]
 - !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "dateFormat"]
 - !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "deliveryMode"]
 - !private ["Ps7CVarArg", "dismiss"]
 - ["Ps7CVarArg", "doneButtonAction"]
 - !private ["Ps7CVarArg", "endEditing"]
@@ -298,6 +314,7 @@ depends-member:
 - ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps7CVarArg", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["Ps7CVarArg", "navigationItem"]
 - ["Ps7CVarArg", "num"]
 - !private ["Ps7CVarArg", "persistentContainer"]
 - ["Ps7CVarArg", "photoImageView"]
@@ -325,6 +342,7 @@ depends-member:
 - !private ["Ps7CVarArg", "source"]
 - !private ["Ps7CVarArg", "sourceType"]
 - ["Ps7CVarArg", "strURL"]
+- !private ["Ps7CVarArg", "string"]
 - ["Ps7CVarArg", "studyTime"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "tag"]
@@ -338,6 +356,7 @@ depends-member:
 - ["Ps7CVarArg", "textFieldShouldEndEditing"]
 - ["Ps7CVarArg", "textFieldShouldReturn"]
 - ["Ps7CVarArg", "textView"]
+- !private ["Ps7CVarArg", "title"]
 - ["Ps7CVarArg", "updateSaveButtonState"]
 - !private ["Ps7CVarArg", "view"]
 - !private ["Ps7CVarArg", "viewContext"]
@@ -362,6 +381,7 @@ depends-member:
 - !private ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSize"]
+- !private ["Ps28CustomDebugStringConvertible", "DateFormatter"]
 - !private ["Ps28CustomDebugStringConvertible", "Diary"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -375,6 +395,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
 - !private ["Ps28CustomDebugStringConvertible", "PHAsset"]
 - !private ["Ps28CustomDebugStringConvertible", "PHImageManager"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps28CustomDebugStringConvertible", "Selector"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
@@ -392,7 +414,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "cancel"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "deliveryMode"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
 - ["Ps28CustomDebugStringConvertible", "doneButtonAction"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
@@ -419,6 +443,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
 - ["Ps28CustomDebugStringConvertible", "num"]
 - !private ["Ps28CustomDebugStringConvertible", "persistentContainer"]
 - ["Ps28CustomDebugStringConvertible", "photoImageView"]
@@ -447,6 +472,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "source"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceType"]
 - ["Ps28CustomDebugStringConvertible", "strURL"]
+- !private ["Ps28CustomDebugStringConvertible", "string"]
 - ["Ps28CustomDebugStringConvertible", "studyTime"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "tag"]
@@ -460,6 +486,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "textFieldShouldEndEditing"]
 - ["Ps28CustomDebugStringConvertible", "textFieldShouldReturn"]
 - ["Ps28CustomDebugStringConvertible", "textView"]
+- !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "updateSaveButtonState"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "viewContext"]
@@ -489,6 +516,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "width"]
 - !private ["Ps23CustomStringConvertible", "CGRect"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
+- !private ["Ps23CustomStringConvertible", "DateFormatter"]
 - !private ["Ps23CustomStringConvertible", "Diary"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Index"]
@@ -502,6 +530,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSPredicate"]
 - !private ["Ps23CustomStringConvertible", "PHAsset"]
 - !private ["Ps23CustomStringConvertible", "PHImageManager"]
+- !private ["Ps23CustomStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps23CustomStringConvertible", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps23CustomStringConvertible", "Selector"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "String"]
@@ -521,7 +551,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "cancel"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "dateFormat"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "deliveryMode"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
 - ["Ps23CustomStringConvertible", "doneButtonAction"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
@@ -548,6 +580,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["Ps23CustomStringConvertible", "navigationItem"]
 - ["Ps23CustomStringConvertible", "num"]
 - !private ["Ps23CustomStringConvertible", "persistentContainer"]
 - ["Ps23CustomStringConvertible", "photoImageView"]
@@ -575,6 +608,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "source"]
 - !private ["Ps23CustomStringConvertible", "sourceType"]
 - ["Ps23CustomStringConvertible", "strURL"]
+- !private ["Ps23CustomStringConvertible", "string"]
 - ["Ps23CustomStringConvertible", "studyTime"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "tag"]
@@ -588,12 +622,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "textFieldShouldEndEditing"]
 - ["Ps23CustomStringConvertible", "textFieldShouldReturn"]
 - ["Ps23CustomStringConvertible", "textView"]
+- !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "updateSaveButtonState"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "viewContext"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - ["V10Foundation4Date", "deinit"]
+- !private ["CSo13DateFormatter", "dateFormat"]
+- ["CSo13DateFormatter", "deinit"]
+- !private ["CSo13DateFormatter", "init"]
+- !private ["CSo13DateFormatter", "string"]
 - ["C11FoodTracker5Diary", "deinit"]
 - !private ["C11FoodTracker5Diary", "fetchRequest"]
 - !private ["Vs10Dictionary", "Index"]
@@ -603,6 +642,7 @@ depends-member:
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "CGSize"]
+- !private ["Ps9Equatable", "DateFormatter"]
 - !private ["Ps9Equatable", "Diary"]
 - !private ["Ps9Equatable", "Int"]
 - ["Ps9Equatable", "NSArray"]
@@ -612,6 +652,8 @@ depends-member:
 - !private ["Ps9Equatable", "NSPredicate"]
 - !private ["Ps9Equatable", "PHAsset"]
 - !private ["Ps9Equatable", "PHImageManager"]
+- !private ["Ps9Equatable", "PHImageRequestOptions"]
+- !private ["Ps9Equatable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9Equatable", "Selector"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "String"]
@@ -629,8 +671,10 @@ depends-member:
 - !private ["Ps9Equatable", "aspectFit"]
 - ["Ps9Equatable", "cancel"]
 - !private ["Ps9Equatable", "cornerRadius"]
+- !private ["Ps9Equatable", "dateFormat"]
 - !private ["Ps9Equatable", "decimalPad"]
 - !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "deliveryMode"]
 - !private ["Ps9Equatable", "dismiss"]
 - !private ["Ps9Equatable", "done"]
 - ["Ps9Equatable", "doneButtonAction"]
@@ -643,6 +687,7 @@ depends-member:
 - !private ["Ps9Equatable", "firstObject"]
 - !private ["Ps9Equatable", "flexibleSpace"]
 - !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "highQualityFormat"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "imagePickerController"]
 - ["Ps9Equatable", "imagePickerControllerDidCancel"]
@@ -659,6 +704,7 @@ depends-member:
 - ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9Equatable", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["Ps9Equatable", "navigationItem"]
 - ["Ps9Equatable", "num"]
 - !private ["Ps9Equatable", "persistentContainer"]
 - ["Ps9Equatable", "photoImageView"]
@@ -688,6 +734,7 @@ depends-member:
 - !private ["Ps9Equatable", "source"]
 - !private ["Ps9Equatable", "sourceType"]
 - ["Ps9Equatable", "strURL"]
+- !private ["Ps9Equatable", "string"]
 - ["Ps9Equatable", "studyTime"]
 - !private ["Ps9Equatable", "tag"]
 - ["Ps9Equatable", "tapSave"]
@@ -700,6 +747,7 @@ depends-member:
 - ["Ps9Equatable", "textFieldShouldEndEditing"]
 - ["Ps9Equatable", "textFieldShouldReturn"]
 - ["Ps9Equatable", "textView"]
+- !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "updateSaveButtonState"]
 - !private ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "viewContext"]
@@ -728,8 +776,12 @@ depends-member:
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "isEmpty"]
 - !private ["Sf", "deinit"]
+- !private ["CSo9Formatter", "dateFormat"]
+- !private ["CSo9Formatter", "init"]
+- !private ["CSo9Formatter", "string"]
 - !private ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "CGSize"]
+- !private ["Ps8Hashable", "DateFormatter"]
 - !private ["Ps8Hashable", "Diary"]
 - !private ["Ps8Hashable", "Int"]
 - ["Ps8Hashable", "NSArray"]
@@ -739,6 +791,8 @@ depends-member:
 - !private ["Ps8Hashable", "NSPredicate"]
 - !private ["Ps8Hashable", "PHAsset"]
 - !private ["Ps8Hashable", "PHImageManager"]
+- !private ["Ps8Hashable", "PHImageRequestOptions"]
+- !private ["Ps8Hashable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps8Hashable", "Selector"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "String"]
@@ -756,8 +810,10 @@ depends-member:
 - !private ["Ps8Hashable", "aspectFit"]
 - ["Ps8Hashable", "cancel"]
 - !private ["Ps8Hashable", "cornerRadius"]
+- !private ["Ps8Hashable", "dateFormat"]
 - !private ["Ps8Hashable", "decimalPad"]
 - !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "deliveryMode"]
 - !private ["Ps8Hashable", "dismiss"]
 - !private ["Ps8Hashable", "done"]
 - ["Ps8Hashable", "doneButtonAction"]
@@ -770,6 +826,7 @@ depends-member:
 - !private ["Ps8Hashable", "firstObject"]
 - !private ["Ps8Hashable", "flexibleSpace"]
 - !private ["Ps8Hashable", "frame"]
+- !private ["Ps8Hashable", "highQualityFormat"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "imagePickerController"]
 - ["Ps8Hashable", "imagePickerControllerDidCancel"]
@@ -786,6 +843,7 @@ depends-member:
 - ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps8Hashable", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["Ps8Hashable", "navigationItem"]
 - ["Ps8Hashable", "num"]
 - !private ["Ps8Hashable", "persistentContainer"]
 - ["Ps8Hashable", "photoImageView"]
@@ -814,6 +872,7 @@ depends-member:
 - !private ["Ps8Hashable", "source"]
 - !private ["Ps8Hashable", "sourceType"]
 - ["Ps8Hashable", "strURL"]
+- !private ["Ps8Hashable", "string"]
 - ["Ps8Hashable", "studyTime"]
 - !private ["Ps8Hashable", "tag"]
 - ["Ps8Hashable", "tapSave"]
@@ -826,6 +885,7 @@ depends-member:
 - ["Ps8Hashable", "textFieldShouldEndEditing"]
 - ["Ps8Hashable", "textFieldShouldReturn"]
 - ["Ps8Hashable", "textView"]
+- !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "updateSaveButtonState"]
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "viewContext"]
@@ -874,6 +934,7 @@ depends-member:
 - !private ["C11FoodTracker18MealViewController", "CGRect"]
 - !private ["C11FoodTracker18MealViewController", "CGSize"]
 - !private ["C11FoodTracker18MealViewController", "Date"]
+- !private ["C11FoodTracker18MealViewController", "DateFormatter"]
 - !private ["C11FoodTracker18MealViewController", "Diary"]
 - ["C11FoodTracker18MealViewController", "Int"]
 - ["C11FoodTracker18MealViewController", "Meal"]
@@ -888,6 +949,8 @@ depends-member:
 - !private ["C11FoodTracker18MealViewController", "PHAsset"]
 - !private ["C11FoodTracker18MealViewController", "PHFetchResult"]
 - !private ["C11FoodTracker18MealViewController", "PHImageManager"]
+- !private ["C11FoodTracker18MealViewController", "PHImageRequestOptions"]
+- !private ["C11FoodTracker18MealViewController", "PHImageRequestOptionsDeliveryMode"]
 - ["C11FoodTracker18MealViewController", "RatingControl"]
 - !private ["C11FoodTracker18MealViewController", "Selector"]
 - ["C11FoodTracker18MealViewController", "String"]
@@ -922,6 +985,7 @@ depends-member:
 - ["C11FoodTracker18MealViewController", "navigationController"]
 - ["C11FoodTracker18MealViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["C11FoodTracker18MealViewController", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["C11FoodTracker18MealViewController", "navigationItem"]
 - ["C11FoodTracker18MealViewController", "num"]
 - ["C11FoodTracker18MealViewController", "photoImageView"]
 - ["C11FoodTracker18MealViewController", "prepare"]
@@ -971,6 +1035,7 @@ depends-member:
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "CGSize"]
+- !private ["PSo8NSCoding", "DateFormatter"]
 - !private ["PSo8NSCoding", "Diary"]
 - !private ["PSo8NSCoding", "Int"]
 - ["PSo8NSCoding", "NSArray"]
@@ -980,6 +1045,8 @@ depends-member:
 - !private ["PSo8NSCoding", "NSPredicate"]
 - !private ["PSo8NSCoding", "PHAsset"]
 - !private ["PSo8NSCoding", "PHImageManager"]
+- !private ["PSo8NSCoding", "PHImageRequestOptions"]
+- !private ["PSo8NSCoding", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo8NSCoding", "Selector"]
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIApplication"]
@@ -993,6 +1060,7 @@ depends-member:
 - !private ["PSo8NSCoding", "URL"]
 - ["PSo8NSCoding", "cancel"]
 - !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "dateFormat"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dismiss"]
 - ["PSo8NSCoding", "doneButtonAction"]
@@ -1017,6 +1085,7 @@ depends-member:
 - ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo8NSCoding", "navigationItem"]
 - ["PSo8NSCoding", "num"]
 - ["PSo8NSCoding", "photoImageView"]
 - !private ["PSo8NSCoding", "popViewController"]
@@ -1039,6 +1108,7 @@ depends-member:
 - !private ["PSo8NSCoding", "sizeToFit"]
 - !private ["PSo8NSCoding", "sourceType"]
 - ["PSo8NSCoding", "strURL"]
+- !private ["PSo8NSCoding", "string"]
 - ["PSo8NSCoding", "studyTime"]
 - !private ["PSo8NSCoding", "tag"]
 - ["PSo8NSCoding", "tapSave"]
@@ -1051,22 +1121,27 @@ depends-member:
 - ["PSo8NSCoding", "textFieldShouldEndEditing"]
 - ["PSo8NSCoding", "textFieldShouldReturn"]
 - ["PSo8NSCoding", "textView"]
+- !private ["PSo8NSCoding", "title"]
 - ["PSo8NSCoding", "updateSaveButtonState"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "dateFormat"]
+- !private ["PSo9NSCopying", "deliveryMode"]
 - !private ["PSo9NSCopying", "entity"]
 - !private ["PSo9NSCopying", "fetchAssets"]
 - !private ["PSo9NSCopying", "firstObject"]
 - ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "isEmpty"]
 - !private ["PSo9NSCopying", "predicate"]
+- !private ["PSo9NSCopying", "string"]
 - ["CSo6NSDate", "deinit"]
 - ["CSo6NSDate", "init"]
 - ["CSo19NSEntityDescription", "deinit"]
 - !private ["CSo19NSEntityDescription", "entity"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
+- !private ["PSo26NSExtensionRequestHandling", "DateFormatter"]
 - !private ["PSo26NSExtensionRequestHandling", "Diary"]
 - !private ["PSo26NSExtensionRequestHandling", "Int"]
 - ["PSo26NSExtensionRequestHandling", "NSArray"]
@@ -1076,6 +1151,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
 - !private ["PSo26NSExtensionRequestHandling", "PHAsset"]
 - !private ["PSo26NSExtensionRequestHandling", "PHImageManager"]
+- !private ["PSo26NSExtensionRequestHandling", "PHImageRequestOptions"]
+- !private ["PSo26NSExtensionRequestHandling", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo26NSExtensionRequestHandling", "Selector"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
@@ -1102,6 +1179,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - ["PSo26NSExtensionRequestHandling", "num"]
 - ["PSo26NSExtensionRequestHandling", "photoImageView"]
 - !private ["PSo26NSExtensionRequestHandling", "popViewController"]
@@ -1158,6 +1236,7 @@ depends-member:
 - !private ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CGSize"]
 - !private ["CSo8NSObject", "Date"]
+- !private ["CSo8NSObject", "DateFormatter"]
 - !private ["CSo8NSObject", "Diary"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "Meal"]
@@ -1172,6 +1251,8 @@ depends-member:
 - !private ["CSo8NSObject", "PHAsset"]
 - !private ["CSo8NSObject", "PHFetchResult"]
 - !private ["CSo8NSObject", "PHImageManager"]
+- !private ["CSo8NSObject", "PHImageRequestOptions"]
+- !private ["CSo8NSObject", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo8NSObject", "RatingControl"]
 - !private ["CSo8NSObject", "Selector"]
 - ["CSo8NSObject", "String"]
@@ -1193,7 +1274,9 @@ depends-member:
 - !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "cancel"]
 - !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "deliveryMode"]
 - !private ["CSo8NSObject", "dismiss"]
 - ["CSo8NSObject", "doneButtonAction"]
 - !private ["CSo8NSObject", "endEditing"]
@@ -1220,6 +1303,7 @@ depends-member:
 - ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "num"]
 - !private ["CSo8NSObject", "persistentContainer"]
 - ["CSo8NSObject", "photoImageView"]
@@ -1247,6 +1331,7 @@ depends-member:
 - !private ["CSo8NSObject", "source"]
 - !private ["CSo8NSObject", "sourceType"]
 - ["CSo8NSObject", "strURL"]
+- !private ["CSo8NSObject", "string"]
 - ["CSo8NSObject", "studyTime"]
 - !private ["CSo8NSObject", "tag"]
 - ["CSo8NSObject", "tapSave"]
@@ -1259,12 +1344,14 @@ depends-member:
 - ["CSo8NSObject", "textFieldShouldEndEditing"]
 - ["CSo8NSObject", "textFieldShouldReturn"]
 - ["CSo8NSObject", "textView"]
+- !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "updateSaveButtonState"]
 - !private ["CSo8NSObject", "view"]
 - !private ["CSo8NSObject", "viewContext"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
+- !private ["PSo16NSObjectProtocol", "DateFormatter"]
 - !private ["PSo16NSObjectProtocol", "Diary"]
 - !private ["PSo16NSObjectProtocol", "Int"]
 - ["PSo16NSObjectProtocol", "NSArray"]
@@ -1274,6 +1361,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSPredicate"]
 - !private ["PSo16NSObjectProtocol", "PHAsset"]
 - !private ["PSo16NSObjectProtocol", "PHImageManager"]
+- !private ["PSo16NSObjectProtocol", "PHImageRequestOptions"]
+- !private ["PSo16NSObjectProtocol", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo16NSObjectProtocol", "Selector"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
@@ -1287,7 +1376,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "URL"]
 - ["PSo16NSObjectProtocol", "cancel"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "dateFormat"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "deliveryMode"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
 - ["PSo16NSObjectProtocol", "doneButtonAction"]
 - !private ["PSo16NSObjectProtocol", "endEditing"]
@@ -1314,6 +1405,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "num"]
 - !private ["PSo16NSObjectProtocol", "persistentContainer"]
 - ["PSo16NSObjectProtocol", "photoImageView"]
@@ -1341,6 +1433,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "source"]
 - !private ["PSo16NSObjectProtocol", "sourceType"]
 - ["PSo16NSObjectProtocol", "strURL"]
+- !private ["PSo16NSObjectProtocol", "string"]
 - ["PSo16NSObjectProtocol", "studyTime"]
 - !private ["PSo16NSObjectProtocol", "tag"]
 - ["PSo16NSObjectProtocol", "tapSave"]
@@ -1353,6 +1446,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "textFieldShouldEndEditing"]
 - ["PSo16NSObjectProtocol", "textFieldShouldReturn"]
 - ["PSo16NSObjectProtocol", "textView"]
+- !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "updateSaveButtonState"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "viewContext"]
@@ -1378,6 +1472,11 @@ depends-member:
 - ["CSo14PHImageManager", "deinit"]
 - !private ["CSo14PHImageManager", "init"]
 - !private ["CSo14PHImageManager", "requestImage"]
+- ["CSo21PHImageRequestOptions", "deinit"]
+- !private ["CSo21PHImageRequestOptions", "deliveryMode"]
+- !private ["CSo21PHImageRequestOptions", "init"]
+- ["OSC33PHImageRequestOptionsDeliveryMode", "deinit"]
+- !private ["OSC33PHImageRequestOptionsDeliveryMode", "highQualityFormat"]
 - !private ["CSo8PHObject", "fetchAssets"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -1415,6 +1514,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "decimalPad"]
 - !private ["Ps16RawRepresentable", "done"]
 - !private ["Ps16RawRepresentable", "flexibleSpace"]
+- !private ["Ps16RawRepresentable", "highQualityFormat"]
 - !private ["Ps16RawRepresentable", "photoLibrary"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
 - ["V10ObjectiveC8Selector", "deinit"]
@@ -1478,6 +1578,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
+- !private ["PSo21UIAppearanceContainer", "DateFormatter"]
 - !private ["PSo21UIAppearanceContainer", "Diary"]
 - !private ["PSo21UIAppearanceContainer", "Int"]
 - ["PSo21UIAppearanceContainer", "NSArray"]
@@ -1487,6 +1588,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSPredicate"]
 - !private ["PSo21UIAppearanceContainer", "PHAsset"]
 - !private ["PSo21UIAppearanceContainer", "PHImageManager"]
+- !private ["PSo21UIAppearanceContainer", "PHImageRequestOptions"]
+- !private ["PSo21UIAppearanceContainer", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo21UIAppearanceContainer", "Selector"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
@@ -1519,6 +1622,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "num"]
 - ["PSo21UIAppearanceContainer", "photoImageView"]
 - !private ["PSo21UIAppearanceContainer", "popViewController"]
@@ -1573,6 +1677,7 @@ depends-member:
 - !private ["PSo16UIBarPositioning", "sizeToFit"]
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "CGSize"]
+- !private ["PSo18UIContentContainer", "DateFormatter"]
 - !private ["PSo18UIContentContainer", "Diary"]
 - !private ["PSo18UIContentContainer", "Int"]
 - ["PSo18UIContentContainer", "NSArray"]
@@ -1582,6 +1687,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSPredicate"]
 - !private ["PSo18UIContentContainer", "PHAsset"]
 - !private ["PSo18UIContentContainer", "PHImageManager"]
+- !private ["PSo18UIContentContainer", "PHImageRequestOptions"]
+- !private ["PSo18UIContentContainer", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UIContentContainer", "Selector"]
 - !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIApplication"]
@@ -1608,6 +1715,7 @@ depends-member:
 - ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo18UIContentContainer", "navigationItem"]
 - ["PSo18UIContentContainer", "num"]
 - ["PSo18UIContentContainer", "photoImageView"]
 - !private ["PSo18UIContentContainer", "popViewController"]
@@ -1676,6 +1784,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
+- !private ["PSo18UIFocusEnvironment", "DateFormatter"]
 - !private ["PSo18UIFocusEnvironment", "Diary"]
 - !private ["PSo18UIFocusEnvironment", "Int"]
 - ["PSo18UIFocusEnvironment", "NSArray"]
@@ -1685,6 +1794,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSPredicate"]
 - !private ["PSo18UIFocusEnvironment", "PHAsset"]
 - !private ["PSo18UIFocusEnvironment", "PHImageManager"]
+- !private ["PSo18UIFocusEnvironment", "PHImageRequestOptions"]
+- !private ["PSo18UIFocusEnvironment", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UIFocusEnvironment", "Selector"]
 - !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
@@ -1717,6 +1828,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "num"]
 - ["PSo18UIFocusEnvironment", "photoImageView"]
 - !private ["PSo18UIFocusEnvironment", "popViewController"]
@@ -1775,6 +1887,7 @@ depends-member:
 - !private ["CSo23UIImagePickerController", "sourceType"]
 - !private ["PSo31UIImagePickerControllerDelegate", "CGRect"]
 - !private ["PSo31UIImagePickerControllerDelegate", "CGSize"]
+- !private ["PSo31UIImagePickerControllerDelegate", "DateFormatter"]
 - !private ["PSo31UIImagePickerControllerDelegate", "Diary"]
 - !private ["PSo31UIImagePickerControllerDelegate", "Int"]
 - ["PSo31UIImagePickerControllerDelegate", "NSArray"]
@@ -1784,6 +1897,8 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "NSPredicate"]
 - !private ["PSo31UIImagePickerControllerDelegate", "PHAsset"]
 - !private ["PSo31UIImagePickerControllerDelegate", "PHImageManager"]
+- !private ["PSo31UIImagePickerControllerDelegate", "PHImageRequestOptions"]
+- !private ["PSo31UIImagePickerControllerDelegate", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo31UIImagePickerControllerDelegate", "Selector"]
 - !private ["PSo31UIImagePickerControllerDelegate", "String"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIApplication"]
@@ -1804,6 +1919,7 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "navigationController"]
 - ["PSo31UIImagePickerControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo31UIImagePickerControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo31UIImagePickerControllerDelegate", "navigationItem"]
 - !private ["PSo31UIImagePickerControllerDelegate", "num"]
 - !private ["PSo31UIImagePickerControllerDelegate", "photoImageView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "present"]
@@ -1843,6 +1959,7 @@ depends-member:
 - !private ["CSo22UINavigationController", "sourceType"]
 - !private ["PSo30UINavigationControllerDelegate", "CGRect"]
 - !private ["PSo30UINavigationControllerDelegate", "CGSize"]
+- !private ["PSo30UINavigationControllerDelegate", "DateFormatter"]
 - !private ["PSo30UINavigationControllerDelegate", "Diary"]
 - !private ["PSo30UINavigationControllerDelegate", "Int"]
 - ["PSo30UINavigationControllerDelegate", "NSArray"]
@@ -1852,6 +1969,8 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "NSPredicate"]
 - !private ["PSo30UINavigationControllerDelegate", "PHAsset"]
 - !private ["PSo30UINavigationControllerDelegate", "PHImageManager"]
+- !private ["PSo30UINavigationControllerDelegate", "PHImageRequestOptions"]
+- !private ["PSo30UINavigationControllerDelegate", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo30UINavigationControllerDelegate", "Selector"]
 - !private ["PSo30UINavigationControllerDelegate", "String"]
 - !private ["PSo30UINavigationControllerDelegate", "UIApplication"]
@@ -1872,6 +1991,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "navigationController"]
 - ["PSo30UINavigationControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo30UINavigationControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo30UINavigationControllerDelegate", "navigationItem"]
 - !private ["PSo30UINavigationControllerDelegate", "num"]
 - !private ["PSo30UINavigationControllerDelegate", "photoImageView"]
 - !private ["PSo30UINavigationControllerDelegate", "present"]
@@ -1893,12 +2013,15 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "updateSaveButtonState"]
 - !private ["PSo30UINavigationControllerDelegate", "view"]
 - ["PSo30UINavigationControllerDelegate", ""]
+- ["CSo16UINavigationItem", "deinit"]
+- !private ["CSo16UINavigationItem", "title"]
 - !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "AppDelegate"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CGSize"]
 - !private ["CSo11UIResponder", "Date"]
+- !private ["CSo11UIResponder", "DateFormatter"]
 - !private ["CSo11UIResponder", "Diary"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "Meal"]
@@ -1913,6 +2036,8 @@ depends-member:
 - !private ["CSo11UIResponder", "PHAsset"]
 - !private ["CSo11UIResponder", "PHFetchResult"]
 - !private ["CSo11UIResponder", "PHImageManager"]
+- !private ["CSo11UIResponder", "PHImageRequestOptions"]
+- !private ["CSo11UIResponder", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo11UIResponder", "RatingControl"]
 - !private ["CSo11UIResponder", "Selector"]
 - ["CSo11UIResponder", "String"]
@@ -1953,6 +2078,7 @@ depends-member:
 - ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "num"]
 - !private ["CSo11UIResponder", "persistentContainer"]
 - ["CSo11UIResponder", "photoImageView"]
@@ -1992,6 +2118,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
 - !private ["PSo30UIResponderStandardEditActions", "CGSize"]
+- !private ["PSo30UIResponderStandardEditActions", "DateFormatter"]
 - !private ["PSo30UIResponderStandardEditActions", "Diary"]
 - !private ["PSo30UIResponderStandardEditActions", "Int"]
 - ["PSo30UIResponderStandardEditActions", "NSArray"]
@@ -2001,6 +2128,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSPredicate"]
 - !private ["PSo30UIResponderStandardEditActions", "PHAsset"]
 - !private ["PSo30UIResponderStandardEditActions", "PHImageManager"]
+- !private ["PSo30UIResponderStandardEditActions", "PHImageRequestOptions"]
+- !private ["PSo30UIResponderStandardEditActions", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo30UIResponderStandardEditActions", "Selector"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
 - !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
@@ -2033,6 +2162,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo30UIResponderStandardEditActions", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationItem"]
 - ["PSo30UIResponderStandardEditActions", "num"]
 - !private ["PSo30UIResponderStandardEditActions", "persistentContainer"]
 - ["PSo30UIResponderStandardEditActions", "photoImageView"]
@@ -2075,6 +2205,7 @@ depends-member:
 - !private ["CSo11UIStackView", "rating"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "CGSize"]
+- !private ["PSo16UIStateRestoring", "DateFormatter"]
 - !private ["PSo16UIStateRestoring", "Diary"]
 - !private ["PSo16UIStateRestoring", "Int"]
 - ["PSo16UIStateRestoring", "NSArray"]
@@ -2084,6 +2215,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSPredicate"]
 - !private ["PSo16UIStateRestoring", "PHAsset"]
 - !private ["PSo16UIStateRestoring", "PHImageManager"]
+- !private ["PSo16UIStateRestoring", "PHImageRequestOptions"]
+- !private ["PSo16UIStateRestoring", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo16UIStateRestoring", "Selector"]
 - !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIApplication"]
@@ -2110,6 +2243,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo16UIStateRestoring", "navigationItem"]
 - ["PSo16UIStateRestoring", "num"]
 - ["PSo16UIStateRestoring", "photoImageView"]
 - !private ["PSo16UIStateRestoring", "popViewController"]
@@ -2150,6 +2284,7 @@ depends-member:
 - !private ["CSo11UITextField", "text"]
 - !private ["PSo19UITextFieldDelegate", "CGRect"]
 - !private ["PSo19UITextFieldDelegate", "CGSize"]
+- !private ["PSo19UITextFieldDelegate", "DateFormatter"]
 - !private ["PSo19UITextFieldDelegate", "Diary"]
 - !private ["PSo19UITextFieldDelegate", "Int"]
 - ["PSo19UITextFieldDelegate", "NSArray"]
@@ -2159,6 +2294,8 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "NSPredicate"]
 - !private ["PSo19UITextFieldDelegate", "PHAsset"]
 - !private ["PSo19UITextFieldDelegate", "PHImageManager"]
+- !private ["PSo19UITextFieldDelegate", "PHImageRequestOptions"]
+- !private ["PSo19UITextFieldDelegate", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo19UITextFieldDelegate", "Selector"]
 - !private ["PSo19UITextFieldDelegate", "String"]
 - !private ["PSo19UITextFieldDelegate", "UIApplication"]
@@ -2179,6 +2316,7 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "navigationController"]
 - ["PSo19UITextFieldDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo19UITextFieldDelegate", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo19UITextFieldDelegate", "navigationItem"]
 - !private ["PSo19UITextFieldDelegate", "num"]
 - !private ["PSo19UITextFieldDelegate", "photoImageView"]
 - !private ["PSo19UITextFieldDelegate", "present"]
@@ -2216,6 +2354,7 @@ depends-member:
 - !private ["CSo9UIToolbar", "sizeToFit"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
+- !private ["PSo18UITraitEnvironment", "DateFormatter"]
 - !private ["PSo18UITraitEnvironment", "Diary"]
 - !private ["PSo18UITraitEnvironment", "Int"]
 - ["PSo18UITraitEnvironment", "NSArray"]
@@ -2225,6 +2364,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSPredicate"]
 - !private ["PSo18UITraitEnvironment", "PHAsset"]
 - !private ["PSo18UITraitEnvironment", "PHImageManager"]
+- !private ["PSo18UITraitEnvironment", "PHImageRequestOptions"]
+- !private ["PSo18UITraitEnvironment", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UITraitEnvironment", "Selector"]
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
@@ -2257,6 +2398,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "num"]
 - ["PSo18UITraitEnvironment", "photoImageView"]
 - !private ["PSo18UITraitEnvironment", "popViewController"]
@@ -2312,6 +2454,7 @@ depends-member:
 - !private ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "CGSize"]
 - !private ["CSo16UIViewController", "Date"]
+- !private ["CSo16UIViewController", "DateFormatter"]
 - !private ["CSo16UIViewController", "Diary"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "Meal"]
@@ -2326,6 +2469,8 @@ depends-member:
 - !private ["CSo16UIViewController", "PHAsset"]
 - !private ["CSo16UIViewController", "PHFetchResult"]
 - !private ["CSo16UIViewController", "PHImageManager"]
+- !private ["CSo16UIViewController", "PHImageRequestOptions"]
+- !private ["CSo16UIViewController", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo16UIViewController", "RatingControl"]
 - !private ["CSo16UIViewController", "Selector"]
 - ["CSo16UIViewController", "String"]
@@ -2361,6 +2506,7 @@ depends-member:
 - ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["CSo16UIViewController", "navigationItem"]
 - ["CSo16UIViewController", "num"]
 - ["CSo16UIViewController", "photoImageView"]
 - !private ["CSo16UIViewController", "popViewController"]
@@ -2443,6 +2589,7 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "isEmpty"]
 - !private ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "CGSize"]
+- !private ["Ps9_Hashable", "DateFormatter"]
 - !private ["Ps9_Hashable", "Diary"]
 - !private ["Ps9_Hashable", "Int"]
 - ["Ps9_Hashable", "NSArray"]
@@ -2452,6 +2599,8 @@ depends-member:
 - !private ["Ps9_Hashable", "NSPredicate"]
 - !private ["Ps9_Hashable", "PHAsset"]
 - !private ["Ps9_Hashable", "PHImageManager"]
+- !private ["Ps9_Hashable", "PHImageRequestOptions"]
+- !private ["Ps9_Hashable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9_Hashable", "Selector"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "String"]
@@ -2469,8 +2618,10 @@ depends-member:
 - !private ["Ps9_Hashable", "aspectFit"]
 - ["Ps9_Hashable", "cancel"]
 - !private ["Ps9_Hashable", "cornerRadius"]
+- !private ["Ps9_Hashable", "dateFormat"]
 - !private ["Ps9_Hashable", "decimalPad"]
 - !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "deliveryMode"]
 - !private ["Ps9_Hashable", "dismiss"]
 - !private ["Ps9_Hashable", "done"]
 - ["Ps9_Hashable", "doneButtonAction"]
@@ -2483,6 +2634,7 @@ depends-member:
 - !private ["Ps9_Hashable", "firstObject"]
 - !private ["Ps9_Hashable", "flexibleSpace"]
 - !private ["Ps9_Hashable", "frame"]
+- !private ["Ps9_Hashable", "highQualityFormat"]
 - !private ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "imagePickerController"]
 - ["Ps9_Hashable", "imagePickerControllerDidCancel"]
@@ -2499,6 +2651,7 @@ depends-member:
 - ["Ps9_Hashable", "navigationController"]
 - ["Ps9_Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9_Hashable", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["Ps9_Hashable", "navigationItem"]
 - ["Ps9_Hashable", "num"]
 - !private ["Ps9_Hashable", "persistentContainer"]
 - ["Ps9_Hashable", "photoImageView"]
@@ -2527,6 +2680,7 @@ depends-member:
 - !private ["Ps9_Hashable", "source"]
 - !private ["Ps9_Hashable", "sourceType"]
 - ["Ps9_Hashable", "strURL"]
+- !private ["Ps9_Hashable", "string"]
 - ["Ps9_Hashable", "studyTime"]
 - !private ["Ps9_Hashable", "tag"]
 - ["Ps9_Hashable", "tapSave"]
@@ -2539,6 +2693,7 @@ depends-member:
 - ["Ps9_Hashable", "textFieldShouldEndEditing"]
 - ["Ps9_Hashable", "textFieldShouldReturn"]
 - ["Ps9_Hashable", "textView"]
+- !private ["Ps9_Hashable", "title"]
 - ["Ps9_Hashable", "updateSaveButtonState"]
 - !private ["Ps9_Hashable", "view"]
 - !private ["Ps9_Hashable", "viewContext"]
@@ -2596,6 +2751,7 @@ depends-nominal:
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Date"
+- "CSo13DateFormatter"
 - "C11FoodTracker5Diary"
 - "Vs10Dictionary"
 - !private "Sd"
@@ -2609,6 +2765,7 @@ depends-nominal:
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Sf"
+- !private "CSo9Formatter"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
@@ -2655,6 +2812,8 @@ depends-nominal:
 - "CSo13PHFetchResult"
 - "OSC18PHImageContentMode"
 - "CSo14PHImageManager"
+- "CSo21PHImageRequestOptions"
+- "OSC33PHImageRequestOptionsDeliveryMode"
 - !private "CSo8PHObject"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
@@ -2700,6 +2859,7 @@ depends-nominal:
 - "OSC14UIKeyboardType"
 - "CSo22UINavigationController"
 - "PSo30UINavigationControllerDelegate"
+- "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo11UIStackView"
@@ -2741,9 +2901,9 @@ depends-nominal:
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
+- !private "description"
 - !private "value"
 - !private "setValue"
-- !private "description"
 depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"

@@ -125,11 +125,15 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
             let url = URL(string: (imgDic["img"] as! NSString) as String)
             let fetchResult: PHFetchResult = PHAsset.fetchAssets(withALAssetURLs: [url!], options: nil)
             let asset: PHAsset = (fetchResult.firstObject! as PHAsset)
+            
             let manager: PHImageManager = PHImageManager()
-            manager.requestImage(for: asset,targetSize: CGSize(width: 5, height: 500),contentMode: .aspectFill,options: nil) { (image, info) -> Void in
+            var options:PHImageRequestOptions = PHImageRequestOptions()
+            options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+            manager.requestImage(for: asset,targetSize: CGSize(width: 5, height: 500),contentMode: .aspectFill,options: options) { (image, info) -> Void in
                 //                        self.cell.tableMyImg.image = image
                 AImage = image
                 self.count += 1
+                cell.image.image = AImage
             }
             cell.image.image = AImage
         }

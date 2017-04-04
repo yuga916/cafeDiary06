@@ -7,18 +7,19 @@ provides-member:
 - ["C11FoodTracker12CalendarCell", ""]
 provides-dynamic-lookup:
 - "textLabel"
+- "todayLabel"
 depends-top-level:
-- "AssignmentPrecedence"
-- !private "NSTextAlignment"
-- "UILabel"
+- "NSCoder"
+- !private "StringLiteralType"
 - !private "CGSize"
-- !private "UIFont"
 - "CalendarCell"
 - "UICollectionViewCell"
-- !private "StringLiteralType"
+- "UILabel"
+- !private "UIFont"
 - !private "CGPoint"
+- "AssignmentPrecedence"
+- !private "NSTextAlignment"
 - "CGRect"
-- "NSCoder"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "CGRect"]
@@ -34,6 +35,7 @@ depends-member:
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "textAlignment"]
 - ["Ps9AnyObject", "textLabel"]
+- ["Ps9AnyObject", "todayLabel"]
 - ["Ps9AnyObject", ""]
 - !private ["CSo7CALayer", "cornerRadius"]
 - ["CSo7CALayer", "deinit"]
@@ -50,6 +52,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "layer"]
 - !private ["PSo15CALayerDelegate", "textAlignment"]
 - ["PSo15CALayerDelegate", "textLabel"]
+- ["PSo15CALayerDelegate", "todayLabel"]
 - ["PSo15CALayerDelegate", ""]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -75,6 +78,7 @@ depends-member:
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "textAlignment"]
 - ["Ps7CVarArg", "textLabel"]
+- ["Ps7CVarArg", "todayLabel"]
 - ["Ps7CVarArg", ""]
 - !private ["C11FoodTracker12CalendarCell", "CGPoint"]
 - ["C11FoodTracker12CalendarCell", "CGRect"]
@@ -89,6 +93,7 @@ depends-member:
 - ["C11FoodTracker12CalendarCell", "init"]
 - !private ["C11FoodTracker12CalendarCell", "layer"]
 - ["C11FoodTracker12CalendarCell", "textLabel"]
+- ["C11FoodTracker12CalendarCell", "todayLabel"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRect"]
@@ -105,6 +110,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "textAlignment"]
 - ["Ps28CustomDebugStringConvertible", "textLabel"]
+- ["Ps28CustomDebugStringConvertible", "todayLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "height"]
@@ -127,6 +133,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "textAlignment"]
 - ["Ps23CustomStringConvertible", "textLabel"]
+- ["Ps23CustomStringConvertible", "todayLabel"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CGPoint"]
 - !private ["Ps9Equatable", "CGRect"]
@@ -144,6 +151,7 @@ depends-member:
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "textAlignment"]
 - ["Ps9Equatable", "textLabel"]
+- ["Ps9Equatable", "todayLabel"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
@@ -165,6 +173,7 @@ depends-member:
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "textAlignment"]
 - ["Ps8Hashable", "textLabel"]
+- ["Ps8Hashable", "todayLabel"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - ["Si", "deinit"]
@@ -185,6 +194,7 @@ depends-member:
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "textAlignment"]
 - ["PSo8NSCoding", "textLabel"]
+- ["PSo8NSCoding", "todayLabel"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -203,6 +213,7 @@ depends-member:
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "textAlignment"]
 - ["CSo8NSObject", "textLabel"]
+- ["CSo8NSObject", "todayLabel"]
 - !private ["PSo16NSObjectProtocol", "CGPoint"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
@@ -217,6 +228,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
 - ["PSo16NSObjectProtocol", "textLabel"]
+- ["PSo16NSObjectProtocol", "todayLabel"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
@@ -241,6 +253,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
 - ["PSo29UIAccessibilityIdentification", "textLabel"]
+- ["PSo29UIAccessibilityIdentification", "todayLabel"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "CGPoint"]
 - !private ["PSo12UIAppearance", "CGRect"]
@@ -255,6 +268,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "textAlignment"]
 - ["PSo12UIAppearance", "textLabel"]
+- ["PSo12UIAppearance", "todayLabel"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "CGPoint"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
@@ -269,6 +283,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
 - ["PSo21UIAppearanceContainer", "textLabel"]
+- ["PSo21UIAppearanceContainer", "todayLabel"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo24UICollectionReusableView", "CGPoint"]
 - ["CSo24UICollectionReusableView", "CGRect"]
@@ -282,6 +297,7 @@ depends-member:
 - ["CSo24UICollectionReusableView", "init"]
 - !private ["CSo24UICollectionReusableView", "layer"]
 - ["CSo24UICollectionReusableView", "textLabel"]
+- ["CSo24UICollectionReusableView", "todayLabel"]
 - !private ["CSo20UICollectionViewCell", "CGPoint"]
 - ["CSo20UICollectionViewCell", "CGRect"]
 - !private ["CSo20UICollectionViewCell", "CGSize"]
@@ -295,6 +311,7 @@ depends-member:
 - ["CSo20UICollectionViewCell", "init"]
 - !private ["CSo20UICollectionViewCell", "layer"]
 - ["CSo20UICollectionViewCell", "textLabel"]
+- ["CSo20UICollectionViewCell", "todayLabel"]
 - ["CSo20UICollectionViewCell", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "font"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "init"]
@@ -312,6 +329,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
 - ["PSo17UICoordinateSpace", "textLabel"]
+- ["PSo17UICoordinateSpace", "todayLabel"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "CGPoint"]
 - !private ["PSo13UIDynamicItem", "CGRect"]
@@ -326,6 +344,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
 - ["PSo13UIDynamicItem", "textLabel"]
+- ["PSo13UIDynamicItem", "todayLabel"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "CGPoint"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
@@ -340,6 +359,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - !private ["PSo18UIFocusEnvironment", "textAlignment"]
 - ["PSo18UIFocusEnvironment", "textLabel"]
+- ["PSo18UIFocusEnvironment", "todayLabel"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "CGPoint"]
 - !private ["PSo11UIFocusItem", "CGRect"]
@@ -354,6 +374,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "layer"]
 - !private ["PSo11UIFocusItem", "textAlignment"]
 - ["PSo11UIFocusItem", "textLabel"]
+- ["PSo11UIFocusItem", "todayLabel"]
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo6UIFont", "init"]
 - ["CSo7UILabel", "deinit"]
@@ -374,6 +395,7 @@ depends-member:
 - !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "textAlignment"]
 - ["CSo11UIResponder", "textLabel"]
+- ["CSo11UIResponder", "todayLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "CGPoint"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
 - !private ["PSo30UIResponderStandardEditActions", "CGSize"]
@@ -387,6 +409,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
 - !private ["PSo30UIResponderStandardEditActions", "textAlignment"]
 - ["PSo30UIResponderStandardEditActions", "textLabel"]
+- ["PSo30UIResponderStandardEditActions", "todayLabel"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo18UITraitEnvironment", "CGPoint"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
@@ -401,6 +424,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "layer"]
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
 - ["PSo18UITraitEnvironment", "textLabel"]
+- ["PSo18UITraitEnvironment", "todayLabel"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "CGPoint"]
 - ["CSo6UIView", "CGRect"]
@@ -416,6 +440,7 @@ depends-member:
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "textAlignment"]
 - ["CSo6UIView", "textLabel"]
+- ["CSo6UIView", "todayLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGPoint"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGRect"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGSize"]
@@ -429,6 +454,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textAlignment"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "textLabel"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "todayLabel"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -450,6 +476,7 @@ depends-member:
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "textAlignment"]
 - ["Ps9_Hashable", "textLabel"]
+- ["Ps9_Hashable", "todayLabel"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -541,4 +568,4 @@ depends-external:
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
 - "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/Build/Products/Debug-iphoneos/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
-interface-hash: "f9894de4d4fbfba59baa90c21ad86942"
+interface-hash: "af94c83220df11c4b3cd6a29f3c4dc64"

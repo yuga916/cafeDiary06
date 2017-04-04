@@ -17,6 +17,7 @@ extension Date {
         // let dateComponents = DateComponents()
         var dateComponents = DateComponents()
         dateComponents.month = addValue
+//        dateComponents.day = 1
         //return calendar.dateByAddingComponents(dateComponents, toDate: self, options: NSCalendarOptions(rawValue: 0))!
         return calendar.date(byAdding: dateComponents, to: self)!
     }
@@ -74,10 +75,12 @@ class DateManager: NSObject {
     }
     
     // ⑵表記の変更
+    //ループ中の日付が出る。
     func conversionDateFormat(indexPath: NSIndexPath) -> String {
         dateForCellAtIndexPath(numberOfItems: numberOfItems)
         let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = "d"
+//        return formatter.string(from: currentMonthOfDates[indexPath.row] as Date)
         return formatter.string(from: currentMonthOfDates[indexPath.row] as Date)
     }
     

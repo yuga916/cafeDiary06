@@ -6,77 +6,82 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker18listViewController", ""]
 provides-dynamic-lookup:
-- "myCafe"
 - "selectedImageURL"
-- "selectedDate"
 - "read"
-- "numberOfSections"
-- "cellSize"
-- "viewDidLoad"
-- "prepare"
-- "cafeDic"
-- "tabBar"
+- "selectedDate"
+- "myCafe"
 - "didReceiveMemoryWarning"
+- "prepare"
+- "tabBar"
+- "cafeDic"
+- "cellSize"
+- "numberOfSections"
+- "myTableView"
+- "viewWillAppear"
+- "cafeArray"
+- "viewDidLoad"
 - "selectedName"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
-- "myTableView"
-- "cafeArray"
-- "viewWillAppear"
 depends-top-level:
-- !private "AppDelegate"
-- "Dictionary"
-- !private "NSSortDescriptor"
-- !private "AnyObject"
-- !private "/"
-- "CastingPrecedence"
-- !private "PHImageManager"
-- "AssignmentPrecedence"
-- "IndexPath"
-- !private "=="
-- !private "+"
-- "listViewController"
-- !private "UIColor"
-- !private "StringLiteralType"
-- "UITableView"
-- !private "DateFormatter"
-- "UITabBarItem"
-- "UITableViewDelegate"
-- "UITableViewDataSource"
-- !private "PHAsset"
-- !private "print"
 - !private "BooleanLiteralType"
+- !private "PHAsset"
+- "Date"
 - !private "PHFetchResult"
-- !private "UIScreen"
-- "UITableViewCell"
-- !private "MealTableViewCell"
-- "NSDictionary"
-- "CGFloat"
-- !private "Array"
-- !private "UIApplication"
-- !private "NSFetchRequest"
-- !private "Diary"
-- !private "MealViewController"
-- "UIViewController"
+- "UITableViewCellEditingStyle"
+- !private "CGSize"
+- "Int"
 - !private "NSString"
 - !private "NSNumber"
-- !private "NSDate"
-- "UITabBar"
-- !private "CGSize"
-- "UIStoryboardSegue"
-- !private "NSForegroundColorAttributeName"
-- "NSArray"
-- "Date"
-- "Int"
-- !private "URL"
-- "Bool"
+- !private "StringLiteralType"
 - !private "UIImage"
-- !private "Void"
+- !private "NSManagedObject"
+- !private "NSForegroundColorAttributeName"
+- !private "PHImageRequestOptionsDeliveryMode"
+- "NSDictionary"
+- "UITableView"
+- !private "NSDate"
+- !private "MealTableViewCell"
+- !private "Array"
+- "UIStoryboardSegue"
+- !private "AppDelegate"
+- "CGFloat"
+- !private "CVarArg"
+- !private "UIScreen"
+- !private "MealViewController"
+- !private "DateFormatter"
+- "Bool"
+- "IndexPath"
+- !private "UIColor"
+- !private "+"
+- !private "NSSortDescriptor"
+- !private "URL"
+- !private "/"
+- !private "AnyObject"
+- "listViewController"
+- "UITabBar"
+- !private "PHImageManager"
+- "NSArray"
+- !private "print"
+- !private "Diary"
+- !private "NSFetchRequest"
+- !private "UIApplication"
+- "AssignmentPrecedence"
+- !private "=="
 - "String"
-- "UITableViewCellEditingStyle"
+- "CastingPrecedence"
+- "Dictionary"
+- "UITabBarItem"
+- !private "Void"
+- "UITableViewDataSource"
+- !private "NSPredicate"
+- !private "PHImageRequestOptions"
+- "UITableViewCell"
+- "UIViewController"
+- "UITableViewDelegate"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -87,9 +92,12 @@ depends-member:
 - ["Ps9AnyObject", "Key"]
 - ["Ps9AnyObject", "NSArray"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "NSPredicate"]
 - !private ["Ps9AnyObject", "NSSortDescriptor"]
 - !private ["Ps9AnyObject", "PHAsset"]
 - !private ["Ps9AnyObject", "PHImageManager"]
+- !private ["Ps9AnyObject", "PHImageRequestOptions"]
+- !private ["Ps9AnyObject", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIImage"]
@@ -105,7 +113,9 @@ depends-member:
 - !private ["Ps9AnyObject", "dateView"]
 - ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "delete"]
 - !private ["Ps9AnyObject", "deleteRows"]
+- !private ["Ps9AnyObject", "deliveryMode"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -129,6 +139,7 @@ depends-member:
 - !private ["Ps9AnyObject", "performSegue"]
 - !private ["Ps9AnyObject", "persistentContainer"]
 - !private ["Ps9AnyObject", "photoImageView"]
+- !private ["Ps9AnyObject", "predicate"]
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "rating"]
@@ -136,6 +147,7 @@ depends-member:
 - ["Ps9AnyObject", "read"]
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "requestImage"]
+- !private ["Ps9AnyObject", "save"]
 - !private ["Ps9AnyObject", "scSelectedDate"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
@@ -255,9 +267,12 @@ depends-member:
 - ["Ps7CVarArg", "Key"]
 - ["Ps7CVarArg", "NSArray"]
 - !private ["Ps7CVarArg", "NSForegroundColorAttributeName"]
+- !private ["Ps7CVarArg", "NSPredicate"]
 - !private ["Ps7CVarArg", "NSSortDescriptor"]
 - !private ["Ps7CVarArg", "PHAsset"]
 - !private ["Ps7CVarArg", "PHImageManager"]
+- !private ["Ps7CVarArg", "PHImageRequestOptions"]
+- !private ["Ps7CVarArg", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIApplication"]
@@ -277,8 +292,11 @@ depends-member:
 - !private ["Ps7CVarArg", "date"]
 - !private ["Ps7CVarArg", "dateFormat"]
 - !private ["Ps7CVarArg", "dateView"]
+- ["Ps7CVarArg", "deinit"]
 - !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "delete"]
 - !private ["Ps7CVarArg", "deleteRows"]
+- !private ["Ps7CVarArg", "deliveryMode"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
@@ -302,6 +320,7 @@ depends-member:
 - !private ["Ps7CVarArg", "performSegue"]
 - !private ["Ps7CVarArg", "persistentContainer"]
 - !private ["Ps7CVarArg", "photoImageView"]
+- !private ["Ps7CVarArg", "predicate"]
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "rating"]
@@ -310,6 +329,7 @@ depends-member:
 - !private ["Ps7CVarArg", "reloadData"]
 - !private ["Ps7CVarArg", "remove"]
 - !private ["Ps7CVarArg", "requestImage"]
+- !private ["Ps7CVarArg", "save"]
 - !private ["Ps7CVarArg", "scSelectedDate"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
 - ["Ps7CVarArg", "scrollViewDidEndDragging"]
@@ -377,9 +397,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Key"]
 - ["Ps28CustomDebugStringConvertible", "NSArray"]
 - !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
 - !private ["Ps28CustomDebugStringConvertible", "NSSortDescriptor"]
 - !private ["Ps28CustomDebugStringConvertible", "PHAsset"]
 - !private ["Ps28CustomDebugStringConvertible", "PHImageManager"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
@@ -398,7 +421,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - !private ["Ps28CustomDebugStringConvertible", "dateView"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "delete"]
 - !private ["Ps28CustomDebugStringConvertible", "deleteRows"]
+- !private ["Ps28CustomDebugStringConvertible", "deliveryMode"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -422,6 +447,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "persistentContainer"]
 - !private ["Ps28CustomDebugStringConvertible", "photoImageView"]
+- !private ["Ps28CustomDebugStringConvertible", "predicate"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "rating"]
@@ -431,6 +457,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "remove"]
 - !private ["Ps28CustomDebugStringConvertible", "requestImage"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "save"]
 - !private ["Ps28CustomDebugStringConvertible", "scSelectedDate"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
@@ -509,9 +536,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "Key"]
 - ["Ps23CustomStringConvertible", "NSArray"]
 - !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps23CustomStringConvertible", "NSPredicate"]
 - !private ["Ps23CustomStringConvertible", "NSSortDescriptor"]
 - !private ["Ps23CustomStringConvertible", "PHAsset"]
 - !private ["Ps23CustomStringConvertible", "PHImageManager"]
+- !private ["Ps23CustomStringConvertible", "PHImageRequestOptions"]
+- !private ["Ps23CustomStringConvertible", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIApplication"]
@@ -533,7 +563,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dateFormat"]
 - !private ["Ps23CustomStringConvertible", "dateView"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "delete"]
 - !private ["Ps23CustomStringConvertible", "deleteRows"]
+- !private ["Ps23CustomStringConvertible", "deliveryMode"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -557,6 +589,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "performSegue"]
 - !private ["Ps23CustomStringConvertible", "persistentContainer"]
 - !private ["Ps23CustomStringConvertible", "photoImageView"]
+- !private ["Ps23CustomStringConvertible", "predicate"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "rating"]
@@ -566,6 +599,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "remove"]
 - !private ["Ps23CustomStringConvertible", "requestImage"]
 - !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "save"]
 - !private ["Ps23CustomStringConvertible", "scSelectedDate"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -632,9 +666,12 @@ depends-member:
 - ["Ps9Equatable", "Key"]
 - ["Ps9Equatable", "NSArray"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
+- !private ["Ps9Equatable", "NSPredicate"]
 - !private ["Ps9Equatable", "NSSortDescriptor"]
 - !private ["Ps9Equatable", "PHAsset"]
 - !private ["Ps9Equatable", "PHImageManager"]
+- !private ["Ps9Equatable", "PHImageRequestOptions"]
+- !private ["Ps9Equatable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIApplication"]
@@ -656,6 +693,7 @@ depends-member:
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "delete"]
 - !private ["Ps9Equatable", "deleteRows"]
+- !private ["Ps9Equatable", "deliveryMode"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -665,6 +703,7 @@ depends-member:
 - !private ["Ps9Equatable", "fetchRequest"]
 - !private ["Ps9Equatable", "firstObject"]
 - !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "highQualityFormat"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
@@ -680,6 +719,7 @@ depends-member:
 - !private ["Ps9Equatable", "performSegue"]
 - !private ["Ps9Equatable", "persistentContainer"]
 - !private ["Ps9Equatable", "photoImageView"]
+- !private ["Ps9Equatable", "predicate"]
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "rating"]
@@ -688,6 +728,7 @@ depends-member:
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "requestImage"]
 - !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "save"]
 - !private ["Ps9Equatable", "scSelectedDate"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
@@ -766,9 +807,12 @@ depends-member:
 - ["Ps8Hashable", "Key"]
 - ["Ps8Hashable", "NSArray"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
+- !private ["Ps8Hashable", "NSPredicate"]
 - !private ["Ps8Hashable", "NSSortDescriptor"]
 - !private ["Ps8Hashable", "PHAsset"]
 - !private ["Ps8Hashable", "PHImageManager"]
+- !private ["Ps8Hashable", "PHImageRequestOptions"]
+- !private ["Ps8Hashable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIApplication"]
@@ -790,6 +834,7 @@ depends-member:
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "delete"]
 - !private ["Ps8Hashable", "deleteRows"]
+- !private ["Ps8Hashable", "deliveryMode"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -799,6 +844,7 @@ depends-member:
 - !private ["Ps8Hashable", "fetchRequest"]
 - !private ["Ps8Hashable", "firstObject"]
 - !private ["Ps8Hashable", "frame"]
+- !private ["Ps8Hashable", "highQualityFormat"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -814,6 +860,7 @@ depends-member:
 - !private ["Ps8Hashable", "performSegue"]
 - !private ["Ps8Hashable", "persistentContainer"]
 - !private ["Ps8Hashable", "photoImageView"]
+- !private ["Ps8Hashable", "predicate"]
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "rating"]
@@ -822,6 +869,7 @@ depends-member:
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "requestImage"]
 - !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "save"]
 - !private ["Ps8Hashable", "scSelectedDate"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
@@ -954,9 +1002,12 @@ depends-member:
 - ["PSo8NSCoding", "Key"]
 - ["PSo8NSCoding", "NSArray"]
 - !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
+- !private ["PSo8NSCoding", "NSPredicate"]
 - !private ["PSo8NSCoding", "NSSortDescriptor"]
 - !private ["PSo8NSCoding", "PHAsset"]
 - !private ["PSo8NSCoding", "PHImageManager"]
+- !private ["PSo8NSCoding", "PHImageRequestOptions"]
+- !private ["PSo8NSCoding", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIImage"]
@@ -969,6 +1020,7 @@ depends-member:
 - !private ["PSo8NSCoding", "date"]
 - !private ["PSo8NSCoding", "dateFormat"]
 - !private ["PSo8NSCoding", "dateView"]
+- !private ["PSo8NSCoding", "delete"]
 - !private ["PSo8NSCoding", "deleteRows"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -987,12 +1039,14 @@ depends-member:
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "performSegue"]
 - !private ["PSo8NSCoding", "photoImageView"]
+- !private ["PSo8NSCoding", "predicate"]
 - ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "rating"]
 - !private ["PSo8NSCoding", "ratingControl"]
 - ["PSo8NSCoding", "read"]
 - !private ["PSo8NSCoding", "reloadData"]
+- !private ["PSo8NSCoding", "save"]
 - !private ["PSo8NSCoding", "scSelectedDate"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -1031,9 +1085,11 @@ depends-member:
 - !private ["PSo9NSCopying", "date"]
 - !private ["PSo9NSCopying", "dateFormat"]
 - !private ["PSo9NSCopying", "deinit"]
+- !private ["PSo9NSCopying", "deliveryMode"]
 - !private ["PSo9NSCopying", "fetchAssets"]
 - !private ["PSo9NSCopying", "firstObject"]
 - ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "predicate"]
 - !private ["PSo9NSCopying", "sortedArray"]
 - !private ["PSo9NSCopying", "string"]
 - !private ["PSo9NSCopying", "subscript"]
@@ -1050,9 +1106,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "Int"]
 - ["PSo26NSExtensionRequestHandling", "NSArray"]
 - !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
 - !private ["PSo26NSExtensionRequestHandling", "NSSortDescriptor"]
 - !private ["PSo26NSExtensionRequestHandling", "PHAsset"]
 - !private ["PSo26NSExtensionRequestHandling", "PHImageManager"]
+- !private ["PSo26NSExtensionRequestHandling", "PHImageRequestOptions"]
+- !private ["PSo26NSExtensionRequestHandling", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
@@ -1108,14 +1167,20 @@ depends-member:
 - !private ["PSo17NSFastEnumeration", "sortedArray"]
 - !private ["PSo17NSFastEnumeration", "subscript"]
 - ["CSo14NSFetchRequest", "deinit"]
+- !private ["CSo14NSFetchRequest", "predicate"]
 - ["PSo20NSFetchRequestResult", "Key"]
 - ["PSo20NSFetchRequestResult", "Value"]
 - !private ["PSo20NSFetchRequestResult", "fetchRequest"]
 - !private ["PSo20NSFetchRequestResult", "subscript"]
+- !private ["PSo9NSLocking", "delete"]
 - !private ["PSo9NSLocking", "fetch"]
+- !private ["PSo9NSLocking", "save"]
+- ["CSo15NSManagedObject", "deinit"]
 - !private ["CSo15NSManagedObject", "fetchRequest"]
 - ["CSo22NSManagedObjectContext", "deinit"]
+- !private ["CSo22NSManagedObjectContext", "delete"]
 - !private ["CSo22NSManagedObjectContext", "fetch"]
+- !private ["CSo22NSManagedObjectContext", "save"]
 - ["PSo16NSMutableCopying", "Key"]
 - ["PSo16NSMutableCopying", "Value"]
 - ["PSo16NSMutableCopying", "init"]
@@ -1127,6 +1192,7 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGSize"]
+- !private ["CSo8NSObject", "CVarArg"]
 - ["CSo8NSObject", "Date"]
 - !private ["CSo8NSObject", "DateFormatter"]
 - !private ["CSo8NSObject", "Diary"]
@@ -1140,12 +1206,16 @@ depends-member:
 - ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSFetchRequest"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
+- !private ["CSo8NSObject", "NSManagedObject"]
 - !private ["CSo8NSObject", "NSNumber"]
+- !private ["CSo8NSObject", "NSPredicate"]
 - !private ["CSo8NSObject", "NSSortDescriptor"]
 - !private ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "PHAsset"]
 - !private ["CSo8NSObject", "PHFetchResult"]
 - !private ["CSo8NSObject", "PHImageManager"]
+- !private ["CSo8NSObject", "PHImageRequestOptions"]
+- !private ["CSo8NSObject", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIApplication"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -1168,7 +1238,9 @@ depends-member:
 - !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "dateView"]
 - !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "delete"]
 - !private ["CSo8NSObject", "deleteRows"]
+- !private ["CSo8NSObject", "deliveryMode"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -1192,6 +1264,7 @@ depends-member:
 - !private ["CSo8NSObject", "performSegue"]
 - !private ["CSo8NSObject", "persistentContainer"]
 - !private ["CSo8NSObject", "photoImageView"]
+- !private ["CSo8NSObject", "predicate"]
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "rating"]
@@ -1199,6 +1272,7 @@ depends-member:
 - ["CSo8NSObject", "read"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "requestImage"]
+- !private ["CSo8NSObject", "save"]
 - !private ["CSo8NSObject", "scSelectedDate"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -1241,9 +1315,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Key"]
 - ["PSo16NSObjectProtocol", "NSArray"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
+- !private ["PSo16NSObjectProtocol", "NSPredicate"]
 - !private ["PSo16NSObjectProtocol", "NSSortDescriptor"]
 - !private ["PSo16NSObjectProtocol", "PHAsset"]
 - !private ["PSo16NSObjectProtocol", "PHImageManager"]
+- !private ["PSo16NSObjectProtocol", "PHImageRequestOptions"]
+- !private ["PSo16NSObjectProtocol", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
@@ -1258,7 +1335,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
 - !private ["PSo16NSObjectProtocol", "dateView"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "delete"]
 - !private ["PSo16NSObjectProtocol", "deleteRows"]
+- !private ["PSo16NSObjectProtocol", "deliveryMode"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -1282,6 +1361,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "performSegue"]
 - !private ["PSo16NSObjectProtocol", "persistentContainer"]
 - !private ["PSo16NSObjectProtocol", "photoImageView"]
+- !private ["PSo16NSObjectProtocol", "predicate"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "rating"]
@@ -1289,6 +1369,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "read"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "requestImage"]
+- !private ["PSo16NSObjectProtocol", "save"]
 - !private ["PSo16NSObjectProtocol", "scSelectedDate"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -1325,6 +1406,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo21NSPersistentContainer", "viewContext"]
+- !private ["CSo24NSPersistentStoreRequest", "predicate"]
+- ["CSo11NSPredicate", "deinit"]
+- !private ["CSo11NSPredicate", "init"]
 - ["PSo14NSSecureCoding", "Key"]
 - ["PSo14NSSecureCoding", "Value"]
 - ["PSo14NSSecureCoding", "init"]
@@ -1345,6 +1429,11 @@ depends-member:
 - ["CSo14PHImageManager", "deinit"]
 - !private ["CSo14PHImageManager", "init"]
 - !private ["CSo14PHImageManager", "requestImage"]
+- ["CSo21PHImageRequestOptions", "deinit"]
+- !private ["CSo21PHImageRequestOptions", "deliveryMode"]
+- !private ["CSo21PHImageRequestOptions", "init"]
+- ["OSC33PHImageRequestOptionsDeliveryMode", "deinit"]
+- !private ["OSC33PHImageRequestOptionsDeliveryMode", "highQualityFormat"]
 - !private ["CSo8PHObject", "fetchAssets"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
@@ -1402,6 +1491,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "aspectFill"]
 - !private ["Ps16RawRepresentable", "delete"]
 - !private ["Ps16RawRepresentable", "fade"]
+- !private ["Ps16RawRepresentable", "highQualityFormat"]
 - !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["Ps8Sequence", "Element"]
@@ -1474,9 +1564,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "Int"]
 - ["PSo21UIAppearanceContainer", "NSArray"]
 - !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "NSPredicate"]
 - !private ["PSo21UIAppearanceContainer", "NSSortDescriptor"]
 - !private ["PSo21UIAppearanceContainer", "PHAsset"]
 - !private ["PSo21UIAppearanceContainer", "PHImageManager"]
+- !private ["PSo21UIAppearanceContainer", "PHImageRequestOptions"]
+- !private ["PSo21UIAppearanceContainer", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
@@ -1552,9 +1645,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "Int"]
 - ["PSo18UIContentContainer", "NSArray"]
 - !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIContentContainer", "NSPredicate"]
 - !private ["PSo18UIContentContainer", "NSSortDescriptor"]
 - !private ["PSo18UIContentContainer", "PHAsset"]
 - !private ["PSo18UIContentContainer", "PHImageManager"]
+- !private ["PSo18UIContentContainer", "PHImageRequestOptions"]
+- !private ["PSo18UIContentContainer", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UIContentContainer", "UIApplication"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIImage"]
@@ -1637,9 +1733,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "Int"]
 - ["PSo18UIFocusEnvironment", "NSArray"]
 - !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "NSPredicate"]
 - !private ["PSo18UIFocusEnvironment", "NSSortDescriptor"]
 - !private ["PSo18UIFocusEnvironment", "PHAsset"]
 - !private ["PSo18UIFocusEnvironment", "PHImageManager"]
+- !private ["PSo18UIFocusEnvironment", "PHImageRequestOptions"]
+- !private ["PSo18UIFocusEnvironment", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
@@ -1733,6 +1832,7 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CGSize"]
+- !private ["CSo11UIResponder", "CVarArg"]
 - ["CSo11UIResponder", "Date"]
 - !private ["CSo11UIResponder", "DateFormatter"]
 - !private ["CSo11UIResponder", "Diary"]
@@ -1745,12 +1845,16 @@ depends-member:
 - ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSFetchRequest"]
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
+- !private ["CSo11UIResponder", "NSManagedObject"]
 - !private ["CSo11UIResponder", "NSNumber"]
+- !private ["CSo11UIResponder", "NSPredicate"]
 - !private ["CSo11UIResponder", "NSSortDescriptor"]
 - !private ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "PHAsset"]
 - !private ["CSo11UIResponder", "PHFetchResult"]
 - !private ["CSo11UIResponder", "PHImageManager"]
+- !private ["CSo11UIResponder", "PHImageRequestOptions"]
+- !private ["CSo11UIResponder", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIApplication"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -1829,9 +1933,12 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "Int"]
 - ["PSo30UIResponderStandardEditActions", "NSArray"]
 - !private ["PSo30UIResponderStandardEditActions", "NSForegroundColorAttributeName"]
+- !private ["PSo30UIResponderStandardEditActions", "NSPredicate"]
 - !private ["PSo30UIResponderStandardEditActions", "NSSortDescriptor"]
 - !private ["PSo30UIResponderStandardEditActions", "PHAsset"]
 - !private ["PSo30UIResponderStandardEditActions", "PHImageManager"]
+- !private ["PSo30UIResponderStandardEditActions", "PHImageRequestOptions"]
+- !private ["PSo30UIResponderStandardEditActions", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
@@ -1909,9 +2016,12 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "Int"]
 - ["PSo20UIScrollViewDelegate", "NSArray"]
 - !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo20UIScrollViewDelegate", "NSPredicate"]
 - !private ["PSo20UIScrollViewDelegate", "NSSortDescriptor"]
 - !private ["PSo20UIScrollViewDelegate", "PHAsset"]
 - !private ["PSo20UIScrollViewDelegate", "PHImageManager"]
+- !private ["PSo20UIScrollViewDelegate", "PHImageRequestOptions"]
+- !private ["PSo20UIScrollViewDelegate", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo20UIScrollViewDelegate", "UIApplication"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
@@ -1957,9 +2067,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "Int"]
 - ["PSo16UIStateRestoring", "NSArray"]
 - !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
+- !private ["PSo16UIStateRestoring", "NSPredicate"]
 - !private ["PSo16UIStateRestoring", "NSSortDescriptor"]
 - !private ["PSo16UIStateRestoring", "PHAsset"]
 - !private ["PSo16UIStateRestoring", "PHImageManager"]
+- !private ["PSo16UIStateRestoring", "PHImageRequestOptions"]
+- !private ["PSo16UIStateRestoring", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo16UIStateRestoring", "UIApplication"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
@@ -2028,9 +2141,12 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "Int"]
 - ["PSo21UITableViewDataSource", "NSArray"]
 - !private ["PSo21UITableViewDataSource", "NSForegroundColorAttributeName"]
+- !private ["PSo21UITableViewDataSource", "NSPredicate"]
 - !private ["PSo21UITableViewDataSource", "NSSortDescriptor"]
 - !private ["PSo21UITableViewDataSource", "PHAsset"]
 - !private ["PSo21UITableViewDataSource", "PHImageManager"]
+- !private ["PSo21UITableViewDataSource", "PHImageRequestOptions"]
+- !private ["PSo21UITableViewDataSource", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo21UITableViewDataSource", "UIApplication"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
@@ -2074,9 +2190,12 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "Int"]
 - ["PSo19UITableViewDelegate", "NSArray"]
 - !private ["PSo19UITableViewDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo19UITableViewDelegate", "NSPredicate"]
 - !private ["PSo19UITableViewDelegate", "NSSortDescriptor"]
 - !private ["PSo19UITableViewDelegate", "PHAsset"]
 - !private ["PSo19UITableViewDelegate", "PHImageManager"]
+- !private ["PSo19UITableViewDelegate", "PHImageRequestOptions"]
+- !private ["PSo19UITableViewDelegate", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo19UITableViewDelegate", "UIApplication"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
@@ -2123,9 +2242,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "Int"]
 - ["PSo18UITraitEnvironment", "NSArray"]
 - !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UITraitEnvironment", "NSPredicate"]
 - !private ["PSo18UITraitEnvironment", "NSSortDescriptor"]
 - !private ["PSo18UITraitEnvironment", "PHAsset"]
 - !private ["PSo18UITraitEnvironment", "PHImageManager"]
+- !private ["PSo18UITraitEnvironment", "PHImageRequestOptions"]
+- !private ["PSo18UITraitEnvironment", "PHImageRequestOptionsDeliveryMode"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
@@ -2207,6 +2329,7 @@ depends-member:
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "CGSize"]
+- !private ["CSo16UIViewController", "CVarArg"]
 - ["CSo16UIViewController", "Date"]
 - !private ["CSo16UIViewController", "DateFormatter"]
 - !private ["CSo16UIViewController", "Diary"]
@@ -2219,12 +2342,16 @@ depends-member:
 - ["CSo16UIViewController", "NSDictionary"]
 - !private ["CSo16UIViewController", "NSFetchRequest"]
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
+- !private ["CSo16UIViewController", "NSManagedObject"]
 - !private ["CSo16UIViewController", "NSNumber"]
+- !private ["CSo16UIViewController", "NSPredicate"]
 - !private ["CSo16UIViewController", "NSSortDescriptor"]
 - !private ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "PHAsset"]
 - !private ["CSo16UIViewController", "PHFetchResult"]
 - !private ["CSo16UIViewController", "PHImageManager"]
+- !private ["CSo16UIViewController", "PHImageRequestOptions"]
+- !private ["CSo16UIViewController", "PHImageRequestOptionsDeliveryMode"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIApplication"]
 - !private ["CSo16UIViewController", "UIColor"]
@@ -2347,9 +2474,12 @@ depends-member:
 - ["Ps9_Hashable", "Key"]
 - ["Ps9_Hashable", "NSArray"]
 - !private ["Ps9_Hashable", "NSForegroundColorAttributeName"]
+- !private ["Ps9_Hashable", "NSPredicate"]
 - !private ["Ps9_Hashable", "NSSortDescriptor"]
 - !private ["Ps9_Hashable", "PHAsset"]
 - !private ["Ps9_Hashable", "PHImageManager"]
+- !private ["Ps9_Hashable", "PHImageRequestOptions"]
+- !private ["Ps9_Hashable", "PHImageRequestOptionsDeliveryMode"]
 - !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UIApplication"]
@@ -2371,6 +2501,7 @@ depends-member:
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "delete"]
 - !private ["Ps9_Hashable", "deleteRows"]
+- !private ["Ps9_Hashable", "deliveryMode"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
@@ -2380,6 +2511,7 @@ depends-member:
 - !private ["Ps9_Hashable", "fetchRequest"]
 - !private ["Ps9_Hashable", "firstObject"]
 - !private ["Ps9_Hashable", "frame"]
+- !private ["Ps9_Hashable", "highQualityFormat"]
 - !private ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -2395,6 +2527,7 @@ depends-member:
 - !private ["Ps9_Hashable", "performSegue"]
 - !private ["Ps9_Hashable", "persistentContainer"]
 - !private ["Ps9_Hashable", "photoImageView"]
+- !private ["Ps9_Hashable", "predicate"]
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "rating"]
@@ -2403,6 +2536,7 @@ depends-member:
 - !private ["Ps9_Hashable", "reloadData"]
 - !private ["Ps9_Hashable", "requestImage"]
 - !private ["Ps9_Hashable", "row"]
+- !private ["Ps9_Hashable", "save"]
 - !private ["Ps9_Hashable", "scSelectedDate"]
 - ["Ps9_Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps9_Hashable", "scrollViewDidEndDragging"]
@@ -2484,6 +2618,7 @@ depends-member:
 - ["C11FoodTracker18listViewController", "Bool"]
 - ["C11FoodTracker18listViewController", "CGFloat"]
 - !private ["C11FoodTracker18listViewController", "CGSize"]
+- !private ["C11FoodTracker18listViewController", "CVarArg"]
 - ["C11FoodTracker18listViewController", "Date"]
 - !private ["C11FoodTracker18listViewController", "DateFormatter"]
 - !private ["C11FoodTracker18listViewController", "Diary"]
@@ -2496,12 +2631,16 @@ depends-member:
 - ["C11FoodTracker18listViewController", "NSDictionary"]
 - !private ["C11FoodTracker18listViewController", "NSFetchRequest"]
 - !private ["C11FoodTracker18listViewController", "NSForegroundColorAttributeName"]
+- !private ["C11FoodTracker18listViewController", "NSManagedObject"]
 - !private ["C11FoodTracker18listViewController", "NSNumber"]
+- !private ["C11FoodTracker18listViewController", "NSPredicate"]
 - !private ["C11FoodTracker18listViewController", "NSSortDescriptor"]
 - !private ["C11FoodTracker18listViewController", "NSString"]
 - !private ["C11FoodTracker18listViewController", "PHAsset"]
 - !private ["C11FoodTracker18listViewController", "PHFetchResult"]
 - !private ["C11FoodTracker18listViewController", "PHImageManager"]
+- !private ["C11FoodTracker18listViewController", "PHImageRequestOptions"]
+- !private ["C11FoodTracker18listViewController", "PHImageRequestOptionsDeliveryMode"]
 - ["C11FoodTracker18listViewController", "String"]
 - !private ["C11FoodTracker18listViewController", "UIApplication"]
 - !private ["C11FoodTracker18listViewController", "UIColor"]
@@ -2630,13 +2769,15 @@ depends-nominal:
 - "CSo14NSFetchRequest"
 - "PSo20NSFetchRequestResult"
 - !private "PSo9NSLocking"
-- !private "CSo15NSManagedObject"
+- "CSo15NSManagedObject"
 - "CSo22NSManagedObjectContext"
 - "PSo16NSMutableCopying"
 - "CSo8NSNumber"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "CSo21NSPersistentContainer"
+- !private "CSo24NSPersistentStoreRequest"
+- "CSo11NSPredicate"
 - "PSo14NSSecureCoding"
 - "CSo16NSSortDescriptor"
 - "CSo8NSString"
@@ -2645,6 +2786,8 @@ depends-nominal:
 - "CSo13PHFetchResult"
 - "OSC18PHImageContentMode"
 - "CSo14PHImageManager"
+- "CSo21PHImageRequestOptions"
+- "OSC33PHImageRequestOptionsDeliveryMode"
 - !private "CSo8PHObject"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"

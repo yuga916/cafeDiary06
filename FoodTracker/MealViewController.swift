@@ -21,6 +21,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet weak var studyTime: UITextField!
     
     
+    
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     
@@ -68,6 +69,15 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         ratingControl.rating = 0
         ratingControl.layer.cornerRadius = 5
 //        ratingControl.rating = selectedRating
+        
+        //ヘッダー文言の変更
+        let formatter: DateFormatter = DateFormatter()
+        //let formatter = DateFormatter() //
+        formatter.dateFormat = "yyyy年MM月dd日"
+        //formatter.string(from: date as Date)
+        let selectMonth = formatter.string(from: scSelectedDate as Date)
+        self.navigationItem.title = selectMonth
+        
         read()
     }
     
@@ -94,7 +104,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     //キーボードが立ち上がるとき
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
-        print(textField.tag)
+//        print(textField.tag)
         switch textField.tag {
         case 1:
             //cafe名記入欄の表示
@@ -113,14 +123,14 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
      
 //        StringなのでNumberに変更して格納
 //        var studyTime:NSNumber = self.studyTime.text as! NSNumber
-        print(textField.tag)
+//        print(textField.tag)
         //studyTime入力の時は、StringをIntに変換して格納
         if textField.tag == 2 {
         
             var str = self.studyTime.text
-            print(self.studyTime.text)
+//            print(self.studyTime.text)
             num = Int(str!)!
-            print(num)
+//            print(num)
             
         }
         
@@ -158,11 +168,12 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
             let fetchResult: PHFetchResult = PHAsset.fetchAssets(withALAssetURLs: [url!], options: nil)
             let asset: PHAsset = (fetchResult.firstObject! as PHAsset)
             let manager: PHImageManager = PHImageManager()
-            manager.requestImage(for: asset,targetSize: CGSize(width: 500, height: 500),contentMode: .aspectFit,options: nil) { (image, info) -> Void in
+            var options:PHImageRequestOptions = PHImageRequestOptions()
+            options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+            manager.requestImage(for: asset,targetSize: CGSize(width: 500, height: 500),contentMode: .aspectFit,options: options) { (image, info) -> Void in
                 self.photoImageView.image = image
                 //閉じる処理
                 picker.dismiss(animated: true, completion: nil)
-
             }
         }
     }
@@ -218,7 +229,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         // Make sure ViewController is notified when the user picks an image.
         imagePickerController.delegate = self
-        imagePickerController.allowsEditing = true
+//        imagePickerController.allowsEditing = true
         present(imagePickerController, animated: true, completion: nil)
     }
     
@@ -282,7 +293,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         query.predicate = NSPredicate(format:"date = %@", scSelectedDate)
         let fetchResults = try! viewContext.fetch(query)
         
-        print(fetchResults.count)
+//        print(fetchResults.count)
         
         if fetchResults.count == 0 {
             //ToDoエンティティオブジェクトを作成
@@ -366,7 +377,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
             let fetchResults = try viewContext.fetch(query)
             
             
-            print(fetchResults.count)
+//            print(fetchResults.count)
             //            print(fetchResults)
             //データの取得
             //一旦配列を空っぽにする（初期化する）→そうしないとどんどん、TableViewに表示されてしまう。
@@ -379,7 +390,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
                 let studyTimenum: NSNumber = (result.value(forKey: "studyTime") as? NSNumber)!
                 let img: String? = result.value(forKey: "img") as? String
                 let rating: NSNumber? = result.value(forKey: "rating") as? NSNumber
-                print("name:\(coffeeName) saveDate:\(date) studyTime:\(studyTime) image:\(img) rating:\(rating)")
+                print("editpage_name:\(coffeeName) saveDate:\(date) studyTime:\(studyTime) image:\(img) rating:\(rating)")
                 //                myCafe = NSArray() as! [String]
                 //                myCafe.append(coffeeName!)
                 //                print(myCafe)
@@ -396,10 +407,13 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
                     let fetchResult: PHFetchResult = PHAsset.fetchAssets(withALAssetURLs: [url!], options: nil)
                     let asset: PHAsset = (fetchResult.firstObject! as PHAsset)
                     let manager: PHImageManager = PHImageManager()
-                    manager.requestImage(for: asset,targetSize: CGSize(width: 5, height: 500),contentMode: .aspectFill,options: nil) { (image, info) -> Void in
+                    var options:PHImageRequestOptions = PHImageRequestOptions()
+                    options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+                    manager.requestImage(for: asset,targetSize: CGSize(width: 5, height: 500),contentMode: .aspectFill,options: options) { (image, info) -> Void in
                         //                        self.cell.tableMyImg.image = image
                         AImage = image
                         self.strURL = img!
+                        self.photoImageView.image = AImage
                     }
                     photoImageView.image = AImage
                 }
@@ -409,4 +423,5 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         //TableViewの再描画
 //        myTableView.reloadData()
     }
+    
 }

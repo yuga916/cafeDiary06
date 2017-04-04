@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "ec3006868baf7689b70b13f0928745ee"
-build_time: [542431174, 164280000]
+build_time: [543847298, 639582000]
 inputs:
   "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/DateManager.swift": [9223372036854775807, 0]
   "/Users/yuga/Documents/ios20161219/CafeDiary/cafeDiary04/FoodTracker/listViewController.swift": [9223372036854775807, 0]

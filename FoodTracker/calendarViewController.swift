@@ -27,16 +27,16 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     var cafeArray: [NSDictionary] = []
     var cafeDic: NSDictionary! = [:]
     var myCafe = NSArray() as! [String]
-
+    var tmpToday = NSDate()
+    var selectedToday = NSDate()
     
     let dateManager = DateManager()
     let daysPerWeek: Int = 7
     let cellMargin: CGFloat = 2.0
     var selectedDate = NSDate()
-    var today: NSDate!
+    var today = NSDate()
     let weekArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     let baseView:UIView = UIView(frame: CGRect(x:0,y:720,width:200,height:250))
-
     
     @IBOutlet weak var cafeLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -60,6 +60,23 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        let timeFormatter: DateFormatter = DateFormatter()
+        timeFormatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
+        timeFormatter.dateFormat = "yyyy/MM/dd "
+        var todayJpn = timeFormatter.string(from: today as Date) as! String
+        var tmpToday1 = todayJpn + "00:00:00 +0000" as! String
+//        print("今日:\(todayJpn)")
+        timeFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
+        tmpToday = timeFormatter.date(from: tmpToday1) as! NSDate
+        print("今日:\(tmpToday1)")
+        
+        
+//        print("今日:\(todayJpnTime)")
+//        timeFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
+//        today = timeFormatter.date(from: todayJpnTime as String) as! NSDate
+//        print("今日:\(today)")
+        
+        
         navigationBar.title = changeHeaderTitle()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
 
@@ -140,6 +157,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     //既に存在するデータの読み込み処理
     func read() {
         
+        
         //AppDelegateを使う用意をする
         let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         
@@ -171,10 +189,10 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 let studyTime: NSNumber = (result.value(forKey: "studyTime") as? NSNumber)!
                 let img: String? = result.value(forKey: "img") as? String
                 let rating: NSNumber? = result.value(forKey: "rating") as? NSNumber
-                print("name:\(coffeeName) saveDate:\(date) studyTime:\(studyTime) image:\(img) rating:\(rating)")
+//                print("name:\(coffeeName) saveDate:\(date) studyTime:\(studyTime) image:\(img) rating:\(rating)")
                 cafeDic = ["coffeeName":coffeeName, "date":date, "studyTime":studyTime, "img":img, "rating":rating]
                 cafeArray.append(cafeDic)
-                print(cafeArray)
+//                print(cafeArray)
                 //                myCafe = NSArray() as! [String]
                 //                myCafe.append(coffeeName!)
                 //                print(myCafe)
@@ -199,12 +217,15 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                     let fetchResult: PHFetchResult = PHAsset.fetchAssets(withALAssetURLs: [url!], options: nil)
                     let asset: PHAsset = (fetchResult.firstObject! as PHAsset)
                     let manager: PHImageManager = PHImageManager()
-                    manager.requestImage(for: asset,targetSize: CGSize(width: 5, height: 500),contentMode: .aspectFill,options: nil) { (image, info) -> Void in
+                    var options:PHImageRequestOptions = PHImageRequestOptions()
+                    options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+                    manager.requestImage(for: asset,targetSize: CGSize(width: 5, height: 500),contentMode: .aspectFill,options: options) { (image, info) -> Void in
                         //                        self.cell.tableMyImg.image = image
                         AImage = image
+                        self.cafeImage.image = AImage
                 }
                 
-                    cafeImage.image = AImage
+                    self.cafeImage.image = AImage
                 }
                 //データ入力がない場合、すべて表示しない。
                 
@@ -256,17 +277,52 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         } else {
             cell.textLabel.textColor = UIColor.gray
         }
+        
+        //
+        let todayFormatter: DateFormatter = DateFormatter()
+        todayFormatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
+        
+        todayFormatter.dateFormat = "yyyy/MM"
+        //formatter.string(from: date as Date)
+        
+        var selectMonth = todayFormatter.string(from: selectedDate as Date)
+        
+        //        let selectedDateTmp = selectMonth + "/" + dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath) + " 09:00:00 +0900" as! String
+        let selectedDateTmp = selectMonth + "/" + dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath) + " 09:00:00 +0900" as! String
+        todayFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
+        
+        //        formatter.dateFormat = "yyyy/MM/dd"
+        //        formatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
+        //        var tmpDate = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath) as! NSDate
+        //時差を治す。
+        //        formatter.timeZone = TimeZone.current
+        
+        //        selectedToday = todayFormatter.date(from: selectedDateTmp) as! NSDate
+        
+//        selectedToday = todayFormatter.date(from: selectedDateTmp as String)
+
+        
+        
+        
         //テキスト配置
         if indexPath.section == 0 {
             cell.textLabel.text = weekArray[indexPath.row]
             cell.backgroundColor = UIColor.clear
             cell.isUserInteractionEnabled = false
+            cell.todayLabel.isHidden = true
             
         } else {
             print(indexPath.row)
             print(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))
             
+            cell.todayLabel.isHidden = true
+            
             if Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! >= 25 {
+                
+                
+//                if tmpToday == selectedToday {
+//                    cell.todayLabel.isHidden = false
+//                }
                 
                 cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
                 cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
@@ -276,11 +332,19 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
                 cell.isUserInteractionEnabled = false
                 
+//                if tmpToday == selectedToday {
+//                    cell.todayLabel.isHidden = false
+//                }
+                
             } else if Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! == 1 || Int(indexPath.row) - Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))! == 0 {
                 
                 cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
                 cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
                 cell.isUserInteractionEnabled = false
+                
+//                if tmpToday == selectedToday {
+//                    cell.todayLabel.isHidden = false
+//                }
                 
             } else if (indexPath.row > Int(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))!) {
                 
@@ -288,11 +352,19 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
                 cell.isUserInteractionEnabled = true
                 
+//                if tmpToday == selectedToday {
+//                    cell.todayLabel.isHidden = false
+//                }
+                
             } else {
                 
                 cell.textLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
                 cell.backgroundColor = UIColor(red: 1, green: 0.97, blue: 0.86, alpha: 1.0)
                 cell.isUserInteractionEnabled = true
+                
+                if tmpToday == selectedToday {
+                    cell.todayLabel.isHidden = false
+                }
             }
             
             //月によって1日の場所は異なる(後ほど説明します)
@@ -309,6 +381,11 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         
         return cell
     }
+    
+//    //今日の日付を出す
+//    func todayDate(indexPath: NSIndexPath) -> NSDate {
+//        
+//    }
     
     //セルのサイズを設定
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -347,9 +424,12 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     
     //cellが選択された時のアクション
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Num: \(indexPath.row)")
-        print("Selected: \(selectedDate)")
-        print(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))
+//        print("Num: \(indexPath.row)")
+//        print("Selected: \(selectedDate)")
+//        print(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))
+//        print("tmpToday: \(tmpToday)")
+//        var selectedDateTmp1 = todayDate(indexPath: indexPath as NSIndexPath)
+//        print("selectedDateTmp: \(selectedDateTmp1)")
         
         let formatter: DateFormatter = DateFormatter()
         formatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
@@ -369,7 +449,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         //時差を治す。
 //        formatter.timeZone = TimeZone.current
         selectedDate = formatter.date(from: selectedDateTmp) as! NSDate
-        print("Selected: \(selectedDate)")
+//        print("Selected2: \(selectedDate)")
         read()
     }
 //    func collectionView(collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -416,4 +496,6 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         //(date: selectedDate)
         navigationBar.title = changeHeaderTitle()
     }
+    
+    
 }
